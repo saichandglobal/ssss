@@ -15,15 +15,12 @@ This is our general plan and reasoning
   * NVMe drive on the PCIe bus for Ceph Journal and Frequently Used Ceph PGs
   * 40GB nic card for general networking
   * 1GB nic card for management
-* To reduce blast radious we will have 4 independent clusters accessed through the sharding feature.
-  * If one goes down we still have 3 left.
-  * This is particularly useful to reduce load and improve recovery times.
-  * This can be also useful to migrate CephFS data into BlueStore when it's stable and available.
 * As a backup for git repos we will use GitLab GEO feature pushing into a secondary node hosted at Amazon with an EFS drive (we don't care if it's slow)
   * This makes Amazon DirectConnect a critical feature for our colo as we will need to have high bandwidth to it.
   * We will start backfilling this Amazon instance as soon as we finish draining CephFS, so when we are done we can start moving from Amazon to the colo.
 * To prevent a total loss in the case of another MDS meltdown we will create snapshots periodically so we can recover (hourly, daily, whatever makes sense)
 * We will push forward with the GEO feature to use an object storage, in which case we will use RADOS as the object storage to simplify our installation.
+* CephFS supports having some osds in BlueStore and XFS at the same time (but don't leave it like this), we will move to BlueStore when it's stable and available.
 
 
 ## CephFS in the cloud
