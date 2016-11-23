@@ -4,6 +4,11 @@
 
 ## Where and how to look for data
 
+### Design decisions
+
+* [Storage design](design/storage.md)
+* [Network design](design/networking.md)
+
 ### General System Health
 
 #### Blackbox Monitoring
