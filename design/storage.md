@@ -8,10 +8,11 @@ This is our general plan and reasoning
 * Our general architecture goes in the way of using
   * 12 cores processors
   * 2 sockets
-  * 24 drives
-    * 22 for Ceph storage
-    * 2 for the OS as a raid
-    * NVMe drive on the PCIe bus for Ceph Journal (as fast as it gets)
+  * 96 GB of RAW storage
+    * Minimum spindle count of 16 drives
+    * Minimum HBA count of 2
+    * 2 drives for the OS as a RAID 1
+  * NVMe drive on the PCIe bus for Ceph Journal and Frequently Used Ceph PGs
   * 40GB nic card for general networking
   * 1GB nic card for management
 * To reduce blast radious we will have 4 independent clusters accessed through the sharding feature.
@@ -31,10 +32,10 @@ This is our general plan and reasoning
 
 * Latencies will kill you.
 * Random hosts going down at any time will double your workload.
-* Network attached storage, as premium as it is, is shared.
+* Network attached storage, as premium as it is, is shared and slow.
 * CephFS will lock when it can't write to the journal.
 
 The good side:
 
-* CephFS survives to things locking and injecting latencies remarkably well.
+* CephFS survives locking and injecting latencies remarkably well.
 
