@@ -2,12 +2,12 @@
 
 [These are not the runbooks you are looking for](https://gitlab.com/gitlab-com/runbooks)
 
-## Where and how to look for data
-
-### Design decisions
+## Design decisions
 
 * [Storage design](design/storage.md)
 * [Network design](design/networking.md)
+
+## Where and how to look for data
 
 ### General System Health
 
