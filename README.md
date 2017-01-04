@@ -2,6 +2,8 @@
 
 [These are not the runbooks you are looking for](https://gitlab.com/gitlab-com/runbooks)
 
+[Infrastucture Overview](overview.md)
+
 ## Where and how to look for data
 
 ### General System Health
