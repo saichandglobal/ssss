@@ -39,6 +39,7 @@ The primary things on Digital Ocean at this time are:
 
 * Blackbox monitoring servers
 * Shared runner managers
+* Runner cache servers
 * ELK servers
 
 # Technology at GitLab
