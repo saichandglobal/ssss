@@ -42,6 +42,19 @@ The primary things on Digital Ocean at this time are:
 * Runner cache servers
 * ELK servers
 
+## AWS
+
+We host our DNS with route53 and we have several EC2 instances for various
+purposes. The servers you will interact with most are listed Below
+
+* Version
+* Mattermost
+* License
+
+## Google Cloud
+
+We are currently investigating Google Cloud.
+
 # Technology at GitLab
 
 We use a lot of cool ([but boring](https://about.gitlab.com/handbook/#values)])
