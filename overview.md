@@ -23,7 +23,8 @@ group are available at any given time. This ensures that Azure will not reboot
 all instances in the same availability set at the same time for anything that
 is planned.
 
-Additionally, we utilize an Azure load balancer to manage PostgreSQL failovers.
+Additionally, we utilize an Azure load balancer to manage PostgreSQL failovers
+and to front-end the HA-Proxy servers with a single virtual IP address.
 
 <create graphic to go here>
 
@@ -37,6 +38,7 @@ things, however not all will be listed here.
 
 The primary things on Digital Ocean at this time are: 
 
+* Chef Configuration Management Servers
 * Blackbox monitoring servers
 * Shared runner managers
 * Runner cache servers
