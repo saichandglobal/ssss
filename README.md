@@ -2,11 +2,6 @@
 
 [These are not the runbooks you are looking for](https://gitlab.com/gitlab-com/runbooks)
 
-## Design decisions
-
-* [Storage design](design/storage.md)
-* [Network design](design/networking.md)
-
 ## Where and how to look for data
 
 ### General System Health
@@ -25,3 +20,7 @@
 * [Postgres Queries](http://performance.gitlab.net/dashboard/db/postgres-queries) use this dashboard to understand if we have blocked or slow queries, dead tuples, etc.
 * [Business Stats](http://performance.gitlab.net/dashboard/db/business-stats): shows many pushes, new repos and CI builds.
 * [Daily overview](http://performance.gitlab.net/dashboard/db/daily-overview): shows endpoints with amount of calls and performance metrics. Useful to understand what is slow generally.
+
+## Production Architecture
+
+![Architecture](img/GitLab Infrastructure Architecture.png)
