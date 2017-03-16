@@ -24,3 +24,5 @@
 ## Production Architecture
 
 ![Architecture](img/GitLab Infrastructure Architecture.png)
+
+[Source](https://docs.google.com/drawings/d/1MqoemFRdoLm3_p5aKBhzblZM872F1R-tWdoOR5xMQpE/edit), GitLab internal use only
