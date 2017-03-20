@@ -26,7 +26,7 @@ is planned.
 Additionally, we utilize an Azure load balancer to manage PostgreSQL failovers
 and to front-end the HA-Proxy servers with a single virtual IP address.
 
-<create graphic to go here>
+![Architecture](img/GitLab Infrastructure Architecture.png)
 
 This constitutes our core infrastructure.
 
