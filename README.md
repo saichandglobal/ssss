@@ -2,7 +2,7 @@
 
 [These are not the runbooks you are looking for](https://gitlab.com/gitlab-com/runbooks)
 
-[Infrastucture Overview](overview.md)
+[Infrastructure Overview](overview.md)
 
 ## Where and how to look for data
 
@@ -13,13 +13,22 @@
 * [GitLab Web Status](http://performance.gitlab.net/dashboard/db/gitlab-web-status): front end perspective of GitLab. Useful to understand how GitLab.com looks from the user perspective. Use this graph to quickly troubleshoot what part of GitLab is slow.
 * [GitLab Git Status](http://performance.gitlab.net/dashboard/db/gitlab-git-status): front end perspective of GitLab ssh access.
 
-#### Whitebox Monitoring
+#### Public Whitebox Monitoring
 
-* [Fleet overview](http://performance.gitlab.net/dashboard/db/fleet-overview): useful to see the fleet status from the inside of GitLab.com. Use this graph to quickly see if the workers or the database are under heavy load, and to check load balancer bandwidth.
-* [Postgres Stats](http://performance.gitlab.net/dashboard/db/postgres-stats): useful to understand how is the database behaving in depth. Use this graph to review if we have spikes of exclusive locks, active or idle in transaction processes
-* [Ceph Stats](http://performance.gitlab.net/dashboard/db/ceph-stats): useful to understand the health of the underlying Rados cluster
+We offer a monitoring infrastructure site that is publicly accessible.
+
+This monitoring site is updated hourly with any change we make in the private one, so it is a 1:1 copy of the private dashboards.
+
+There are some metrics that are not visible in this public site because we do not keep a copy of metrics obtained through influxdb.
+
+* [Fleet overview](http://monitor.gitlab.net/dashboard/db/fleet-overview): useful to see the fleet status from the inside of GitLab.com. Use this graph to quickly see if the workers or the database are under heavy load, and to check load balancer bandwidth.
+* [Postgres Stats](http://monitor.gitlab.net/dashboard/db/postgres-stats): useful to understand how is the database behaving in depth. Use this graph to review if we have spikes of exclusive locks, active or idle in transaction processes
+* [Postgres Queries](http://monitor.gitlab.net/dashboard/db/postgres-queries) use this dashboard to understand if we have blocked or slow queries, dead tuples, etc.
+* [Storage Stats](http://monitor.gitlab.net/dashboard/db/storage-stats) use this dashboard to understand storage use and performance.
+
+#### Private Whitebox Monitor
+
 * [Host Stats](http://performance.gitlab.net/dashboard/db/host-stats): useful to dive deep into a specific host to understand what is going on with it. Select a host from the dropdown on the top.
-* [Postgres Queries](http://performance.gitlab.net/dashboard/db/postgres-queries) use this dashboard to understand if we have blocked or slow queries, dead tuples, etc.
 * [Business Stats](http://performance.gitlab.net/dashboard/db/business-stats): shows many pushes, new repos and CI builds.
 * [Daily overview](http://performance.gitlab.net/dashboard/db/daily-overview): shows endpoints with amount of calls and performance metrics. Useful to understand what is slow generally.
 
