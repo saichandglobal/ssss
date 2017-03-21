@@ -2,7 +2,7 @@
 
 Our core infrastructure is currently hosted on several cloud providers,
 all with different functions. This document does not cover servers that
-are not integral to the public facing operations of GitLab.com. 
+are not integral to the public facing operations of GitLab.com.
 
 ## Azure
 
@@ -36,7 +36,7 @@ Digital Ocean houses several servers that do not need to directly interact
 with our main infrastructure. There are many of these that do a variety of
 things, however not all will be listed here.
 
-The primary things on Digital Ocean at this time are: 
+The primary things on Digital Ocean at this time are:
 
 * Chef Configuration Management Servers
 * Blackbox monitoring servers
