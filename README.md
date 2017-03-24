@@ -2,7 +2,9 @@
 
 [These are not the runbooks you are looking for](https://gitlab.com/gitlab-com/runbooks)
 
-[Infrastructure Overview](overview.md)
+## I'm here to see how the GitLab.com infrastructure is made
+
+You should read the [production architecture](production_architecture.md) then.
 
 ## Where and how to look for data
 
@@ -31,9 +33,3 @@ There are some metrics that are not visible in this public site because we do no
 * [Host Stats](http://performance.gitlab.net/dashboard/db/host-stats): useful to dive deep into a specific host to understand what is going on with it. Select a host from the dropdown on the top.
 * [Business Stats](http://performance.gitlab.net/dashboard/db/business-stats): shows many pushes, new repos and CI builds.
 * [Daily overview](http://performance.gitlab.net/dashboard/db/daily-overview): shows endpoints with amount of calls and performance metrics. Useful to understand what is slow generally.
-
-## Production Architecture
-
-![Architecture](img/GitLab Infrastructure Architecture.png)
-
-[Source](https://docs.google.com/drawings/d/1MqoemFRdoLm3_p5aKBhzblZM872F1R-tWdoOR5xMQpE/edit), GitLab internal use only
