@@ -25,7 +25,7 @@ the following servers there.
 * 4 PostgreSQL servers
 * 5 Redis servers
 * 3 Prometheus servers
-* 11 NFS servers
+* 5 NFS servers
 
 Note that these numbers can fluctuate to adapt to the platform needs.
 
