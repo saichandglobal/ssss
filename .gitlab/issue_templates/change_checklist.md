@@ -65,3 +65,5 @@ of the document back into the issue and deprecate the doc (and close the issue i
   - [ ] What should be improved?
   - [ ] Specific action items / recommendations.
 - If the issue caused an outage, or service degradation, label the issue as "outage".
+
+/label ~change
