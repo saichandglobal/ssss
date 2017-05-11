@@ -1,5 +1,8 @@
 ### PLANNING THE CHANGE
 
+For more background on when this template should be used, see the
+[infrastructure handbook](https://about.gitlab.com/handbook/infrastructure/#making-changes-to-gitlabcom).
+
 - [ ] Context: _What is the background of the change? Relevant links?_
 - [ ] Downtime: _Will the change introduce downtime, and if so, how much?_
   - [ ] What options were considered to avoid downtime?
