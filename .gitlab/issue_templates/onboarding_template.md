@@ -49,7 +49,7 @@ Onboarder = O
   1. [ ] O: add new production engineer to production [slack group](https://docs.google.com/document/d/1rrVgD2QVixuAf07roYws7Z8rUF2gJKrrmTE4Z3vtENo/edit)
   1. [ ] O: mention the new production engineer in the `production` channel.
   1. [ ] O: mention the new production engineer in the `prometheus-alerts` channel.
-  1. [ ] O: learn who your team mates are and ping them in your onboarding issue - We do mention the people we address to in issues, get used to doing it.
+  1. [ ] O: learn who your teammates are and ping them in your onboarding issue - We do mention the people we address to in issues, get used to doing it.
 1. [ ] Context & Comfort with GitLab's code base:
   1. [ ] N: review issues labeled as `outage` in the infrastructure issue tracker.
   1. [ ] O: point the new production engineer to the ongoing meta issues that define the team strategy.
