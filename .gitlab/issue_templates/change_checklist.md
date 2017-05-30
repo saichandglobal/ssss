@@ -12,6 +12,8 @@ For more background on when this template should be used, see the
 - [ ] Pre-checks: _What should we check before starting with the change? Consider dashboards, metrics, limits of current infrastructure, etc._
   - [ ] Does the change alter how we use Azure or how many of Azure's resources we use? If
   so, consider opening an "advisory ticket" in the Azure portal to get input from their team.
+  - [ ] Check that you have all the correct versions of the required software installed in the affected hosts.
+  - [ ] Check that you have the right access level to the required resources.
 - [ ] Change Procedure:
   - [ ] List the steps that are needed for the change; be as granular as possible.
   - [ ] Did you do a dry run to test / measure performance and timings?
@@ -42,8 +44,10 @@ from the Production team, and to confirm scheduling.
 
 #### Preparatory steps
 - [ ] Copy/paste items here from the Preparatory Steps listed above.
+- [ ] Perform any Pre Check that is necessary before executing the change
 
 #### Initial Tasks
+
 - [ ] Create a google doc to track the progress. This is because in the event of an
 outage, Google docs allow for real-time collaboration, and don't depend on
 GitLab.com being available.
@@ -58,15 +62,18 @@ GitLab.com being available.
 - [ ] Set PagerDuty maintenance window before starting the change.
 
 #### The Change
-- [ ] Start running the changes. When this happens, one person is making the change, the
+
+- Before starting the Change
+  - [ ] Tweet to publicly notify that you are performing a change in production following the
+[guidelines](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/tweeting-guidelines.md).
+- Start running the changes. When this happens, one person is making the change, the
 other person is taking notes of when the different steps are happening. Make it explicit
 who will do what.
-- [ ] When the change is done and finished, either successfully or not, copy the content
-of the document back into the issue and deprecate the doc (and close the issue if possible).
-- [ ] Retrospective: answer the following three questions:
-  - [ ] What went well?
-  - [ ] What should be improved?
-  - [ ] Specific action items / recommendations.
-- If the issue caused an outage, or service degradation, label the issue as "outage".
+- When the change is done and finished, either successfully or not
+  - [ ] Tweet again to notify that the change is finished and point to the change issue.
+  - [ ] Copy the content of the document back into the issue redacting any data that is necessary to keep it blameless and deprecate the doc.
+  - [ ] Perform a quick post mortem following the [Blameless Postmortem guideline](https://about.gitlab.com/handbook/infrastructure/#postmortems)
+  in the infrastructure handbook in a new issue.
+  - [ ] If the issue caused an outage, or service degradation, label the issue as "outage".
 
 /label ~change
