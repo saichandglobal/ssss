@@ -5,9 +5,10 @@ ___
 ___
 
 ## When we are going to do it?
-  * Start time: ___
-  * Duration: ___
-  * Estimated end time: ___
+
+* Start time: ___
+* Duration: ___
+* Estimated end time: ___
 
 ## How we are going to do it?
 ___
@@ -22,24 +23,27 @@ ___
 ___
 
 ## Impact
-  * Type of impact: <internal|client facing|no impact>
-  * What will happen: ___
-  * Do we expect downtime? (set the override in pagerduty): ___
+
+* Type of impact: <internal|client facing|no impact>
+* What will happen: ___
+* Do we expect downtime? (set the override in pagerduty): ___
 
 ## How are we communicating this to our customers?
-  * Tweet before and after the change.
-  * Do we need to set a broadcast banner?: ___
+
+* Tweet before and after the change.
+* Do we need to set a broadcast banner?: ___
 
 ## What is the rollback plan?
 ___
 
 ## Monitoring
-  * Graphs to check for failures:
-    * ___
-  * Graphs to check for improvements:
-    * ___
-  * Alerts that may trigger:
-    * ___
+
+* Graphs to check for failures:
+  * ___
+* Graphs to check for improvements:
+  * ___
+* Alerts that may trigger:
+  * ___
 
 ## [IF NEEDED]
 
@@ -51,8 +55,9 @@ ___
 Schedule a downtime in the production calendar twice as long as your worst duration estimate, be pesimistic (better safe than sorry)
 
 ### When things go wrong (downtime or service degradation)
-  * Label the change issue as outage
-  * Perform a blameless post mortem
+
+* Label the change issue as outage
+* Perform a blameless post mortem
 
 ## References
 
