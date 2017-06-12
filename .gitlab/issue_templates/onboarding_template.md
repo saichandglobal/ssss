@@ -40,6 +40,7 @@ Onboarder = O
   1. [ ] O: add new production engineer as 'developer' to the [gitlab-org](https://gitlab.com/groups/gitlab-org/group_members) group.
   1. [ ] O: add new production engineer as 'master' to the [cookbooks](https://gitlab.com/groups/gitlab-cookbooks/group_members) group.
   1. [ ] O: add new production engineer as 'master' to the [gl-infra](https://gitlab.com/groups/gl-infra/group_members) group.
+  1. [ ] O: add new production engineer as 'master' to the [gitlab-cog](https://gitlab.com/groups/gitlab-cog/group_members) group.
   1. [ ] O: add new production engineer to [Azure Active Directory](https://manage.windowsazure.com/@sytsegitlab.onmicrosoft.com#Workspaces/ActiveDirectoryExtension/Directory/7cc60e3a-c2c5-43d6-b426-1d8c9e8e7ad1/users)
   1. [ ] O: create a cog user and add the new production engineer to the right groups (gitlab-admin, for a start)
   1. [ ] O: make new production engineer 'co-admin' [on Azure](https://manage.windowsazure.com/@sytsegitlab.onmicrosoft.com#Workspaces/AdminTasks/ListUsers)
@@ -49,7 +50,7 @@ Onboarder = O
   1. [ ] O: add new production engineer to production [slack group](https://docs.google.com/document/d/1rrVgD2QVixuAf07roYws7Z8rUF2gJKrrmTE4Z3vtENo/edit)
   1. [ ] O: mention the new production engineer in the `production` channel.
   1. [ ] O: mention the new production engineer in the `prometheus-alerts` channel.
-  1. [ ] O: learn who your teammates are and ping them in your onboarding issue - We do mention the people we address to in issues, get used to doing it.
+  1. [ ] N: learn who your teammates are and ping them in your onboarding issue - We do mention the people we address to in issues, get used to doing it.
 1. [ ] Context & Comfort with GitLab's code base:
   1. [ ] N: review issues labeled as `outage` in the infrastructure issue tracker.
   1. [ ] O: point the new production engineer to the ongoing meta issues that define the team strategy.
