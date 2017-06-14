@@ -1,19 +1,19 @@
-## What are going to do?
+## What are we going to do?
 ___
 
-## Why we are doing it?
+## Why are we doing it?
 ___
 
-## When we are going to do it?
+## When are we going to do it?
 
 * Start time: ___
 * Duration: ___
 * Estimated end time: ___
 
-## How we are going to do it?
+## How are we going to do it?
 ___
 
-## How we are preparing for it?
+## How are we preparing for it?
 ___
 
 ## What can we check before starting?
@@ -52,7 +52,7 @@ ___
 
 ### Scheduling
 
-Schedule a downtime in the production calendar twice as long as your worst duration estimate, be pesimistic (better safe than sorry)
+Schedule a downtime in the production calendar twice as long as your worst duration estimate, be pessimistic (better safe than sorry)
 
 ### When things go wrong (downtime or service degradation)
 
@@ -61,10 +61,10 @@ Schedule a downtime in the production calendar twice as long as your worst durat
 
 ## References
 
-[Making changes to GitLab.com](https://about.gitlab.com/handbook/infrastructure/#making-changes-to-gitlabcom).
-[Infrastructure links](https://about.gitlab.com/handbook/infrastructure/#common-links
-[On-Call Log](https://docs.google.com/document/d/1nWDqjzBwzYecn9Dcl4hy1s4MLng_uMq-8yGRMxtgK6M/edit#)
-[Blameless Postmortems Guideline](https://about.gitlab.com/handbook/infrastructure/#postmortems)
-[Monitoring](http://monitor.gitlab.net)
+* [Making changes to GitLab.com](https://about.gitlab.com/handbook/infrastructure/#making-changes-to-gitlabcom)
+* [Infrastructure links](https://about.gitlab.com/handbook/infrastructure/#common-links)
+* [On-Call Log](https://docs.google.com/document/d/1nWDqjzBwzYecn9Dcl4hy1s4MLng_uMq-8yGRMxtgK6M/edit#)
+* [Blameless Postmortems Guideline](https://about.gitlab.com/handbook/infrastructure/#postmortems)
+* [Monitoring](http://monitor.gitlab.net)
 
 /label ~change
