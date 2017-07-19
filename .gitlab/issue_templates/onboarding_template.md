@@ -48,8 +48,6 @@ Onboarder = O
   1. [ ] O: make new production engineer 'co-admin' [on Azure](https://manage.windowsazure.com/@sytsegitlab.onmicrosoft.com#Workspaces/AdminTasks/ListUsers)
   1. [ ] O: make new production engineer 'admin' on [AWS](https://console.aws.amazon.com/iam/home#home)
 1. [ ] Communications:
-  1. [ ] O: add new production engineer to ops-notifications [email alias](https://docs.google.com/document/d/1rrVgD2QVixuAf07roYws7Z8rUF2gJKrrmTE4Z3vtENo/edit)
-  1. [ ] O: add new production engineer to production [slack group](https://docs.google.com/document/d/1rrVgD2QVixuAf07roYws7Z8rUF2gJKrrmTE4Z3vtENo/edit)
   1. [ ] O: mention the new production engineer in the `production` channel.
   1. [ ] O: mention the new production engineer in the `prometheus-alerts` channel.
   1. [ ] N: learn who your teammates are and ping them in your onboarding issue - We do mention the people we address to in issues, get used to doing it.
