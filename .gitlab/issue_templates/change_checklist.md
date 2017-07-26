@@ -33,6 +33,9 @@ ___
 * Tweet before and after the change.
 * Do we need to set a broadcast banner?: ___
 
+Refer to the [Announce a deployment](https://gitlab.com/gitlab-com/runbooks/master/howto/announce-a-deployment.md)
+document.
+
 ## What is the rollback plan?
 ___
 
