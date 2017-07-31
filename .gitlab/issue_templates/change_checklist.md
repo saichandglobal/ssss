@@ -30,11 +30,10 @@ ___
 
 ## How are we communicating this to our customers?
 
-* Tweet before and after the change.
-* Do we need to set a broadcast banner?: ___
+* [Announce the deployment] well in advance: ___
+* Tweet after the change.
 
-Refer to the [Announce a deployment](https://gitlab.com/gitlab-com/runbooks/master/howto/announce-a-deployment.md)
-document.
+[Announce the deployment]: https://gitlab.com/gitlab-org/takeoff/blob/master/doc/announce-a-deployment.md
 
 ## What is the rollback plan?
 ___
