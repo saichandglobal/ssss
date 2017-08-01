@@ -14,7 +14,7 @@ Onboarder = O
   1. [ ] O: invite new production engineer to [Digital Ocean](https://cloud.digitalocean.com/settings/team) (new production engineer: make sure you are not signed in to DO when accepting the invite!)
 1. [ ] Chef:
   1. [ ] N: clone the [chef-repo](https://dev.gitlab.org/cookbooks/chef-repo) and run `bundle install` to install all the dependencies
-  1. [ ] O: [create SSH user](https://dev.gitlab.org/cookbooks/chef-repo/blob/master/README.md#add-a-new-sysadmin)
+  1. [ ] N: [create a SSH user](https://dev.gitlab.org/cookbooks/chef-repo/blob/master/README.md#add-a-new-sysadmin) and send an MR to [chef-repo](https://dev.gitlab.org/cookbooks/chef-repo)
   1. [ ] O: run `sudo chef-client` on `chef.gitlab.com` to ensure the new production engineer has SSH access there
   1. [ ] N: create Chef user and Chef key via `ssh chef.gitlab.com` and [chef-server-ctl user-create](https://dev.gitlab.org/cookbooks/chef-repo/blob/master/doc/set-up-chef-server.md#creating-users)
   1. [ ] N: add your Chef user to the 'gitlab' and 'staging' groups with `chef-server-ctl org-user-add`
