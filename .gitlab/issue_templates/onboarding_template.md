@@ -33,6 +33,7 @@ Onboarder = O
   1. [ ] N: get familiar with [targets](https://prometheus.gitlab.com/targets) and [alerts](https://prometheus.gitlab.com/alerts) within prometheus.
   1. [ ] N: get familiar with [prometheus alert manager](https://alerts.gitlab.com), look for the documentation of this in the [runbooks](https://gitlab.com/gitlab-com/runbooks).
 1. [ ] Runbooks and Alerts:
+  1. [ ] O: add new production engineer as 'master' to [runbooks](https://gitlab.com/gitlab-com/runbooks/project_members).
   1. [ ] N: clone and get familiar with the [runbooks](https://gitlab.com/gitlab-com/runbooks)
   1. [ ] N: submit a fix of documentation to the runbooks.
   1. [ ] N: submit a fix to an alert in the runbooks (or submit a new one).
