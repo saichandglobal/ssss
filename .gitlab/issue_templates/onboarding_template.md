@@ -48,6 +48,9 @@ Onboarder = O
   1. [ ] O: create a cog user and add the new production engineer to the right groups (gitlab-admin, for a start)
   1. [ ] O: make new production engineer 'co-admin' [on Azure](https://manage.windowsazure.com/@sytsegitlab.onmicrosoft.com#Workspaces/AdminTasks/ListUsers)
   1. [ ] O: make new production engineer 'admin' on [AWS](https://console.aws.amazon.com/iam/home#home)
+1. [ ] VPN Access:
+  1. [ ] N: Make sure you have VPN by following the instructions from [creating client certificate](https://gitlab.com/gitlab-cookbooks/gitlab_openvpn#how-to-create-a-client-certificate).
+  1. [ ] N: Test VPN access by bringing the VPN up and ssh'ing into a staging sidekiq host (`sidekiq-asap01.sv.stg.gitlab.com`)
 1. [ ] Communications:
   1. [ ] O: mention the new production engineer in the `production` channel.
   1. [ ] O: mention the new production engineer in the `prometheus-alerts` channel.
