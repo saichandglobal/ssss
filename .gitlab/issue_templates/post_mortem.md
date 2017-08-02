@@ -10,6 +10,14 @@ On date: YYYY-MM-DD
 - 00:00 UTC - something happened
 - 00:01 UTC - something else happened
 
+## Incident Analysis
+
+- How was the incident detected?
+- Is there anything that could have been done to improve the time to detection?
+- How was the root cause discovered?
+- Was this incident triggered by a change?
+- Was there an existing issue that would have either prevented this incident or reduced the impact?
+
 ## Root Cause Analysis
 
 Follow the the 5 whys in a blameless manner as the core of the post mortem.
