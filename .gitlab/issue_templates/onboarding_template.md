@@ -12,16 +12,6 @@ Onboarder = O
   1. [ ] N: [create Microsoft account](https://signup.live.com) for yourname@gitlab.com
   1. [ ] N: create your GitLab `admin` account. [Register](https://gitlab.com/users/sign_in#register-pane) using yourname+admin@gitlab.com. After that, make sure you create an issue in the [infrastructure project](https://gitlab.com/gitlab-com/infrastructure/issues) so you are granted the appropriate privileges (please label the issue as `access request`)
   1. [ ] O: invite new production engineer to [Digital Ocean](https://cloud.digitalocean.com/settings/team) (new production engineer: make sure you are not signed in to DO when accepting the invite!)
-1. [ ] Chef:
-  1. [ ] N: clone the [chef-repo](https://dev.gitlab.org/cookbooks/chef-repo) and run `bundle install` to install all the dependencies
-  1. [ ] N: [create a SSH user](https://dev.gitlab.org/cookbooks/chef-repo/blob/master/README.md#add-a-new-sysadmin) and send an MR to [chef-repo](https://dev.gitlab.org/cookbooks/chef-repo)
-  1. [ ] O: run `sudo chef-client` on `chef.gitlab.com` to ensure the new production engineer has SSH access there
-  1. [ ] N: create Chef user and Chef key via `ssh chef.gitlab.com` and [chef-server-ctl user-create](https://dev.gitlab.org/cookbooks/chef-repo/blob/master/doc/set-up-chef-server.md#creating-users)
-  1. [ ] N: add your Chef user to the 'gitlab' and 'staging' groups with `chef-server-ctl org-user-add`
-  1. [ ] O: make the new chef user admin with [knife acl](https://dev.gitlab.org/cookbooks/chef-repo/blob/master/doc/set-up-chef-server.md#add-users-to-the-admins-group-of-the-gitlab-organization)
-  1. [ ] N: create chef-repo/.chef/knife.rb from [knife.rb.example](https://dev.gitlab.org/cookbooks/chef-repo/blob/master/knife.rb.example)
-  1. [ ] N: test your chef setup with `knife status`
-  1. [ ] O: add new Chef user to VAULT_ADMINS in Rakefile and run `rake update_vault_admins`
 1. [ ] Tools:
   1. [ ] N: install the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
   1. [ ] N: investigate installing and enabling the [toolbelt](https://gitlab.com/gl-infra/toolbelt)
@@ -48,6 +38,16 @@ Onboarder = O
   1. [ ] O: create a cog user and add the new production engineer to the right groups (gitlab-admin, for a start)
   1. [ ] O: make new production engineer 'co-admin' [on Azure](https://manage.windowsazure.com/@sytsegitlab.onmicrosoft.com#Workspaces/AdminTasks/ListUsers)
   1. [ ] O: make new production engineer 'admin' on [AWS](https://console.aws.amazon.com/iam/home#home)
+1. [ ] Chef:
+  1. [ ] N: clone the [chef-repo](https://dev.gitlab.org/cookbooks/chef-repo) and run `bundle install` to install all the dependencies
+  1. [ ] N: [create a SSH user](https://dev.gitlab.org/cookbooks/chef-repo/blob/master/README.md#add-a-new-sysadmin) and send an MR to [chef-repo](https://dev.gitlab.org/cookbooks/chef-repo)
+  1. [ ] O: run `sudo chef-client` on `chef.gitlab.com` to ensure the new production engineer has SSH access there
+  1. [ ] N: create Chef user and Chef key via `ssh chef.gitlab.com` and [chef-server-ctl user-create](https://dev.gitlab.org/cookbooks/chef-repo/blob/master/doc/set-up-chef-server.md#creating-users)
+  1. [ ] N: add your Chef user to the 'gitlab' and 'staging' groups with `chef-server-ctl org-user-add`
+  1. [ ] O: make the new chef user admin with [knife acl](https://dev.gitlab.org/cookbooks/chef-repo/blob/master/doc/set-up-chef-server.md#add-users-to-the-admins-group-of-the-gitlab-organization)
+  1. [ ] N: create chef-repo/.chef/knife.rb from [knife.rb.example](https://dev.gitlab.org/cookbooks/chef-repo/blob/master/knife.rb.example)
+  1. [ ] N: test your chef setup with `knife status`
+  1. [ ] O: add new Chef user to VAULT_ADMINS in Rakefile and run `rake update_vault_admins`
 1. [ ] VPN Access:
   1. [ ] N: Make sure you have VPN by following the instructions from [creating client certificate](https://gitlab.com/gitlab-cookbooks/gitlab_openvpn#how-to-create-a-client-certificate).
   1. [ ] N: Test VPN access by bringing the VPN up and ssh'ing into a staging sidekiq host (`sidekiq-asap01.sv.stg.gitlab.com`)
