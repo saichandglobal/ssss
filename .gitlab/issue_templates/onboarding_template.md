@@ -12,6 +12,16 @@ Onboarder = O
   1. [ ] N: [create Microsoft account](https://signup.live.com) for yourname@gitlab.com
   1. [ ] N: create your GitLab `admin` account. [Register](https://gitlab.com/users/sign_in#register-pane) using yourname+admin@gitlab.com. After that, make sure you create an issue in the [infrastructure project](https://gitlab.com/gitlab-com/infrastructure/issues) so you are granted the appropriate privileges (please label the issue as `access request`)
   1. [ ] O: invite new production engineer to [Digital Ocean](https://cloud.digitalocean.com/settings/team) (new production engineer: make sure you are not signed in to DO when accepting the invite!)
+1. [ ] Permissions:
+  1. [ ] O: add new production engineer as 'developer' to the [gitlab-com](https://gitlab.com/groups/gitlab-com/group_members) group.
+  1. [ ] O: add new production engineer as 'developer' to the [gitlab-org](https://gitlab.com/groups/gitlab-org/group_members) group.
+  1. [ ] O: add new production engineer as 'master' to the [cookbooks](https://gitlab.com/groups/gitlab-cookbooks/group_members) group.
+  1. [ ] O: add new production engineer as 'master' to the [gl-infra](https://gitlab.com/groups/gl-infra/group_members) group.
+  1. [ ] O: add new production engineer as 'master' to the [gitlab-cog](https://gitlab.com/groups/gitlab-cog/group_members) group.
+  1. [ ] O: add new production engineer to [Azure Active Directory](https://manage.windowsazure.com/@sytsegitlab.onmicrosoft.com#Workspaces/ActiveDirectoryExtension/Directory/7cc60e3a-c2c5-43d6-b426-1d8c9e8e7ad1/users)
+  1. [ ] O: create a cog user and add the new production engineer to the right groups (gitlab-admin, for a start)
+  1. [ ] O: make new production engineer 'co-admin' [on Azure](https://manage.windowsazure.com/@sytsegitlab.onmicrosoft.com#Workspaces/AdminTasks/ListUsers)
+  1. [ ] O: make new production engineer 'admin' on [AWS](https://console.aws.amazon.com/iam/home#home)
 1. [ ] Tools:
   1. [ ] N: install the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
   1. [ ] N: investigate installing and enabling the [toolbelt](https://gitlab.com/gl-infra/toolbelt)
@@ -28,16 +38,6 @@ Onboarder = O
   1. [ ] N: submit a fix of documentation to the runbooks.
   1. [ ] N: submit a fix to an alert in the runbooks (or submit a new one).
   1. [ ] N: after having the MR merged, run `chef-client` in prometheus to enable the new alert.
-1. [ ] Permissions:
-  1. [ ] O: add new production engineer as 'developer' to the [gitlab-com](https://gitlab.com/groups/gitlab-com/group_members) group.
-  1. [ ] O: add new production engineer as 'developer' to the [gitlab-org](https://gitlab.com/groups/gitlab-org/group_members) group.
-  1. [ ] O: add new production engineer as 'master' to the [cookbooks](https://gitlab.com/groups/gitlab-cookbooks/group_members) group.
-  1. [ ] O: add new production engineer as 'master' to the [gl-infra](https://gitlab.com/groups/gl-infra/group_members) group.
-  1. [ ] O: add new production engineer as 'master' to the [gitlab-cog](https://gitlab.com/groups/gitlab-cog/group_members) group.
-  1. [ ] O: add new production engineer to [Azure Active Directory](https://manage.windowsazure.com/@sytsegitlab.onmicrosoft.com#Workspaces/ActiveDirectoryExtension/Directory/7cc60e3a-c2c5-43d6-b426-1d8c9e8e7ad1/users)
-  1. [ ] O: create a cog user and add the new production engineer to the right groups (gitlab-admin, for a start)
-  1. [ ] O: make new production engineer 'co-admin' [on Azure](https://manage.windowsazure.com/@sytsegitlab.onmicrosoft.com#Workspaces/AdminTasks/ListUsers)
-  1. [ ] O: make new production engineer 'admin' on [AWS](https://console.aws.amazon.com/iam/home#home)
 1. [ ] Chef:
   1. [ ] N: clone the [chef-repo](https://dev.gitlab.org/cookbooks/chef-repo) and run `bundle install` to install all the dependencies
   1. [ ] N: [create a SSH user](https://dev.gitlab.org/cookbooks/chef-repo/blob/master/README.md#add-a-new-sysadmin) and send an MR to [chef-repo](https://dev.gitlab.org/cookbooks/chef-repo)
