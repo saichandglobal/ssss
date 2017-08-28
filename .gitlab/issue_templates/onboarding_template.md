@@ -18,9 +18,14 @@ Onboarder = O
   1. [ ] O: add new production engineer as 'master' to the [cookbooks](https://gitlab.com/groups/gitlab-cookbooks/group_members) group.
   1. [ ] O: add new production engineer as 'master' to the [gl-infra](https://gitlab.com/groups/gl-infra/group_members) group.
   1. [ ] O: add new production engineer as 'master' to the [gitlab-cog](https://gitlab.com/groups/gitlab-cog/group_members) group.
-  1. [ ] O: add new production engineer to [Azure Active Directory](https://manage.windowsazure.com/@sytsegitlab.onmicrosoft.com#Workspaces/ActiveDirectoryExtension/Directory/7cc60e3a-c2c5-43d6-b426-1d8c9e8e7ad1/users)
   1. [ ] O: create a cog user and add the new production engineer to the right groups (gitlab-admin, for a start)
-  1. [ ] O: make new production engineer 'co-admin' [on Azure](https://manage.windowsazure.com/@sytsegitlab.onmicrosoft.com#Workspaces/AdminTasks/ListUsers)
+  1. [ ] O: invite the new production engineer to [Azure Active Directory](https://portal.azure.com/?reAuth=true#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
+    1. Azure AD -> Users and Groups -> All Users -> New Guest User -> Enter email and invite.
+  1. [ ] N: create your account with the invitation.
+  1. [ ] O: grant owner permission to the new production engineer in [Azure](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade)
+    1. Subscriptions -> Microsoft Azure Sponsorship -> Access control -> Add -> (Role Owner - Pick the User) -> Save
+  1. [ ] O: add new production engineer to the Azure subscription
+  1. [ ] O: make new production engineer 'co-admin' (Click on the user -> Directory Role -> Global Administrator -> Save)
   1. [ ] O: make new production engineer 'admin' on [AWS](https://console.aws.amazon.com/iam/home#home)
 1. [ ] Tools:
   1. [ ] N: install the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
