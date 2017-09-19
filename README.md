@@ -13,3 +13,7 @@ You should read the [production architecture](https://about.gitlab.com/handbook/
 
 Take a look at information about our infrastructure monitoring in the
 [infrastructure handbook](https://about.gitlab.com/handbook/infrastructure/monitoring).
+
+# Contributing
+
+Please see the [contribution guidelines](CONTRIBUTING.md)
