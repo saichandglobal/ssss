@@ -13,6 +13,5 @@
 Last week's goals: LINK
 
 /label ~database ~goal
-/milestone %"Next WoW"
 /due in 7 days
 /assign @yorickpeterse @\_stark @abrandl
