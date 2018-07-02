@@ -55,6 +55,12 @@ Onboarder = O
   1. [ ] N: create chef-repo/.chef/knife.rb from [knife.rb.example](https://dev.gitlab.org/cookbooks/chef-repo/blob/master/knife.rb.example)
   1. [ ] N: test your chef setup with `knife status`
   1. [ ] O: add new Chef user to VAULT_ADMINS in Rakefile and run `rake update_vault_admins`
+1. [ ] Terraform:
+  1. [ ] N: clone the [terraform repo](https://gitlab.com/gitlab-com/gitlab-com-infrastructure) and do the following setup:
+      * Ensure that gitlab-com-infrastructure/bin is in your path
+      * Ensure `tfenv` is installed and run `tfenv install 0.11.5`
+      * In 1password search for "terraform-private" and create the`*.env` files in the `terraform-private/env_vars` directory
+  1. [ ] N: Run `tf-init` and `tf plan` in the `environments/gstg` directory and ensure that terraform runs and you can see pending changes
 1. [ ] VPN Access:
   1. [ ] N: Make sure you have VPN by following the instructions from [creating client certificate](https://gitlab.com/gitlab-cookbooks/gitlab_openvpn#how-to-create-a-client-certificate).
   1. [ ] N: Test VPN access by bringing the VPN up and ssh'ing into a staging sidekiq host (`sidekiq-asap01.sv.stg.gitlab.com`)
