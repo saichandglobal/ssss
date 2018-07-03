@@ -60,7 +60,8 @@ Onboarder = O
       * Ensure that gitlab-com-infrastructure/bin is in your path
       * Ensure `tfenv` is installed and run `tfenv install 0.11.5`
       * In 1password search for "terraform-private" and create each of the`*.env` files in the `private/env_vars` directory
-      * Ensure that the Google Cloud SDK's [gcloud cli](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/gcloud-cli.md) is configured and authenticated 
+      * Ensure that the Google Cloud SDK's [gcloud cli](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/gcloud-cli.md) is configured and authenticated
+      * Set up access via [GSTG bastion hosts](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/gstg-bastions.md)
   1. [ ] N: Run `tf-init` and `tf plan` in the `environments/gstg` directory and ensure that terraform runs and you can see pending changes
 1. [ ] VPN Access:
   1. [ ] N: Make sure you have VPN by following the instructions from [creating client certificate](https://gitlab.com/gitlab-cookbooks/gitlab_openvpn#how-to-create-a-client-certificate).
