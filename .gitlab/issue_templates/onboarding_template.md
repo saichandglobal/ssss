@@ -13,7 +13,7 @@ Onboarder = O
   1. [ ] N: create your GitLab `admin` account. [Register](https://gitlab.com/users/sign_in#register-pane) using yourname+admin@gitlab.com. After that, make sure you create an issue in the [infrastructure project](https://gitlab.com/gitlab-com/infrastructure/issues) so you are granted the appropriate privileges (please label the issue as `access request`)
   1. [ ] O: invite new production engineer to [Digital Ocean](https://cloud.digitalocean.com/settings/team) (new production engineer: make sure you are not signed in to DO when accepting the invite!)
   1. [ ] O: invite new production engineer to [Pager Duty](https://gitlab.pagerduty.com/users). Don't add the new user to any rotations.
-  1. [ ] N: Accept the invitation and configure [Pager Duty](https://gitlab.pagerduty.com/ timezone and phone number and other details
+  1. [ ] N: Accept the invitation and configure [Pager Duty](https://gitlab.pagerduty.com/) timezone and phone number and other details
 1. [ ] Permissions:
   1. [ ] O: add new production engineer as 'developer' to the [gitlab-com](https://gitlab.com/groups/gitlab-com/group_members) group.
   1. [ ] O: add new production engineer as 'developer' to the [gitlab-org](https://gitlab.com/groups/gitlab-org/group_members) group.
@@ -56,13 +56,8 @@ Onboarder = O
   1. [ ] N: test your chef setup with `knife status`
   1. [ ] O: add new Chef user to VAULT_ADMINS in Rakefile and run `rake update_vault_admins`
 1. [ ] Terraform:
-  1. [ ] N: clone the [terraform repo](https://gitlab.com/gitlab-com/gitlab-com-infrastructure) and do the following setup:
-      * Ensure that gitlab-com-infrastructure/bin is in your path
-      * Ensure `tfenv` is installed and run `tfenv install 0.11.5`
-      * In 1password search for "terraform-private" and create each of the`*.env` files in the `private/env_vars` directory
-      * Ensure that the Google Cloud SDK's [gcloud cli](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/gcloud-cli.md) is configured and authenticated
-      * Set up access via [GSTG bastion hosts](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/gstg-bastions.md)
-  1. [ ] N: Run `tf-init` and `tf plan` in the `environments/gstg` directory and ensure that terraform runs and you can see pending changes
+  1. [ ] N: clone the [terraform repo](https://gitlab.com/gitlab-com/gitlab-com-infrastructure):
+      [ ] Complete the _Getting Started_ guide
 1. [ ] VPN Access:
   1. [ ] N: Make sure you have VPN by following the instructions from [creating client certificate](https://gitlab.com/gitlab-cookbooks/gitlab_openvpn#how-to-create-a-client-certificate).
   1. [ ] N: Test VPN access by bringing the VPN up and ssh'ing into a staging sidekiq host (`sidekiq-asap01.sv.stg.gitlab.com`)
