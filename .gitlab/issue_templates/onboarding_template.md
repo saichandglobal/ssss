@@ -1,15 +1,16 @@
 Title: Production Engineer Onboarding  - [Fill in name and start date]
 
 New team member = N
+
 Onboarder = O
 
 1. [ ] Getting Started:
     1. [ ] O: create this issue and mark it confidential
     1. [ ] O: cross-link general onboarding issue in the peopleops issue tracker
+    1. [ ] N: Complete the setup of your [Yubikey](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/yubikey.md)
     1. [ ] N: read the [infrastructure handbook](https://about.gitlab.com/handbook/infrastructure/) and pages linked from there. Find something to improve? Make a merge request!
 1. [ ] Accounts:
     1. [ ] N: comment in this issue with your desired Unix username and your SSH public key. Tip: use the same username you use on your laptop.
-    1. [ ] N: [create Microsoft account](https://signup.live.com) for yourname@gitlab.com
     1. [ ] N: create your GitLab `admin` account. [Register](https://gitlab.com/users/sign_in#register-pane) using yourname+admin@gitlab.com. After that, make sure you create an issue in the [infrastructure project](https://gitlab.com/gitlab-com/infrastructure/issues) so you are granted the appropriate privileges (please label the issue as `access request`)
     1. [ ] O: invite new production engineer to [Digital Ocean](https://cloud.digitalocean.com/settings/team) (new production engineer: make sure you are not signed in to DO when accepting the invite!)
     1. [ ] O: invite new production engineer to [Pager Duty](https://gitlab.pagerduty.com/users). Don't add the new user to any rotations.
@@ -46,7 +47,7 @@ Onboarder = O
     1. [ ] N: after having the MR merged, run `chef-client` in prometheus to enable the new alert.
 1. [ ] Chef:
     1. [ ] N: clone the [chef-repo](https://dev.gitlab.org/cookbooks/chef-repo) and run `bundle install` to install all the dependencies
-    1. [ ] N: [create a SSH user](https://dev.gitlab.org/cookbooks/chef-repo/blob/master/README.md#add-a-new-system-admin) and send an MR to [chef-repo](https://dev.gitlab.org/cookbooks/chef-repo)
+    1. [ ] N: [create a SSH user](https://dev.gitlab.org/cookbooks/chef-repo/blob/master/README.md#add-a-new-system-admin) and send an MR to [chef-repo](https://dev.gitlab.org/cookbooks/chef-repo) - ensure you are providing the ssh key from the yubikey setup
     1. [ ] O: run `sudo chef-client` on `chef.gitlab.com` to ensure the new production engineer has SSH access there
     1. [ ] N: create Chef user and Chef key via `ssh chef.gitlab.com` and [chef-server-ctl user-create](https://dev.gitlab.org/cookbooks/chef-repo/blob/master/doc/set-up-chef-server.md#creating-users)
     1. [ ] N: add your Chef user to the 'gitlab' and 'staging' groups with `chef-server-ctl org-user-add`
