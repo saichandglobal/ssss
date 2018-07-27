@@ -5,6 +5,8 @@
 // @description  Check the checkboxes for merge requests (Remove source branch, Squash commits) 
 // @author       jarv
 // @match        https://gitlab.com/*/merge_requests/new*
+// @match        https://dev.gitlab.org/*/merge_requests/new*
+// @match        https://ops.gitlab.net/*/merge_requests/new*
 // @grant        none
 // ==/UserScript==
 

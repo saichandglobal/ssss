@@ -5,6 +5,8 @@
 // @description  Makes the navbar purple when the canary cookie is set.
 // @author       jarv
 // @match        https://gitlab.com/*
+// @match        https://gprd.gitlab.com/*
+// @match        https://gstg.gitlab.com/*
 // @grant        none
 // ==/UserScript==
 
