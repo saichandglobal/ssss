@@ -8,7 +8,7 @@ Onboarder = O
     1. [ ] O: create this issue and mark it confidential
     1. [ ] O: cross-link general onboarding issue in the peopleops issue tracker
     1. [ ] N: Complete the setup of your [Yubikey](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/yubikey.md)
-    1. [ ] N: read the [infrastructure handbook](https://about.gitlab.com/handbook/infrastructure/) and pages linked from there. Find something to improve? Make a merge request!
+    1. [ ] N: read the [infrastructure handbook](https://about.gitlab.com/handbook/engineering/infrastructure/) and pages linked from there. Find something to improve? Make a merge request!
 1. [ ] Accounts:
     1. [ ] N: comment in this issue with your desired Unix username and your SSH public key. Tip: use the same username you use on your laptop.
     1. [ ] N: create your GitLab `admin` account. [Register](https://gitlab.com/users/sign_in#register-pane) using yourname+admin@gitlab.com. After that, make sure you create an issue in the [infrastructure project](https://gitlab.com/gitlab-com/infrastructure/issues) so you are granted the appropriate privileges (please label the issue as `access request`)
