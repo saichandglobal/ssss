@@ -64,7 +64,7 @@ Schedule a downtime in the production calendar twice as long as your worst durat
 ## References
 
 * [Making changes to GitLab.com](https://about.gitlab.com/handbook/infrastructure/#making-changes-to-gitlabcom)
-* [Infrastructure links](https://about.gitlab.com/handbook/infrastructure/#common-links)
+* [Infrastructure links](https://about.gitlab.com/handbook/engineering/infrastructure/#common-links)
 * [On-Call Log](https://docs.google.com/document/d/1nWDqjzBwzYecn9Dcl4hy1s4MLng_uMq-8yGRMxtgK6M/edit#)
 * [Blameless Postmortems Guideline](https://about.gitlab.com/handbook/infrastructure/#postmortems)
 * [Monitoring](http://monitor.gitlab.net)
