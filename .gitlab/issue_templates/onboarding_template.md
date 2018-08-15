@@ -58,9 +58,6 @@ Onboarder = O
 1. [ ] Terraform:
   1. [ ] N: clone the [terraform repo](https://gitlab.com/gitlab-com/gitlab-com-infrastructure):
     1. [ ] Complete the _Getting Started_ guide
-1. [ ] VPN Access:
-    1. [ ] N: Make sure you have VPN by following the instructions from [creating client certificate](https://gitlab.com/gitlab-cookbooks/gitlab_openvpn#how-to-create-a-client-certificate).
-    1. [ ] N: Test VPN access by bringing the VPN up and ssh'ing into a staging sidekiq host (`sidekiq-asap-01.sv.stg.gitlab.com`)
 1. [ ] Communications:
     1. [ ] O: mention the new production engineer in the `production` channel.
     1. [ ] O: mention the new production engineer in the `prometheus-alerts` channel.
