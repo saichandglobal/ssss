@@ -15,7 +15,13 @@ If there are any exceptions please note them below and have it reviewed by secur
 - [ ] If the gitlab.com database is copied, that data has been processed by the [pseudonymization script]( https://gitlab.com/gitlab-com/runbooks/blob/master/howto/pseudonymization-gitlab-db.md).
 - [ ] Testbed infrastructure OS configuration is configuration managed using source control.
 - [ ] Regular security updates are applied to all nodes in the testbed.
-- [ ] All inbound traffic to all GitLab services is restricted to be originated from the VPN.
-- [ ] All service related outbound traffic is either tunneled VPN or restricted to the local network.
+- [ ] All inbound traffic to all GitLab services is
+  - [ ] restricted to be originated from the local network
+  - [ ] tunneled via our bastion hosts
+  - [ ] ingresses through a configured load balancer with clearly defined
+    firewall rules
+- [ ] All service related outbound traffic is
+  - [ ] restricted to the local network
+  - [ ] egresses via a NAT endpoint
 - [ ] All connections are over encrypted channels.
 - [ ] Logging is configured such that application and system logs are forwarded and indexed so that they can be searched.
