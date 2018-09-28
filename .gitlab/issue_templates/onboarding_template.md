@@ -57,13 +57,13 @@ Onboarder = O
     1. [ ] N: test your chef setup with `knife status`
     1. [ ] O: add new Chef user to VAULT_ADMINS in Rakefile and run `rake update_vault_admins`
 1. [ ] Bastion setup for SSH:
-  1. [ ] N: follow the steps in [GPRD bastion hosts](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/gprd-bastions.md)
-  1. [ ] N: follow the steps in [GSTG bastion hosts](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/gstg-bastions.md)
-  1. [ ] N: follow the steps in [OPS bastion hosts](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/ops-bastions.md)
-  1. [ ] N: try ssh into a host and make sure it works. Example: `knife status | grep dashboard`, get one of the hosts' name and ssh into it
+    1. [ ] N: follow the steps in [GPRD bastion hosts](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/gprd-bastions.md)
+    1. [ ] N: follow the steps in [GSTG bastion hosts](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/gstg-bastions.md)
+    1. [ ] N: follow the steps in [OPS bastion hosts](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/ops-bastions.md)
+    1. [ ] N: try ssh into a host and make sure it works. Example: `knife status | grep dashboard`, get one of the hosts' name and ssh into it
 1. [ ] Terraform:
-  1. [ ] N: clone the [terraform repo](https://gitlab.com/gitlab-com/gitlab-com-infrastructure):
-    1. [ ] Complete the _Getting Started_ guide
+    1. [ ] N: clone the [terraform repo](https://gitlab.com/gitlab-com/gitlab-com-infrastructure)
+    1. [ ] N: Complete the _Getting Started_ guide
 1. [ ] Communications:
     1. [ ] O: mention the new production engineer in the `production` channel.
     1. [ ] O: mention the new production engineer in the `prometheus-alerts` channel.
