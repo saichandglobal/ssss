@@ -1,0 +1,50 @@
+##################################################
+# GitLab Hosts
+##################################################
+
+# If gitlab.com username is different from SSH username, this needs to be
+# set.  Otherwise git pushes will fail
+Host gitlab.com dev.gitlab.com ops.gitlab.net
+#  User <website user name>
+
+# Set the username and PreferredAuthentications here to avoid duplication
+Host gitlab-*.internal lb-bastion.*.gitlab.com
+#  User                     <unix username>
+  PreferredAuthentications publickey
+  # Optional YubiKey cardno
+  #IdentitiesOnly yes
+  #IdentityFile             cardno:000000000000
+
+# HAProxy nodes use a different port
+Host fe-*.gitlab-*.internal
+    Port 2222
+
+# Bastions for each GCP environment
+Host lb-bastion.*.gitlab.com
+  StrictHostKeyChecking   no
+
+Host *.gitlab-staging-1.internal
+  ProxyCommand ssh lb-bastion.gstg.gitlab.com -W %h:%p
+
+Host *.gitlab-production.internal
+  ProxyCommand ssh lb-bastion.gprd.gitlab.com -W %h:%p
+
+Host *.gitlab-ops.internal
+  ProxyCommand ssh lb-bastion.ops.gitlab.com -W %h:%p
+
+# Console aliases
+Host gprd-console
+  HostName     console-01-sv-gprd.c.gitlab-production.internal
+  ProxyCommand ssh lb-bastion.gprd.gitlab.com -W %h:%p
+Host gstg-console
+  HostName     console-01-sv-gstg.c.gitlab-staging-1.internal
+  ProxyCommand ssh lb-bastion.gstg.gitlab.com -W %h:%p
+
+
+# Deprecated Azure Stuff
+Host *.prd.gitlab.com
+    ProxyCommand ssh deploy.gitlab.com -W %h:%p
+Host *.stor.gitlab.com
+    ProxyCommand ssh deploy.gitlab.com -W %h:%p
+Host *.stg.gitlab.com
+    ProxyCommand ssh deploy.stg.gitlab.com -W %h:%p
