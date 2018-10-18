@@ -50,7 +50,7 @@ Onboarder = O
   1. [ ] N: [create a SSH user](https://dev.gitlab.org/cookbooks/chef-repo/blob/master/README.md#add-a-new-system-admin) and send an MR to [chef-repo](https://dev.gitlab.org/cookbooks/chef-repo)
   1. [ ] O: run `sudo chef-client` on `chef.gitlab.com` to ensure the new production engineer has SSH access there
   1. [ ] N: create Chef user and Chef key via `ssh chef.gitlab.com` and [chef-server-ctl user-create](https://dev.gitlab.org/cookbooks/chef-repo/blob/master/doc/set-up-chef-server.md#creating-users)
-  1. [ ] N: add your Chef user to the 'gitlab' and 'staging' groups with `chef-server-ctl org-user-add`
+  1. [ ] N: add your Chef user to the 'gitlab', 'staging' and 'dev-resources' organizations with `chef-server-ctl org-user-add`
   1. [ ] O: make the new chef user admin with [knife acl](https://dev.gitlab.org/cookbooks/chef-repo/blob/master/doc/set-up-chef-server.md#add-users-to-the-admins-group-of-the-gitlab-organization)
   1. [ ] N: create chef-repo/.chef/knife.rb from [knife.rb.example](https://dev.gitlab.org/cookbooks/chef-repo/blob/master/knife.rb.example)
   1. [ ] N: test your chef setup with `knife status`
