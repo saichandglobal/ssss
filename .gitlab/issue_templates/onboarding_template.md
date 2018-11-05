@@ -7,6 +7,8 @@ Onboarder = O
 1. [ ] Getting Started:
     1. [ ] O: create this issue and mark it confidential
     1. [ ] O: cross-link general onboarding issue in the peopleops issue tracker
+    1. [ ] O: Add new team member to the Geekbot standup
+    1. [ ] O: Add new team member to the Geekbot retro
     1. [ ] N: Complete the setup of your [Yubikey](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/yubikey.md)
     1. [ ] N: read the [infrastructure handbook](https://about.gitlab.com/handbook/engineering/infrastructure/) and pages linked from there. Find something to improve? Make a merge request!
 1. [ ] Accounts:
