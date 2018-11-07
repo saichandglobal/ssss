@@ -21,9 +21,9 @@ Onboarder = O
 1. [ ] Permissions:
     1. [ ] O: add new production engineer as 'developer' to the [gitlab-com](https://gitlab.com/groups/gitlab-com/group_members) group.
     1. [ ] O: add new production engineer as 'developer' to the [gitlab-org](https://gitlab.com/groups/gitlab-org/group_members) group.
-    1. [ ] O: add new production engineer as 'master' to the [cookbooks](https://gitlab.com/groups/gitlab-cookbooks/group_members) group.
-    1. [ ] O: add new production engineer as 'master' to the [gl-infra](https://gitlab.com/groups/gl-infra/group_members) group.
-    1. [ ] O: add new production engineer as 'master' to the [gitlab-cog](https://gitlab.com/groups/gitlab-cog/group_members) group.
+    1. [ ] O: add new production engineer as 'maintainer' to the [cookbooks](https://gitlab.com/groups/gitlab-cookbooks/group_members) group.
+    1. [ ] O: add new production engineer as 'maintainer' to the [gl-infra](https://gitlab.com/groups/gl-infra/group_members) group.
+    1. [ ] O: add new production engineer as 'maintainer' to the [gitlab-cog](https://gitlab.com/groups/gitlab-cog/group_members) group.
     1. [ ] O: create a cog user and add the new production engineer to the right groups (gitlab-admin, for a start)
     1. [ ] O: invite the new production engineer to [Azure Active Directory](https://portal.azure.com/?reAuth=true#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
         1. Azure AD -> Users and Groups -> All Users -> New Guest User -> Enter email and invite.
@@ -43,7 +43,7 @@ Onboarder = O
     1. [ ] N: get familiar with [targets](https://prometheus.gitlab.com/targets) and [alerts](https://prometheus.gitlab.com/alerts) within prometheus.
     1. [ ] N: get familiar with [prometheus alert manager](https://alerts.gitlab.com), look for the documentation of this in the [runbooks](https://gitlab.com/gitlab-com/runbooks).
 1. [ ] Runbooks and Alerts:
-    1. [ ] O: add new production engineer as 'master' to [runbooks](https://gitlab.com/gitlab-com/runbooks/project_members).
+    1. [ ] O: add new production engineer as 'maintainer' to [runbooks](https://gitlab.com/gitlab-com/runbooks/project_members).
     1. [ ] N: clone and get familiar with the [runbooks](https://gitlab.com/gitlab-com/runbooks)
     1. [ ] N: submit a fix of documentation to the runbooks.
     1. [ ] N: submit a fix to an alert in the runbooks (or submit a new one).
@@ -69,7 +69,7 @@ Onboarder = O
     1. [ ] N: Complete the _Getting Started_ guide
 1. [ ] Communications:
     1. [ ] O: mention the new production engineer in the `production` channel.
-    1. [ ] O: mention the new production engineer in the `prometheus-alerts` channel.
+    1. [ ] O: mention the new production engineer in the `alerts` channel.
     1. [ ] N: learn who your teammates are and ping them in your onboarding issue - We do mention the people we address to in issues, get used to doing it.
 1. [ ] Context & Comfort with GitLab's code base:
     1. [ ] N: review issues labeled as `outage` in the infrastructure issue tracker.
