@@ -36,9 +36,9 @@ Onboarder = O
 1. [ ] Tools:
     1. [ ] N: install the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
 1. Monitoring:
-    1. [ ] O: make new production engineer 'admin' on [private monitoring infrastructure](https://performance.gitlab.net)
-    1. [ ] N: get familiar with the dashboards in the [private monitoring infrastructure](https://performance.gitlab.net)
-    1. [ ] N: get familiar with the dashboards in the [public monitoring infrastructure](http://monitor.gitlab.net)
+    1. [ ] O: make new production engineer 'admin' on [private monitoring infrastructure](https://dashboards.gitlab.net/)
+    1. [ ] N: get familiar with the dashboards in the [private monitoring infrastructure](https://dashboards.gitlab.net/)
+    1. [ ] N: get familiar with the dashboards in the [public monitoring infrastructure](https://dashboards.gitlab.com/)
     1. [ ] N: get familiar with [prometheus](https://prometheus.gitlab.com/graph), investigate how to [query](https://prometheus.io/docs/querying/basics/) to get information out of it.
     1. [ ] N: get familiar with [targets](https://prometheus.gitlab.com/targets) and [alerts](https://prometheus.gitlab.com/alerts) within prometheus.
     1. [ ] N: get familiar with [prometheus alert manager](https://alerts.gitlab.com), look for the documentation of this in the [runbooks](https://gitlab.com/gitlab-com/runbooks).
