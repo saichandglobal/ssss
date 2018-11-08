@@ -35,7 +35,7 @@ Onboarder = O
     1. [ ] O: make new production engineer 'admin' on [AWS](https://console.aws.amazon.com/iam/home#home)
 1. [ ] Tools:
     1. [ ] N: install the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
-1. Monitoring:
+1. [ ] Monitoring:
     1. [ ] O: make new production engineer 'admin' on [private monitoring infrastructure](https://dashboards.gitlab.net/)
     1. [ ] N: get familiar with the dashboards in the [private monitoring infrastructure](https://dashboards.gitlab.net/)
     1. [ ] N: get familiar with the dashboards in the [public monitoring infrastructure](https://dashboards.gitlab.com/)
@@ -49,14 +49,14 @@ Onboarder = O
     1. [ ] N: submit a fix to an alert in the runbooks (or submit a new one).
     1. [ ] N: after having the MR merged, run `chef-client` in prometheus to enable the new alert.
 1. [ ] Chef:
-    1. [ ] N: clone the [chef-repo](https://dev.gitlab.org/cookbooks/chef-repo) and run `bundle install` to install all the dependencies
-    1. [ ] N: [create a SSH user](https://dev.gitlab.org/cookbooks/chef-repo/blob/master/README.md#add-a-new-system-admin) and send an MR to [chef-repo](https://dev.gitlab.org/cookbooks/chef-repo) - ensure you are providing the ssh key from the yubikey setup
+    1. [ ] N: clone the [chef-repo](https://ops.gitlab.net/gitlab-cookbooks/chef-repo) and run `bundle install` to install all the dependencies
+    1. [ ] N: [create a SSH user](https://ops.gitlab.net/gitlab-cookbooks/chef-repo/blob/master/README.md#add-a-new-system-admin) and send an MR to [chef-repo](https://ops.gitlab.net/gitlab-cookbooks/chef-repo) - ensure you are providing the ssh key from the yubikey setup
     1. [ ] O: run `sudo chef-client` on `chef.gitlab.com` to ensure the new production engineer has SSH access there
-    1. [ ] N: create Chef user and Chef key via `ssh chef.gitlab.com` and [chef-server-ctl user-create](https://dev.gitlab.org/cookbooks/chef-repo/blob/master/doc/set-up-chef-server.md#creating-users)
+    1. [ ] N: create Chef user and Chef key via `ssh chef.gitlab.com` and [chef-server-ctl user-create](https://ops.gitlab.net/gitlab-cookbooks/chef-repo/blob/master/doc/set-up-chef-server.md#creating-users)
     1. [ ] N: copy the Chef key, change directory to the cloned chef-repo repository on your machine, create a directory named: .chef, create a file with your SSH user name (with a .pem extension) and paste the Chef key. Chef workstation tools such as `knife` and `chef` will need the .pem key to be able to talk to the Chef server.
     1. [ ] N: add your Chef user to the 'gitlab' and 'dev-resources' organizations with `chef-server-ctl org-user-add`
-    1. [ ] O: make the new chef user admin with [knife acl](https://dev.gitlab.org/cookbooks/chef-repo/blob/master/doc/set-up-chef-server.md#add-users-to-the-admins-group-of-the-gitlab-organization)
-    1. [ ] N: create chef-repo/.chef/knife.rb from [knife.rb.example](https://dev.gitlab.org/cookbooks/chef-repo/blob/master/knife.rb.example)
+    1. [ ] O: make the new chef user admin with [knife acl](https://ops.gitlab.net/gitlab-cookbooks/chef-repo/blob/master/doc/set-up-chef-server.md#add-users-to-the-admins-group-of-the-gitlab-organization)
+    1. [ ] N: create chef-repo/.chef/knife.rb from [knife.rb.example](https://ops.gitlab.net/gitlab-cookbooks/chef-repo/blob/master/knife.rb.example)
     1. [ ] N: test your chef setup with `knife status`
     1. [ ] O: add new Chef user to VAULT_ADMINS in Rakefile and run `rake update_vault_admins`
 1. [ ] Bastion setup for SSH:
