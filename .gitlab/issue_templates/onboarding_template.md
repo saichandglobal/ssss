@@ -1,34 +1,30 @@
 # Onboarding
 
-Found something to improve? Make a merge request!
+Found something to improve? [Make a merge request!](https://gitlab.com/gitlab-com/gl-infra/infrastructure/blob/master/.gitlab/issue_templates/onboarding_template.md)
 
 ## Getting Started
 
-1. [ ] Manager: create this issue and mark it confidential
+1. [ ] Manager: create this issue. It will be marked confidential automatically
 1. [ ] Manager: cross-link general onboarding issue in the peopleops issue tracker
 1. [ ] Manager: Add new team member to the Geekbot standup
 1. [ ] Manager: Add new team member to the Geekbot retro
 1. [ ] New team member: Complete the setup of your [Yubikey](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/yubikey.md)
 1. [ ] New team member: read the [infrastructure handbook](https://about.gitlab.com/handbook/engineering/infrastructure/) and pages linked from there including:
     1. [ ] New team member: Review top 10 issues in the [infrastructure issue tracker](https://gitlab.com/gitlab-com/gl-infra/infrastructure/issues)
-    1. [ ] New team member: Review top 10 issues in the [infrastructure issue tracker] labelled as [alert](https://gitlab.com/gitlab-com/gl-infra/infrastructure/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name%5B%5D=alert)
+    1. [ ] New team member: Review top 10 issues in the [infrastructure issue tracker](https://gitlab.com/gitlab-com/gl-infra/infrastructure/issues) labelled as [alert](https://gitlab.com/gitlab-com/gl-infra/infrastructure/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name%5B%5D=alert)
     1. [ ] New team member: read about the [production architecture](https://about.gitlab.com/handbook/engineering/infrastructure/production-architecture)
     1. [ ] New team member: read about [monitoring](https://about.gitlab.com/handbook/engineering/monitoring/)
 
 ## Accounts
 
 1. [ ] New team member: comment in this issue with your desired Unix username and your SSH public key. Tip: use the same username you use on your laptop.
-1. [ ] New team member: create your GitLab `admin` account. [Register](https://gitlab.com/users/sign_in#register-pane) using `yourGitLabHandle+admin@gitlab.com`. After that, make sure you create an issue in the [infrastructure project](https://gitlab.com/gitlab-com/infrastructure/issues) so you are granted the appropriate privileges (please label the issue as `access request`)
+1. [ ] New team member: create your GitLab `admin` account. [Register](https://gitlab.com/users/sign_in#register-pane) using `yourGitLabHandle+admin@gitlab.com`. After that, make sure you create an issue in the [infrastructure project](https://gitlab.com/gitlab-com/gl-infra/infrastructure/issues) so you are granted the appropriate privileges (please label the issue as `access request`)
 1. [ ] Onboarder: invite new production engineer to [DigitalOcean](https://cloud.digitalocean.com/settings/team) (new production engineer: make sure you are not signed in to DO when accepting the invite!)
 1. [ ] Onboarder: invite new production engineer to [PagerDuty](https://gitlab.pagerduty.com/users). Don't add the new user to any rotations.
-1. [ ] New team member: Accept the invitation and configure [PagerDuty](https://gitlab.pagerduty.com/) timezone and phone number and other details
+1. [ ] New team member: Accept the invitation and configure [PagerDuty](https://gitlab.pagerduty.com/) timezone, phone number, and other details
 1. [ ] Onboarder: invite the production engineer to [Status.io](https://app.status.io/dashboard/5b36dc6502d06804c08349f7/team)
 
 ## Permissions
-
-ACCESS REQUESTS
-1. [ ] New team member: If you need access to Staging, if not already granted, please follow the instructions on the [Staging section](https://about.gitlab.com/handbook/engineering/infrastructure/environments/#staging) in the engineering handbook.
-
 
 1. [ ] Onboarder: add new production engineer as 'developer' to the [gitlab-com](https://gitlab.com/groups/gitlab-com/group_members) group.
 1. [ ] Onboarder: add new production engineer as 'developer' to the [gitlab-org](https://gitlab.com/groups/gitlab-org/group_members) group.
