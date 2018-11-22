@@ -66,19 +66,19 @@ value if the threshold _is_ exceeded.
   `sudo gitlab-ctl status postgresql`
 * [ ] You can start a console and run `SELECT 1` using `sudo gitlab-psql
   gitlabhq_production`
-* [ ] The [number of PostgreSQL connections](https://performance.gitlab.net/dashboard/db/postgres-stats?panelId=29&fullscreen&orgId=1)
+* [ ] The [number of PostgreSQL connections](https://dashboards.gitlab.net/dashboard/db/postgres-stats?panelId=29&fullscreen&orgId=1)
   on the affected host(s) does not exceed 300.
-* [ ] The [number of transactions](https://performance.gitlab.net/dashboard/db/postgres-stats?panelId=5&fullscreen&orgId=1)
+* [ ] The [number of transactions](https://dashboards.gitlab.net/dashboard/db/postgres-stats?panelId=5&fullscreen&orgId=1)
   does not exceed (roughly) 20 000 operations per second. If so, note down the
   highest observed number here.
-* [ ] The [replication lag time](https://performance.gitlab.net/dashboard/db/postgres-stats?panelId=16&fullscreen&orgId=1)
+* [ ] The [replication lag time](https://dashboards.gitlab.net/dashboard/db/postgres-stats?panelId=16&fullscreen&orgId=1)
   does not exceed 60 seconds.
-* [ ] The [percentage of CPU used per host](https://performance.gitlab.net/dashboard/db/postgres-stats?panelId=13&fullscreen&orgId=1)
+* [ ] The [percentage of CPU used per host](https://dashboards.gitlab.net/dashboard/db/postgres-stats?panelId=13&fullscreen&orgId=1)
   does not exceed 50%
-* [ ] The [load averages per host](https://performance.gitlab.net/dashboard/db/postgres-stats?panelId=9&fullscreen&orgId=1)
+* [ ] The [load averages per host](https://dashboards.gitlab.net/dashboard/db/postgres-stats?panelId=9&fullscreen&orgId=1)
   do not exceed 20
 * [ ] Added the value of "Health Past 24h" as reported by the
-  [Postgres Stats](https://performance.gitlab.net/dashboard/db/postgres-stats?orgId=1)
+  [Postgres Stats](https://dashboards.gitlab.net/dashboard/db/postgres-stats?orgId=1)
   dashboard: VALUE_HERE
 * [ ] Added the output of the repmgr status below
 * [ ] Added the list of recent repmgr events below
