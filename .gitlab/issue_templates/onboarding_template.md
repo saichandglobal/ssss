@@ -17,9 +17,26 @@ Found something to improve? [Make a merge request!](https://gitlab.com/gitlab-co
 
 ## Accounts
 
+1. [ ] New team member: Create an issue in the [Access Request issue tracker](https://gitlab.com/gitlab-com/access-requests/issues) and follow the instructions in the created issue for each of the following accounts:
+    1. [ ] New team member: AWS with `Admin-level` permissions
+        1. [ ] Onboarder: make new production engineer 'admin' on [AWS](https://console.aws.amazon.com/iam/home#home)
+    1. [ ] New team member: Azure with `Admin-level` permissions
+        1. [ ] Onboarder: When access request has been approved, invite the new production engineer to [Azure Active Directory](https://portal.azure.com/?reAuth=true#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
+            1. Azure AD -> Users and Groups -> All Users -> New Guest User -> Enter email and invite.
+        1. [ ] New team member: create your account with the invitation.
+        1. [ ] Onboarder: grant owner permission to the new production engineer in [Azure](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade)
+            1. Subscriptions -> Microsoft Azure Sponsorship -> Access control -> Add -> (Role Owner - Pick the User) -> Save
+        1. [ ] Onboarder: add new production engineer to the Azure subscription
+        1. [ ] Onboarder: make new production engineer `co-admin` (Click on the user -> Directory Role -> Global Administrator -> Save)
+    1. [ ] New team member: dev.gitlab.org with `Admin-level` permissions
+    1. [ ] New team member: DigitalOcean with `Admin-level` permissions
+        1. [ ] Onboarder: When access request has been approved, invite new production engineer to [DigitalOcean](https://cloud.digitalocean.com/settings/team) (new production engineer: make sure you are not signed in to DO when accepting the invite!)
+    1. [ ] New team member: Google Cloud Platform Console, requesting the GCP IAM group to be `Google Cloud Platform Operations Security Group: gcp-ops-sg@gitlab.com`
+    1. [ ] New team member: Greenhouse.io, requesting access to suitable group (usually SRE, Database or similar) to be able to review and assess candidates
+    1. [ ] New team member: ops.gitlab.net
+    1. [ ] New team member: staging.gitlab.com with `Admin-level` permissions
 1. [ ] New team member: comment in this issue with your desired Unix username and your SSH public key. Tip: use the same username you use on your laptop.
 1. [ ] New team member: create your GitLab `admin` account. [Register](https://gitlab.com/users/sign_in#register-pane) using `yourGitLabHandle+admin@gitlab.com`. After that, make sure you create an issue in the [infrastructure project](https://gitlab.com/gitlab-com/gl-infra/infrastructure/issues) so you are granted the appropriate privileges (please label the issue as `access request`)
-1. [ ] Onboarder: invite new production engineer to [DigitalOcean](https://cloud.digitalocean.com/settings/team) (new production engineer: make sure you are not signed in to DO when accepting the invite!)
 1. [ ] Onboarder: invite new production engineer to [PagerDuty](https://gitlab.pagerduty.com/users). Don't add the new user to any rotations.
 1. [ ] New team member: Accept the invitation and configure [PagerDuty](https://gitlab.pagerduty.com/) timezone, phone number, and other details
 1. [ ] Onboarder: invite the production engineer to [Status.io](https://app.status.io/dashboard/5b36dc6502d06804c08349f7/team)
@@ -28,18 +45,11 @@ Found something to improve? [Make a merge request!](https://gitlab.com/gitlab-co
 
 1. [ ] Onboarder: add new production engineer as 'developer' to the [gitlab-com](https://gitlab.com/groups/gitlab-com/group_members) group.
 1. [ ] Onboarder: add new production engineer as 'developer' to the [gitlab-org](https://gitlab.com/groups/gitlab-org/group_members) group.
+1. [ ] Onboarder: add new production engineer as 'maintainer' to [runbooks](https://gitlab.com/gitlab-com/runbooks/project_members).
 1. [ ] Onboarder: add new production engineer as 'maintainer' to the [cookbooks](https://gitlab.com/groups/gitlab-cookbooks/group_members) group.
 1. [ ] Onboarder: add new production engineer as 'maintainer' to the [gl-infra](https://gitlab.com/groups/gl-infra/group_members) group.
 1. [ ] Onboarder: add new production engineer as 'maintainer' to the [gitlab-cog](https://gitlab.com/groups/gitlab-cog/group_members) group.
 1. [ ] Onboarder: create a cog user and add the new production engineer to the right groups (gitlab-admin, for a start)
-1. [ ] Onboarder: invite the new production engineer to [Azure Active Directory](https://portal.azure.com/?reAuth=true#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
-    1. Azure AD -> Users and Groups -> All Users -> New Guest User -> Enter email and invite.
-1. [ ] New team member: create your account with the invitation.
-1. [ ] Onboarder: grant owner permission to the new production engineer in [Azure](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade)
-    1. Subscriptions -> Microsoft Azure Sponsorship -> Access control -> Add -> (Role Owner - Pick the User) -> Save
-1. [ ] Onboarder: add new production engineer to the Azure subscription
-1. [ ] Onboarder: make new production engineer 'co-admin' (Click on the user -> Directory Role -> Global Administrator -> Save)
-1. [ ] Onboarder: make new production engineer 'admin' on [AWS](https://console.aws.amazon.com/iam/home#home)
 
 ## Tools
 
@@ -59,7 +69,6 @@ Found something to improve? [Make a merge request!](https://gitlab.com/gitlab-co
 
 ## Runbooks and Alerts
 
-1. [ ] Onboarder: add new production engineer as 'maintainer' to [runbooks](https://gitlab.com/gitlab-com/runbooks/project_members).
 1. [ ] New team member: clone and get familiar with the [runbooks](https://gitlab.com/gitlab-com/runbooks)
 1. [ ] New team member: submit a fix of documentation to the runbooks.
 1. [ ] New team member: submit a fix to an alert in the runbooks (or submit a new one).
