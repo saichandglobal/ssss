@@ -18,8 +18,6 @@ Found something to improve? [Make a merge request!](https://gitlab.com/gitlab-co
 ## Accounts
 
 1. [ ] New team member: Create an issue in the [Access Request issue tracker](https://gitlab.com/gitlab-com/access-requests/issues) and follow the instructions in the created issue for each of the following accounts:
-    1. [ ] New team member: AWS with `Admin-level` permissions
-        1. [ ] Onboarder: Once request has been approved, make new production engineer 'admin' on [AWS](https://console.aws.amazon.com/iam/home#home)
     1. [ ] New team member: Azure with `Admin-level` permissions
         1. [ ] Onboarder: Once request has been approved, invite the new production engineer to [Azure Active Directory](https://portal.azure.com/?reAuth=true#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
             1. Azure AD -> Users and Groups -> All Users -> New Guest User -> Enter email and invite.
