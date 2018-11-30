@@ -50,8 +50,6 @@ Found something to improve? [Make a merge request!](https://gitlab.com/gitlab-co
 1. [ ] Onboarder: add new production engineer as 'maintainer' to [runbooks](https://gitlab.com/gitlab-com/runbooks/project_members).
 1. [ ] Onboarder: add new production engineer as 'maintainer' to the [cookbooks](https://gitlab.com/groups/gitlab-cookbooks/group_members) group.
 1. [ ] Onboarder: add new production engineer as 'maintainer' to the [gl-infra](https://gitlab.com/groups/gl-infra/group_members) group.
-1. [ ] Onboarder: add new production engineer as 'maintainer' to the [gitlab-cog](https://gitlab.com/groups/gitlab-cog/group_members) group.
-1. [ ] Onboarder: create a cog user and add the new production engineer to the right groups (gitlab-admin, for a start)
 
 ## Tools
 
@@ -59,7 +57,6 @@ Found something to improve? [Make a merge request!](https://gitlab.com/gitlab-co
 1. [ ] New team member: install the [Google Cloud SDK](https://cloud.google.com/sdk/docs/quickstarts)
 1. [ ] New team member: install the [AWS Cli](https://aws.amazon.com/cli)
 1. [ ] New team member: install [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html)
-
 
 ## Monitoring
 
