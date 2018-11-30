@@ -40,6 +40,7 @@ Found something to improve? [Make a merge request!](https://gitlab.com/gitlab-co
         1. [ ] Onboarder: Once request has been approved, invite the production engineer to [Status.io](https://app.status.io/dashboard/5b36dc6502d06804c08349f7/team)
 1. [ ] New team member: comment in this issue with your desired Unix username and your SSH public key. Tip: use the same username you use on your laptop.
 1. [ ] New team member: create your GitLab `admin` account. [Register](https://gitlab.com/users/sign_in#register-pane) using `yourGitLabHandle+admin@gitlab.com`. After that, make sure you create an issue in the [infrastructure project](https://gitlab.com/gitlab-com/gl-infra/infrastructure/issues) so you are granted the appropriate privileges (please label the issue as `access request`)
+1. [ ] Onboarder: Add new team member to [Google Cloud Enterprise Support](https://enterprise.google.com/supportcenter/managecases)
 
 ## Permissions
 
