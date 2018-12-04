@@ -11,7 +11,7 @@
 * [ ] Remove user from Gitter ssh access:
   * [ ] Remove the users key from
     `gitter-infrastructure/ansible/roles/base/files/authorized_keys/<username>`
-  * [ ] Execute ansible: `ansible-playbook playbooks/base.yml -t ssh-keys`
+  * [ ] Execute ansible: `ansible-playbook -i <environment> playbooks/base.yml -t ssh-keys`
 * [ ] Remove user from the package server:
   * [ ] `bundle exec rake 'edit_role[packages-gitlab-com]'`
 * [ ] Remove [admin user](https://dev.gitlab.org/admin/users?filter=admins) from dev.gitlab.org
