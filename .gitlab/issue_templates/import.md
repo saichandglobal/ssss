@@ -10,6 +10,11 @@ Set the title to Import request [project]
 
 ### Production
 - [ ] Grab the Slack token from 1Password (search for `Import Slack token`)
+- [ ] Copy the file to `/tmp` and make sure is accessible by the `git` user
+- [ ] If the importer is admin, check for any dodgy emails outside the customer's organization (such as @gitlab.com):
+```sh
+ tar -xOf /tmp/project_export.tar.gz project.json  | python -m json.tool | grep '"email"' | uniq
+ ```
 - [ ] Run as **root** on a **tmux** session (Adding slack token, and `-u -p -f` options):
 ```sh
 sudo -u git -H bash -c "EXECJS_RUNTIME=Disabled SLACK_TOKEN='changeme' RAILS_ENV=production /opt/gitlab/embedded/bin/ruby <(curl -s https://gitlab.com/gitlab-com/runbooks/raw/master/scripts/project_import.rb) -u gitlab_username -p namespace/project -f /path/to/export.tar.gz"
