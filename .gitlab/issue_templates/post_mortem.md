@@ -1,4 +1,3 @@
-
 **Please note:** if the incident relates to sensitive data, or is security related consider
 labeling this issue with ~security and mark it confidential.
 ***
@@ -56,9 +55,10 @@ Follow the "**5 whys**" in a **blameless** manner as the core of the post mortem
 
 For this it is necessary to start with the incident, and question why it happened. Keep iterating asking "why?" 5 times. While it's not a hard rule that it has to be 5 times, it helps to keep questions get deeper in finding the actual root cause. 
 
-Keep in min that from one "why?" there may come more than one answer, consider following the different branches.
+Keep in mind that from one "why?" there may come more than one answer, consider following the different branches.
 
-###Example of the usage of "5 whys"
+### Example of the usage of "5 whys"
+
 The vehicle will not start. (the problem)
 
 1. Why? - The battery is dead. 
