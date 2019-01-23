@@ -32,7 +32,6 @@ Onboarder = O
     1. [ ] O: make new production engineer 'co-admin' (Click on the user -> Directory Role -> Global Administrator -> Save)
     1. [ ] O: make new production engineer 'admin' on [Gitter AWS](https://troupe.signin.aws.amazon.com/console)
     1. [ ] O: make new production engineer 'admin' on [Gitlab-com AWS](https://gitlab-com.signin.aws.amazon.com/console)
-    1. [ ] O: make new production engineer 'admin' on [Non-prod AWS](https://474521830347.signin.aws.amazon.com/console)
 1. [ ] Tools:
     1. [ ] N: install the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
 1. [ ] Monitoring:
