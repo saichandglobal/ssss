@@ -2,10 +2,23 @@
 Set the title to Import request [project]
 -->
 
+#### [Secret link to project](https://link.here)
+#### Customer username: `user-to-import-as`
+#### Project path: `fillout/thepath/here`
+#### Import date: YYYY-MM-DD (set due date with `/due`)
+#### Access Request Issue: [link] (for admin imports only)
+
 ### Support
 - [ ] Provide a temporary secret link to the export from the customer
 - [ ] Confirm the customer has sufficient access to create a project in the namespace they want
 - [ ] Add the namespace/project path to this issue as a comment
+
+- [ ] If this is an admin import, fill out an [access request](https://gitlab.com/gitlab-com/access-requests/issues/new?issuable_template=New%20Access%20Request) and link it above. 
+- List the emails of users contained within the import here:
+   - ____
+   - ____
+   - ____
+
 - [ ] Wait for the script to send a message to #annoucements confirming it finished
 
 ### Production
@@ -23,4 +36,5 @@ sudo -u git -H bash -c "EXECJS_RUNTIME=Disabled SLACK_TOKEN='changeme' RAILS_ENV
 - [ ] Exit the tmux session and remove the export file
 
 /label ~oncall ~import
+
 /confidential 
