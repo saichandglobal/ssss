@@ -49,7 +49,11 @@ N - note there is a lot of good onboarding info in [the handbook](https://about.
     1. [ ] N: get familiar with [prometheus alert manager](https://alerts.gitlab.com), look for the documentation of this in the [runbooks](https://gitlab.com/gitlab-com/runbooks).
 1. [ ] Runbooks and Alerts:
     1. [ ] O: add new production engineer as 'maintainer' to [runbooks](https://gitlab.com/gitlab-com/runbooks/project_members).
-    1. [ ] N: clone and get familiar with the [runbooks](https://gitlab.com/gitlab-com/runbooks)
+    1. [ ] N: clone and get familiar with the [runbooks repo](https://gitlab.com/gitlab-com/runbooks) . There are a lot of useful materials in it which will help you become familiar with the infrastructure. Depending on your role, you will find some parts more useful than others. Here are some examples, you don't need to read these now, just make sure you know they are here:
+        1. [ ] directory with [howto](https://gitlab.com/gitlab-com/runbooks/tree/master/howto) docs
+        1. [ ] description of our [logging infrastructure](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/logging.md)
+        1. [ ] directory with all [troubleshooting](https://gitlab.com/gitlab-com/runbooks/tree/master/troubleshooting) docs
+        1. [ ] [troubleshooting prometheus](https://gitlab.com/gitlab-com/runbooks/blob/master/troubleshooting/prometheus-is-down.md)
     1. [ ] N: submit a fix of documentation to the runbooks.
     1. [ ] N: submit a fix to an alert in the runbooks (or submit a new one).
     1. [ ] N: after having the MR merged, run `chef-client` in prometheus to enable the new alert.
@@ -59,6 +63,9 @@ N - note there is a lot of good onboarding info in [the handbook](https://about.
     1. [ ] O: Ensure a successful ansible run to install the users key into the infrastructure
 1. [ ] Chef:
     1. [ ] N: clone the [chef-repo](https://ops.gitlab.net/gitlab-cookbooks/chef-repo) and run `bundle install` to install all the dependencies
+    1. [ ] N: chef-repo repository contains a lot of useful materials. You don't need to read all of them, just look at a few examples and be aware that they are here:
+        1. [ ] description of the [deployment process](https://ops.gitlab.net/gitlab-cookbooks/chef-repo/blob/master/doc/deploying.md)
+        1. [ ] chef server installation [docs](https://ops.gitlab.net/gitlab-cookbooks/chef-repo/blob/master/doc/set-up-chef-server.md)
     1. [ ] N: [create a SSH user](https://ops.gitlab.net/gitlab-cookbooks/chef-repo/blob/master/README.md#add-a-new-system-admin) and send an MR to [chef-repo](https://ops.gitlab.net/gitlab-cookbooks/chef-repo) - ensure you are providing the ssh key from the yubikey setup
     1. [ ] O: run `sudo chef-client` on `chef.gitlab.com` to ensure the new production engineer has SSH access there
     1. [ ] N: create Chef user and Chef key via `ssh chef.gitlab.com` and [chef-server-ctl user-create](https://ops.gitlab.net/gitlab-cookbooks/chef-repo/blob/master/doc/set-up-chef-server.md#creating-users)
@@ -84,4 +91,5 @@ N - note there is a lot of good onboarding info in [the handbook](https://about.
     1. [ ] N: review issues labeled as `outage` in the infrastructure issue tracker.
     1. [ ] O: point the new production engineer to the ongoing meta issues that define the team strategy.
     1. [ ] N: read about the [application architecture](https://docs.gitlab.com/ce/development/architecture.html)
+    1. [ ] N: watch the [gitlab.com infrastructure overview](https://www.youtube.com/watch?v=uCU8jdYzpac) video
     1. [ ] N: contribute a merge request to one of the following repos: gitlab-ce, gitlab-ee, gitaly, workhorse, gitlab-runner (or take a look at the [engineering projects](https://about.gitlab.com/handbook/engineering/projects) for more inspiration). The idea here is to get comfortable with the application architecture and codebase, but not to spend more than 0.5 - 1 day on coding for this task.
