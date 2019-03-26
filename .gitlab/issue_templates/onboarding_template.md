@@ -40,6 +40,7 @@ N - note there is a lot of good onboarding info in [the handbook](https://about.
     1. [ ] O: make new production engineer 'admin' on [Gitlab-com AWS](https://gitlab-com.signin.aws.amazon.com/console)
 1. [ ] Tools:
     1. [ ] N: install the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
+    1. [ ] N: install the [gcloud cli](https://cloud.google.com/sdk/)
 1. [ ] Monitoring:
     1. [ ] O: make new production engineer 'admin' on [private monitoring infrastructure](https://dashboards.gitlab.net/)
     1. [ ] N: get familiar with the dashboards in the [private monitoring infrastructure](https://dashboards.gitlab.net/)
