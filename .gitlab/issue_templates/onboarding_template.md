@@ -26,7 +26,7 @@ N - note there is a lot of good onboarding info in [the handbook](https://about.
     1. [ ] O: add new production engineer as 'developer' to the [gitlab-com](https://gitlab.com/groups/gitlab-com/group_members) group.
     1. [ ] O: add new production engineer as 'developer' to the [gitlab-org](https://gitlab.com/groups/gitlab-org/group_members) group.
     1. [ ] O: add new production engineer as 'maintainer' to the [cookbooks](https://gitlab.com/groups/gitlab-cookbooks/group_members) group.
-    1. [ ] O: add new production engineer as 'maintainer' to the [gl-infra](https://gitlab.com/groups/gl-infra/group_members) group.
+    1. [ ] O: add new production engineer as 'maintainer' to the [gl-infra](https://gitlab.com/groups/gitlab-com/gl-infra/group_members) group.
     1. [ ] O: add new production engineer as 'developer' to the [gitlab-com](https://ops.gitlab.net/groups/gitlab-com/group_members) group on the Ops instance.
     1. [ ] O: add new production engineer as 'developer' to the [gitlab-org](https://ops.gitlab.net/groups/gitlab-org/group_members) group on the Ops instance.
     1. [ ] O: invite the new production engineer to [Azure Active Directory](https://portal.azure.com/?reAuth=true#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
@@ -82,7 +82,7 @@ N - note there is a lot of good onboarding info in [the handbook](https://about.
     1. [ ] N: follow the steps in [OPS bastion hosts](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/ops-bastions.md)
     1. [ ] N: try ssh into a host and make sure it works. Example: `knife status | grep dashboard`, get one of the hosts' name and ssh into it
 1. [ ] Terraform:
-    1. [ ] N: clone the [terraform repo](https://gitlab.com/gitlab-com/gitlab-com-infrastructure)
+    1. [ ] N: clone the [terraform repo](https://ops.gitlab.net/gitlab-com/gitlab-com-infrastructure)
     1. [ ] N: Complete the _Getting Started_ guide
 1. [ ] Communications:
     1. [ ] O: mention the new production engineer in the `production` channel.
