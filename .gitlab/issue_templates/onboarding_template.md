@@ -82,7 +82,7 @@ N - note there is a lot of good onboarding info in [the handbook](https://about.
     1. [ ] N: follow the steps in [OPS bastion hosts](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/ops-bastions.md)
     1. [ ] N: try ssh into a host and make sure it works. Example: `knife status | grep dashboard`, get one of the hosts' name and ssh into it
 1. [ ] Terraform:
-    1. [ ] N: clone the [terraform repo](https://gitlab.com/gitlab-com/gitlab-com-infrastructure)
+    1. [ ] N: clone the [terraform repo](https://ops.gitlab.net/gitlab-com/gitlab-com-infrastructure)
     1. [ ] N: Complete the _Getting Started_ guide
 1. [ ] Communications:
     1. [ ] O: mention the new production engineer in the `production` channel.
