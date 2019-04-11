@@ -63,6 +63,7 @@ N - note there is a lot of good onboarding info in [the handbook](https://about.
     1. [ ] N: Add your public key to the path `ansible/roles/base/files/authorized_keys/<username>` and submit an MR
     1. [ ] O: Ensure a successful ansible run to install the users key into the infrastructure
 1. [ ] Chef:
+    1. [ ] O: add the new production engineer as a 'developer' on [chef-repo](https://ops.gitlab.net/gitlab-cookbooks/chef-repo)
     1. [ ] N: clone the [chef-repo](https://ops.gitlab.net/gitlab-cookbooks/chef-repo) and run `bundle install` to install all the dependencies
     1. [ ] N: chef-repo repository contains a lot of useful materials. You don't need to read all of them, just look at a few examples and be aware that they are here:
         1. [ ] description of the [deployment process](https://ops.gitlab.net/gitlab-cookbooks/chef-repo/blob/master/doc/deploying.md)
