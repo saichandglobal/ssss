@@ -31,7 +31,7 @@ N - note there is a lot of good onboarding info in [the handbook](https://about.
         1. Azure AD -> Users and Groups -> All Users -> New Guest User -> Enter email and invite.
     1. [ ] N: create your account with the invitation.
     1. [ ] O: grant owner permission to the new production engineer in [Azure](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade)
-        1. Subscriptions -> Microsoft Azure Sponsorship -> Access control -> Add -> (Role Owner - Pick the User) -> Save
+        1. Subscriptions -> Microsoft Azure Sponsorship -> Access control -> Add -> Add role assignment -> (select a role and the user) -> Save
     1. [ ] O: add new production engineer to the Azure subscription
     1. [ ] O: make new production engineer 'co-admin' (Click on the user -> Directory Role -> Global Administrator -> Save)
     1. [ ] O: make new production engineer 'admin' on [Gitter AWS](https://troupe.signin.aws.amazon.com/console)
