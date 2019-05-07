@@ -14,13 +14,11 @@ N - note there is a lot of good onboarding info in [the handbook](https://about.
     1. [ ] N: Complete the setup of your [Yubikey](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/yubikey.md)
     1. [ ] N: read the [infrastructure handbook](https://about.gitlab.com/handbook/engineering/infrastructure/) and pages linked from there. Find something to improve? Make a merge request!
 1. [ ] Accounts:
-    1. [ ] O: Create an issue from the SRE Entitlements template in the [Access Request Repo](https://gitlab.com/gitlab-com/access-requests/issues).  This will create accounts for many of the services we use: AWS, Azure, dev, DO, GitLab.com admin, staging, GCP, Chef, Pager Duty, Status.io
+    1. [ ] O: Create an issue from the SRE Entitlements template in the [Access Request Repo](https://gitlab.com/gitlab-com/access-requests/issues).
+    1. [ ] O: Provision accesses in the access request created above by inviting the user to many of the services we use: AWS, Azure, dev, DO, GitLab.com admin, staging, GCP, Chef, Pager Duty, Status.io
     1. [ ] N: comment in this issue with your desired Unix username and your SSH public key. Tip: use the same username you use on your laptop.
     1. [ ] N: You should receive a GitLab `admin` account via a 'plussed' email address (`yourGitLabHandle+admin@gitlab.com`). Set this account password and configure multi factor security on this account.
-    1. [ ] O: invite new production engineer to [Digital Ocean](https://cloud.digitalocean.com/settings/team) (new production engineer: make sure you are not signed in to DO when accepting the invite!)
-    1. [ ] O: invite new production engineer to [Pager Duty](https://gitlab.pagerduty.com/users). Don't add the new user to any rotations.
     1. [ ] N: Accept the invitation and configure [Pager Duty](https://gitlab.pagerduty.com/) timezone and phone number and other details
-    1. [ ] O: invite the production engineer to [Status.io](https://app.status.io/dashboard/5b36dc6502d06804c08349f7/team)
     1. [ ] N: Verify your access to Rackspace - this is where you can make tickets for issues with GCP
 1. [ ] Permissions:
     1. [ ] O: add new production engineer as 'developer' to the [gitlab-com](https://gitlab.com/groups/gitlab-com/group_members) group.
