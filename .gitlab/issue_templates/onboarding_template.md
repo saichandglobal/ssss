@@ -15,7 +15,7 @@ N - note there is a lot of good onboarding info in [the handbook](https://about.
     1. [ ] N: read the [infrastructure handbook](https://about.gitlab.com/handbook/engineering/infrastructure/) and pages linked from there. Find something to improve? Make a merge request!
 1. [ ] Accounts:
     1. [ ] O: Create an issue from the SRE Entitlements template in the [Access Request Repo](https://gitlab.com/gitlab-com/access-requests/issues).  This will create accounts for many of the services we use: AWS, Azure, dev, DO, GitLab.com admin, staging, GCP, Chef, Pager Duty, Status.io
-    1. [ ] N: comment in this issue with your desired Unix username and your SSH public key. Tip: use the same username you use on your laptop.
+    1. [ ] N: comment in the access request issue with your desired Unix username and your SSH public key. Tip: use the same username you use on your laptop.
     1. [ ] N: You should receive a GitLab `admin` account via a 'plussed' email address (`yourGitLabHandle+admin@gitlab.com`). Set this account password and configure multi factor security on this account.
     1. [ ] O: invite new production engineer to [Digital Ocean](https://cloud.digitalocean.com/settings/team) (new production engineer: make sure you are not signed in to DO when accepting the invite!)
     1. [ ] O: invite new production engineer to [Pager Duty](https://gitlab.pagerduty.com/users). Don't add the new user to any rotations.
@@ -48,6 +48,10 @@ N - note there is a lot of good onboarding info in [the handbook](https://about.
     1. [ ] N: get familiar with [prometheus](https://prometheus.gitlab.com/graph), investigate how to [query](https://prometheus.io/docs/querying/basics/) to get information out of it.
     1. [ ] N: get familiar with [targets](https://prometheus.gitlab.com/targets) and [alerts](https://prometheus.gitlab.com/alerts) within prometheus.
     1. [ ] N: get familiar with [prometheus alert manager](https://alerts.gitlab.com), look for the documentation of this in the [runbooks](https://gitlab.com/gitlab-com/runbooks).
+    1. [ ] N: open an [access
+       request](https://gitlab.com/gitlab-com/access-requests/issues/new?issuable_template=New+Access+Request)
+       to add yourself to the prod-eng-team Slack group. This will have the side
+       effect of familiarising yourself with access requests.
 1. [ ] Runbooks and Alerts:
     1. [ ] O: add new production engineer as 'maintainer' to [runbooks](https://gitlab.com/gitlab-com/runbooks/project_members).
     1. [ ] N: clone and get familiar with the [runbooks repo](https://gitlab.com/gitlab-com/runbooks) . There are a lot of useful materials in it which will help you become familiar with the infrastructure. Depending on your role, you will find some parts more useful than others. Here are some examples, you don't need to read these now, just make sure you know they are here:
