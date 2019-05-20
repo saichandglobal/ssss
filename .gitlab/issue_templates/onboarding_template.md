@@ -87,6 +87,9 @@ N - note there is a lot of good onboarding info in [the handbook](https://about.
     1. [ ] N: follow the steps in [DR bastion hosts](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/dr-bastions.md)
     1. [ ] N: follow the steps in [OPS bastion hosts](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/ops-bastions.md)
     1. [ ] N: try ssh into a host and make sure it works. Example: `knife status | grep dashboard`, get one of the hosts' name and ssh into it
+1. [ ] Console access:
+    1. [ ] N: Ensure that you can run a rails console as described in the
+       [runbook](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/staging-environment.md#run-a-rails-console-in-staging-environment).
 1. [ ] Terraform:
     1. [ ] N: clone the [terraform repo](https://ops.gitlab.net/gitlab-com/gitlab-com-infrastructure)
     1. [ ] N: Complete the _Getting Started_ guide
