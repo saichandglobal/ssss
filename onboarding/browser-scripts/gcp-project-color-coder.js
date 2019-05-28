@@ -13,28 +13,20 @@ const PROJECT_FIELD = 'project';
 const URL_DELIMETER = '&';
 const PROJECT_DELIMETER = '=';
 
-const PROJECT_PRODUCTION = 'gitlab-production';
-const PROJECT_PRODUCTION_COLOR = 'red';
-
-const PROJECT_STAGING = 'gitlab-staging-1';
-const PROJECT_STAGING_COLOR = 'blue';
-
-const PROJECT_INTERNAL = 'gitlab-internal-153318';
-const PROJECT_INTERNAL_COLOR = 'green';
-
 //TODO Add DR and other projects
+const PROJECT_MAPPINGS = new Map([
+    ['gitlab-production', 'red'],
+    ['gitlab-staging-1', 'blue'],
+    ['gitlab-internal-153318', 'green'],
+    ['gemnasium-production', 'red'],
+    ['gemnasium-staging', 'blue'],
+]);
 
 var $ = window.jQuery;
 
 var colorCode = function(project_id) {
-    if (project_id == PROJECT_PRODUCTION){
-        $('.pcc-platform-bar-container').css('background-color', PROJECT_PRODUCTION_COLOR);
-    }
-    else if (project_id == PROJECT_STAGING){
-        $('.pcc-platform-bar-container').css('background-color', PROJECT_STAGING_COLOR);
-    }
-    else if (project_id == PROJECT_INTERNAL){
-        $('.pcc-platform-bar-container').css('background-color', PROJECT_INTERNAL_COLOR);
+    if (PROJECT_MAPPINGS.has(project_id)) {
+        $(CONTAINER_ID).css('background-color', PROJECT_MAPPINGS.get(project_id));
     }
 };
 
@@ -51,7 +43,6 @@ $(document).ready(function() {
             break;
         }
     }
-
     if(project_id != ''){
         colorCode(project_id);
     }
