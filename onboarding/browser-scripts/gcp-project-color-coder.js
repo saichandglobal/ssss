@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         GCP Console - Project Color Coder
 // @namespace    gitlab.com/gitlab-com/gl-infra
-// @version      0.1
+// @version      0.2
 // @description  Color code projects in GCP console to distinguish between production, staging, DR...etc
 // @author       aamarsanaa@
 // @match        https://console.cloud.google.com/*
@@ -12,6 +12,7 @@
 const PROJECT_FIELD = 'project';
 const URL_DELIMETER = '&';
 const PROJECT_DELIMETER = '=';
+const CONTAINER_ID = '.cfc-platform-bar-container';
 
 //TODO Add DR and other projects
 const PROJECT_MAPPINGS = new Map([
