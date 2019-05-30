@@ -82,11 +82,8 @@ N - note there is a lot of good onboarding info in [the handbook](https://about.
     1. [ ] N: test your chef setup with `knife status`
     1. [ ] O: add new Chef user to config/vault_admins.yml and run `rake update_vault_admins`
 1. [ ] Bastion setup for SSH:
-    1. [ ] N: follow the steps in [GPRD bastion hosts](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/gprd-bastions.md)
-    1. [ ] N: follow the steps in [GSTG bastion hosts](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/gstg-bastions.md)
-    1. [ ] N: follow the steps in [DR bastion hosts](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/dr-bastions.md)
-    1. [ ] N: follow the steps in [OPS bastion hosts](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/ops-bastions.md)
-    1. [ ] N: try ssh into a host and make sure it works. Example: `knife status | grep dashboard`, get one of the hosts' name and ssh into it
+    1. [ ] N: obtain a base known-good SSH config for GitLab infrastructure: `curl https://gitlab.com/gitlab-com/gl-infra/infrastructure/raw/master/onboarding/ssh-config >> $HOME/.ssh/config`
+    1. [ ] N: try to ssh into a host and make sure it works. Example: `knife status | grep dashboard`, get one of the hosts' name and ssh into it
 1. [ ] Console access:
     1. [ ] N: Ensure that you can run a rails console as described in the
        [runbook](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/staging-environment.md#run-a-rails-console-in-staging-environment).
