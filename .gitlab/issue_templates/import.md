@@ -1,28 +1,30 @@
 <!--
-Set the title to Import request [project]
+Set the title to Import request (for group): [project]
 -->
 
-#### [Secret link to project](https://link.here)
-#### Customer or admin username: `user-to-import-as`
+/due YYYY-MM-DD
+
+#### Import on: YYYY-MM-DD HH:MM UTC 
+#### [Link to project](https://link.here)
+#### Username: `user-to-import-as`
 #### Project path: `fillout/thepath/here`
-#### Import date: YYYY-MM-DD (set due date with `/due`)
-#### Access Request Issue: [link] (for admin imports only)
+#### Access Request Issue (admin imports only): [link]()
+#### Ticket: LINK
 
 ### Support
 - [ ] Provide a temporary secret link to the export from the customer
 - [ ] Confirm the customer has sufficient access to create a project in the namespace they want
-- [ ] Add the namespace/project path to this issue as a comment
+- [ ] Provide the namespace/project path
 
-- [ ] If this is an admin import, fill out an [access request](https://gitlab.com/gitlab-com/access-requests/issues/new?issuable_template=New%20Access%20Request) and link it above. 
-- [ ] If the importer is admin, check for any dodgy emails outside the customer's organization (such as @gitlab.com):
-```sh
- tar -xOf /tmp/project_export.tar.gz project.json  | python -m json.tool | grep '"email"' | uniq
- ```
-- List the emails of users contained within the import here (or if it's >10 attach a list to this issue):
-   - ____
-   - ____
-   - ____
+If admin import:
 
+- [ ] Fill out an [access request](https://gitlab.com/gitlab-com/access-requests/issues/new?issuable_template=New%20Access%20Request) and link it above. 
+- [ ] Check for any dodgy emails outside the customer's organization (such as @gitlab.com) using [export file user checker](https://gitlab.com/gitlab-com/support/toolbox/dcef).
+- List the emails of users contained within the import here (or if it's >10 attach, add as a comment):
+
+```
+insert emails or remove this if not applicable
+```
 
 ### Production
 - [ ] Grab the Slack token from 1Password (search for `Import Slack token`)
@@ -34,6 +36,6 @@ sudo -u git -H bash -c "EXECJS_RUNTIME=Disabled SLACK_TOKEN='changeme' RAILS_ENV
 - [ ] Wait for the script to send a message to #annoucements confirming it finished
 - [ ] Exit the tmux session and remove the export file
 
-/label ~oncall ~import
+/label ~oncall ~import ~"SRE:On-call"
 
 /confidential 
