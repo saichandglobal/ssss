@@ -2,6 +2,13 @@
 # GitLab Hosts
 ##################################################
 
+#General settings; multiplexing for speeeed, keepalives to help azure connectivity
+Host *
+  ControlMaster auto
+  ControlPath ~/.ssh/master-%C
+  ControlPersist 30m
+  ServerAliveInterval 30
+
 # If gitlab.com username is different from SSH username, this needs to be
 # set.  Otherwise git pushes will fail
 Host gitlab.com dev.gitlab.com ops.gitlab.net
@@ -23,14 +30,8 @@ Host fe-*.gitlab-*.internal
 Host lb-bastion.*.gitlab.com
   StrictHostKeyChecking   no
 
-Host *.gitlab-staging-1.internal
-  ProxyCommand ssh lb-bastion.gstg.gitlab.com -W %h:%p
-
-Host *.gitlab-production.internal
-  ProxyCommand ssh lb-bastion.gprd.gitlab.com -W %h:%p
-
-Host *.gitlab-ops.internal
-  ProxyCommand ssh lb-bastion.ops.gitlab.com -W %h:%p
+Host *.gitlab-*.internal
+  ProxyCommand bash -c "ssh lb-bastion.`echo %h | cut -d\".\" -f1|awk -F- '{print $NF}'`.gitlab.com -W %h:%p"
 
 # Console aliases
 Host gprd-console

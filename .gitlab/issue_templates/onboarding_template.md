@@ -14,9 +14,8 @@ N - note there is a lot of good onboarding info in [the handbook](https://about.
     1. [ ] N: Complete the setup of your [Yubikey](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/yubikey.md)
     1. [ ] N: read the [infrastructure handbook](https://about.gitlab.com/handbook/engineering/infrastructure/) and pages linked from there. Find something to improve? Make a merge request!
 1. [ ] Accounts:
-    1. [ ] O: Create an issue from the SRE Entitlements template in the [Access Request Repo](https://gitlab.com/gitlab-com/access-requests/issues).
-    1. [ ] O: Provision accesses in the access request created above by inviting the user to many of the services we use: AWS, Azure, dev, DO, GitLab.com admin, staging, GCP, Chef, Pager Duty, Status.io
-    1. [ ] N: comment in this issue with your desired Unix username and your SSH public key. Tip: use the same username you use on your laptop.
+    1. [ ] O: Create an issue from the SRE Entitlements template in the [Access Request Repo](https://gitlab.com/gitlab-com/access-requests/issues).  This will create accounts for many of the services we use: AWS, Azure, dev, DO, GitLab.com admin, staging, GCP, Chef, Pager Duty, Status.io
+    1. [ ] N: comment in the access request issue with your desired Unix username and your SSH public key. Tip: use the same username you use on your laptop.
     1. [ ] N: You should receive a GitLab `admin` account via a 'plussed' email address (`yourGitLabHandle+admin@gitlab.com`). Set this account password and configure multi factor security on this account.
     1. [ ] N: Accept the invitation and configure [Pager Duty](https://gitlab.pagerduty.com/) timezone and phone number and other details
     1. [ ] N: Verify your access to Rackspace - this is where you can make tickets for issues with GCP
@@ -46,6 +45,10 @@ N - note there is a lot of good onboarding info in [the handbook](https://about.
     1. [ ] N: get familiar with [prometheus](https://prometheus.gitlab.com/graph), investigate how to [query](https://prometheus.io/docs/querying/basics/) to get information out of it.
     1. [ ] N: get familiar with [targets](https://prometheus.gitlab.com/targets) and [alerts](https://prometheus.gitlab.com/alerts) within prometheus.
     1. [ ] N: get familiar with [prometheus alert manager](https://alerts.gitlab.com), look for the documentation of this in the [runbooks](https://gitlab.com/gitlab-com/runbooks).
+    1. [ ] N: open an [access
+       request](https://gitlab.com/gitlab-com/access-requests/issues/new?issuable_template=New+Access+Request)
+       to add yourself to the prod-eng-team Slack group. This will have the side
+       effect of familiarising yourself with access requests.
 1. [ ] Runbooks and Alerts:
     1. [ ] O: add new production engineer as 'maintainer' to [runbooks](https://gitlab.com/gitlab-com/runbooks/project_members).
     1. [ ] N: clone and get familiar with the [runbooks repo](https://gitlab.com/gitlab-com/runbooks) . There are a lot of useful materials in it which will help you become familiar with the infrastructure. Depending on your role, you will find some parts more useful than others. Here are some examples, you don't need to read these now, just make sure you know they are here:
@@ -76,11 +79,11 @@ N - note there is a lot of good onboarding info in [the handbook](https://about.
     1. [ ] N: test your chef setup with `knife status`
     1. [ ] O: add new Chef user to config/vault_admins.yml and run `rake update_vault_admins`
 1. [ ] Bastion setup for SSH:
-    1. [ ] N: follow the steps in [GPRD bastion hosts](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/gprd-bastions.md)
-    1. [ ] N: follow the steps in [GSTG bastion hosts](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/gstg-bastions.md)
-    1. [ ] N: follow the steps in [DR bastion hosts](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/dr-bastions.md)
-    1. [ ] N: follow the steps in [OPS bastion hosts](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/ops-bastions.md)
-    1. [ ] N: try ssh into a host and make sure it works. Example: `knife status | grep dashboard`, get one of the hosts' name and ssh into it
+    1. [ ] N: obtain a base known-good SSH config for GitLab infrastructure: `curl https://gitlab.com/gitlab-com/gl-infra/infrastructure/raw/master/onboarding/ssh-config >> $HOME/.ssh/config`
+    1. [ ] N: try to ssh into a host and make sure it works. Example: `knife status | grep dashboard`, get one of the hosts' name and ssh into it
+1. [ ] Console access:
+    1. [ ] N: Ensure that you can run a rails console as described in the
+       [runbook](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/staging-environment.md#run-a-rails-console-in-staging-environment).
 1. [ ] Terraform:
     1. [ ] N: clone the [terraform repo](https://ops.gitlab.net/gitlab-com/gitlab-com-infrastructure)
     1. [ ] N: Complete the _Getting Started_ guide

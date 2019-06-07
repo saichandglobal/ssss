@@ -9,3 +9,4 @@ The guidelines for reviewing a candidate questionnaire are available in the [peo
 Click the [Greenhouse profile](link) and complete a scorecard after reviewing the candidate's questionnaire responses. Close this ticket after the scorecard is submitted.
 
 /label ~hiring
+/confidential
