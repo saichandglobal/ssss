@@ -86,7 +86,7 @@ N - note there is a lot of good onboarding info in [the handbook](https://about.
        [runbook](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/staging-environment.md#run-a-rails-console-in-staging-environment).
 1. [ ] Terraform:
     1. [ ] N: clone the [terraform repo](https://ops.gitlab.net/gitlab-com/gitlab-com-infrastructure)
-    1. [ ] N: Complete the _Getting Started_ guide
+    1. [ ] N: Complete the [_Getting Started_](https://ops.gitlab.net/gitlab-com/gitlab-com-infrastructure#getting-started) guide
 1. [ ] Communications:
     1. [ ] O: mention the new production engineer in the `production` channel.
     1. [ ] O: mention the new production engineer in the `alerts` channel.
