@@ -22,10 +22,11 @@ N - note there is a lot of good onboarding info in [the handbook](https://about.
 1. [ ] Permissions:
     1. [ ] O: add new production engineer as 'developer' to the [gitlab-com](https://gitlab.com/groups/gitlab-com/group_members) group.
     1. [ ] O: add new production engineer as 'developer' to the [gitlab-org](https://gitlab.com/groups/gitlab-org/group_members) group.
-    1. [ ] O: add new production engineer as 'maintainer' to the [cookbooks](https://gitlab.com/groups/gitlab-cookbooks/group_members) group.
+    1. [ ] O: add new production engineer as 'owner' to the [cookbooks](https://gitlab.com/groups/gitlab-cookbooks/group_members) group.
     1. [ ] O: add new production engineer as 'maintainer' to the [gl-infra](https://gitlab.com/groups/gitlab-com/gl-infra/group_members) group.
     1. [ ] O: add new production engineer as 'developer' to the [gitlab-com](https://ops.gitlab.net/groups/gitlab-com/group_members) group on the Ops instance.
     1. [ ] O: add new production engineer as 'developer' to the [gitlab-org](https://ops.gitlab.net/groups/gitlab-org/group_members) group on the Ops instance.
+    1. [ ] O: add new production engineer as 'owner' to the [cookbooks](https://ops.gitlab.net/groups/gitlab-cookbooks/group_members) group on the Ops instance.
     1. [ ] O: invite the new production engineer to [Azure Active Directory](https://portal.azure.com/?reAuth=true#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
         1. Azure AD -> Users and Groups -> All Users -> New Guest User -> Enter email and invite.
     1. [ ] N: create your account with the invitation.
