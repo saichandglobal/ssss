@@ -64,13 +64,18 @@ N - note there is a lot of good onboarding info in [the handbook](https://about.
     1. [ ] N: clone [gitter-infrastructure](https://gitlab.com/gitlab-com/gl-infra/gitter-infrastructure)
     1. [ ] N: Add your public key to the path `ansible/roles/base/files/authorized_keys/<username>` and submit an MR
     1. [ ] O: Ensure a successful ansible run to install the users key into the infrastructure
+1. [ ] SSH:
+    1. [ ] N: [create a SSH user](https://ops.gitlab.net/gitlab-cookbooks/chef-repo/blob/master/README.md#add-a-new-system-admin) and send an MR to [chef-repo](https://ops.gitlab.net/gitlab-cookbooks/chef-repo) - ensure you are providing the ssh key from the yubikey setup
+    2. [ ] N: wait for chef to propagate your public key to the bastion servers and all the rest of the infrastructure nodes
+1. [ ] Bastion setup for SSH:
+    1. [ ] N: obtain a base known-good SSH config for GitLab infrastructure: `curl https://gitlab.com/gitlab-com/gl-infra/infrastructure/raw/master/onboarding/ssh-config >> $HOME/.ssh/config`
+    1. [ ] N: try to ssh into a host and make sure it works. Example: `knife status | grep dashboard`, get one of the hosts' name and ssh into it
 1. [ ] Chef:
     1. [ ] O: add the new production engineer as a 'developer' on [chef-repo](https://ops.gitlab.net/gitlab-cookbooks/chef-repo)
     1. [ ] N: clone the [chef-repo](https://ops.gitlab.net/gitlab-cookbooks/chef-repo) and run `bundle install` to install all the dependencies
     1. [ ] N: chef-repo repository contains a lot of useful materials. You don't need to read all of them, just look at a few examples and be aware that they are here:
         1. [ ] description of the [deployment process](https://ops.gitlab.net/gitlab-cookbooks/chef-repo/blob/master/doc/deploying.md)
         1. [ ] chef server installation [docs](https://ops.gitlab.net/gitlab-cookbooks/chef-repo/blob/master/doc/set-up-chef-server.md)
-    1. [ ] N: [create a SSH user](https://ops.gitlab.net/gitlab-cookbooks/chef-repo/blob/master/README.md#add-a-new-system-admin) and send an MR to [chef-repo](https://ops.gitlab.net/gitlab-cookbooks/chef-repo) - ensure you are providing the ssh key from the yubikey setup
     1. [ ] O: run `sudo chef-client` on `chef.gitlab.com` to ensure the new production engineer has SSH access there
     1. [ ] N: create Chef user and Chef key via `ssh chef.gitlab.com` and [chef-server-ctl user-create](https://ops.gitlab.net/gitlab-cookbooks/chef-repo/blob/master/doc/set-up-chef-server.md#creating-users)
     1. [ ] N: copy the Chef key, change directory to the cloned chef-repo repository on your machine, create a directory named: .chef, create a file with your SSH user name (with a .pem extension) and paste the Chef key. Chef workstation tools such as `knife` and `chef` will need the .pem key to be able to talk to the Chef server.
@@ -79,9 +84,6 @@ N - note there is a lot of good onboarding info in [the handbook](https://about.
     1. [ ] N: create chef-repo/.chef/knife.rb from [knife.rb.example](https://ops.gitlab.net/gitlab-cookbooks/chef-repo/blob/master/knife.rb.example)
     1. [ ] N: test your chef setup with `knife status`
     1. [ ] O: add new Chef user to config/vault_admins.yml and run `rake update_vault_admins`
-1. [ ] Bastion setup for SSH:
-    1. [ ] N: obtain a base known-good SSH config for GitLab infrastructure: `curl https://gitlab.com/gitlab-com/gl-infra/infrastructure/raw/master/onboarding/ssh-config >> $HOME/.ssh/config`
-    1. [ ] N: try to ssh into a host and make sure it works. Example: `knife status | grep dashboard`, get one of the hosts' name and ssh into it
 1. [ ] Console access:
     1. [ ] N: Ensure that you can run a rails console as described in the
        [runbook](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/staging-environment.md#run-a-rails-console-in-staging-environment).
