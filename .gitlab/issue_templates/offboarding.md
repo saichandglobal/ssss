@@ -27,3 +27,4 @@
 * [ ] Remove [user](https://manage.windowsazure.com/@sytsegitlab.onmicrosoft.com#Workspaces/AdminTasks/ListUsers) from Azure Co-Admins
 * [ ] Remove user from [Grafana](https://dashboards.gitlab.net).
 * [ ] Remove SSH keys from Gitter Ansible: https://gitlab.com/gitlab-com/gl-infra/gitter-infrastructure/tree/master/ansible/roles/base/files/authorized_keys
+* [ ] Remove user from Status.io
