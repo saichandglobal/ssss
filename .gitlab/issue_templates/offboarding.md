@@ -17,6 +17,7 @@
 * [ ] Remove [admin user](https://dev.gitlab.org/admin/users?filter=admins) from dev.gitlab.org
 * [ ] Remove [admin user](https://gitlab.com/admin/users?filter=admins) from GitLab.com
 * [ ] Remove [admin user](https://staging.gitlab.com/admin/users?filter=admins) from GitLab.com staging
+* [ ] Remove [admin user](https://ops.gitlab.net/admin/users?filter=admins) from ops.gitlab.net
 * [ ] Remove [user](https://console.aws.amazon.com) from AWS accounts
   * [ ] staging
   * [ ] Gitter
