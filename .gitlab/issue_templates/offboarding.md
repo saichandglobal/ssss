@@ -2,6 +2,8 @@
 
 * [ ] Find and destroy chef user
   * [ ] ssh into the chef server
+  * [ ] If the user was a server admin, remove from admins: `sudo chef-server-ctl remove-server-admin-permissions CHEF_USERNAME`
+  * [ ] If user was a chef admin, remove from admins group: `sudo chef-server-ctl org-user-remove gitlab CHEF_USERNAME --force`
   * [ ] `sudo chef-server-ctl user-delete CHEF_USERNAME`
 * [ ] Remove user from VAULT_ADMINS in `Rakefile`
   * [ ] run rake update_vault_admins
