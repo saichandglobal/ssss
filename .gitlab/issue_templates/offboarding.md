@@ -26,3 +26,4 @@
 * [ ] Remove [user](https://manage.windowsazure.com/@sytsegitlab.onmicrosoft.com#Workspaces/ActiveDirectoryExtension/Directory/7cc60e3a-c2c5-43d6-b426-1d8c9e8e7ad1/users) from Azure Active Directory
 * [ ] Remove [user](https://manage.windowsazure.com/@sytsegitlab.onmicrosoft.com#Workspaces/AdminTasks/ListUsers) from Azure Co-Admins
 * [ ] Remove user from [Grafana](https://dashboards.gitlab.net).
+* [ ] Remove SSH keys from Gitter Ansible: https://gitlab.com/gitlab-com/gl-infra/gitter-infrastructure/tree/master/ansible/roles/base/files/authorized_keys
