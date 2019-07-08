@@ -7,9 +7,11 @@ labeling this issue with ~security and mark it confidential.
 
 A brief summary of what happened. Try to make it as executive-friendly as possible.
 
-Service(s) affected :
-Team attribution : 
-Minutes downtime or degradation : 
+- Service(s) affected :
+- Team attribution : 
+- Minutes downtime or degradation : 
+
+For calculating duration of event, use the [Platform Metrics Dashboard](https://dashboards.gitlab.net/d/ZUei7TkWz/platform-metrics?orgId=1) to look at appdex and SLO violations.
 
 ## Impact & Metrics
 
