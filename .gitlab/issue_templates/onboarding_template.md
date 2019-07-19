@@ -59,8 +59,6 @@ N - note there is a lot of good onboarding info in [the handbook](https://about.
         1. [ ] directory with all [troubleshooting](https://gitlab.com/gitlab-com/runbooks/tree/master/troubleshooting) docs
         1. [ ] [troubleshooting prometheus](https://gitlab.com/gitlab-com/runbooks/blob/master/troubleshooting/prometheus-is-down.md)
     1. [ ] N: submit a fix of documentation to the runbooks.
-    1. [ ] N: submit a fix to an alert in the runbooks (or submit a new one).
-    1. [ ] N: after having the MR merged, run `chef-client` in prometheus to enable the new alert.
 1. [ ] Gitter:
     1. [ ] N: clone [gitter-infrastructure](https://gitlab.com/gitlab-com/gl-infra/gitter-infrastructure)
     1. [ ] N: Add your public key to the path `ansible/roles/base/files/authorized_keys/<username>` and submit an MR
