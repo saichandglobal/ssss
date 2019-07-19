@@ -1,7 +1,10 @@
-
+<!--
 **Please note:** if the incident relates to sensitive data, or is security related consider
 labeling this issue with ~security and mark it confidential.
-***
+*** 
+-->
+
+Incident: gitlab-com/gl-infra/production#NNN
 
 ## Summary
 
@@ -28,7 +31,6 @@ Include any additional metrics that are of relevance.
 
 Provide any relevant graphs that could help understand the impact of the incident and its dynamics.
 
-
 ## Detection & Response
 
 Start with the following:
@@ -38,21 +40,6 @@ Start with the following:
 - How long did it take from the start of the incident to its detection?
 - How long did it take from detection to remediation?
 - Were there any issues with the response to the incident? (i.e. bastion host used to access the service was not available, relevant team memeber wasn't page-able, ...)
-
-## Timeline
-
-YYYY-MM-DD
-
-- 00:00 UTC - something happened
-- 00:01 UTC - something else happened
-- ...
-
-YYYY-MM-DD+1
-
-- 00:00 UTC - and then this happened
-- 00:01 UTC - and more happened
-- ...
-
 
 ## Root Cause Analysis
 
@@ -64,7 +51,7 @@ For this it is necessary to start with the incident, and question why it happene
 
 Keep in min that from one "why?" there may come more than one answer, consider following the different branches.
 
-###Example of the usage of "5 whys"
+### Example of the usage of "5 whys"
 The vehicle will not start. (the problem)
 
 1. Why? - The battery is dead. 
@@ -90,7 +77,6 @@ Start with the following:
 - Is there an existing issue that would have either prevented this incident or reduced the impact?
 - Did we have any indication or beforehand knowledge that this incident might take place?
 
-
 ## Corrective actions
 
 - List issues that have been created as corrective actions from this incident.
@@ -99,9 +85,7 @@ Start with the following:
     - Include an estimated date of completion of the corrective action.
     - Incldue the named individual who owns the delivery of the corrective action.
 
-
 ## Guidelines
 
 * [Blameless RCA Guideline](https://about.gitlab.com/handbook/infrastructure/#rca)
 * [5 whys](https://en.wikipedia.org/wiki/5_Whys)
-
