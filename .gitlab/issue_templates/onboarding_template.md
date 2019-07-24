@@ -101,4 +101,5 @@ N - note there is a lot of good onboarding info in [the handbook](https://about.
     1. [ ] N: read about the [application architecture](https://docs.gitlab.com/ce/development/architecture.html)
     1. [ ] N: watch the [gitlab.com infrastructure overview](https://www.youtube.com/watch?v=uCU8jdYzpac) video
     1. [ ] N: check out [the service inventory catalog](https://us-central1-gitlab-infra-automation-stg.cloudfunctions.net/ui/services)
+    1. [ ] N: spin up an [Ephemeral environment](https://ops.gitlab.net/gitlab-com/environments). Play with it. Break it. Destroy it. 
     1. [ ] N: contribute a merge request to one of the following repos: gitlab-ce, gitlab-ee, gitaly, workhorse, gitlab-runner (or take a look at the [engineering projects](https://about.gitlab.com/handbook/engineering/projects) for more inspiration). The idea here is to get comfortable with the application architecture and codebase, but not to spend more than 0.5 - 1 day on coding for this task.
