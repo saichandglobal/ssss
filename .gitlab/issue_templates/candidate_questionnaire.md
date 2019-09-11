@@ -10,7 +10,7 @@ The guidelines for reviewing a candidate questionnaire are available in the [peo
 Update the (link) in the Markdown below
 -->
 
-Go to the [candidte's scorecard](link) and grade the questionnaire after thoroughly reviewing the candidate's responses. Close this ticket after the scorecard is submitted
+Go to the [candidate's scorecard](link) and grade the questionnaire after thoroughly reviewing the candidate's responses. Close this ticket after the scorecard is submitted.
 
 /label ~hiring
 /confidential
