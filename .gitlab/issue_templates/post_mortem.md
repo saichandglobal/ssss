@@ -96,6 +96,6 @@ Start with the following:
 
 ## Guidelines
 
-* [Blameless Postmortems Guideline](https://about.gitlab.com/handbook/infrastructure/#postmortems)
+* [Blameless Postmortems Guideline](https://about.gitlab.com/handbook/customer-success/professional-services-engineering/workflows/internal/root-cause-analysis.html)
 * [5 whys](https://en.wikipedia.org/wiki/5_Whys)
 
