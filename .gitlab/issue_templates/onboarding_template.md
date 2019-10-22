@@ -50,7 +50,7 @@ N - note there is a lot of good onboarding info in [the handbook](https://about.
     1. [ ] N: open an [access
        request](https://gitlab.com/gitlab-com/access-requests/issues/new?issuable_template=New+Access+Request)
        to add yourself to the prod-eng-team Slack group. This will have the side
-       effect of familiarising yourself with access requests.
+       effect of familiarizing yourself with access requests.
 1. [ ] Runbooks and Alerts:
     1. [ ] O: add new production engineer as 'maintainer' to [runbooks](https://gitlab.com/gitlab-com/runbooks/project_members).
     1. [ ] N: clone and get familiar with the [runbooks repo](https://gitlab.com/gitlab-com/runbooks) . There are a lot of useful materials in it which will help you become familiar with the infrastructure. Depending on your role, you will find some parts more useful than others. Here are some examples, you don't need to read these now, just make sure you know they are here:
