@@ -1,6 +1,6 @@
 # Group Project Request
 
-- Project / Group Name (<17 characters):
+- Project / Group Name (<17 characters and start with `group-`):
 - Project Administrator (email):
 
 ### Provide a brief overview of the reason for this project and why it is needed and for how long it will be used.
