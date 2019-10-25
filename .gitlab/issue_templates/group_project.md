@@ -28,3 +28,4 @@ Make sure the following criteria is met and understood by the project administra
 - [ ] Merge the change to master
 - [ ] Create a branch from master named `(group name from above)` and push
 - [ ] Verify that the pipeline completed successfully at https://ops.gitlab.net/gitlab-com/group-projects/pipelines
+- [ ] Verify that the branch is protected with a wildcard protected branch. If it is not, add the new branch as a protected branch.
