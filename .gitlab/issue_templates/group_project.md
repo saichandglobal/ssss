@@ -25,7 +25,8 @@ Make sure the following criteria is met and understood by the project administra
 ## Infrastructure Tasks
 
 - [ ] Create file in https://ops.gitlab.net/gitlab-com/group-projects named `environments/(group name from above).tf` by copying an existing file and changing the Administrator and Group Name variables
+- [ ] Once the pipeline succeeds, review the changes are correct and stop the review by activating the `stop_review` job
 - [ ] Merge the change to master
 - [ ] Create a branch from master named `(group name from above)` and push
 - [ ] Verify that the pipeline completed successfully at https://ops.gitlab.net/gitlab-com/group-projects/pipelines
-- [ ] Verify that the branch is protected with a wildcard protected branch. If it is not, add the new branch as a protected branch.
+- [ ] (Optional) If the group does not start with `group-*` or `gitlab-qa-*k`, add the newly created branch as a protected branch.
