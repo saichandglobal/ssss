@@ -11,6 +11,7 @@ N - note there is a lot of good onboarding info in [the handbook](https://about.
     1. [ ] O: cross-link general onboarding issue in the peopleops issue tracker
     1. [ ] O: Add new team member to the Geekbot standup
     1. [ ] O: Add new team member to the Geekbot retro
+    1. [ ] N: [Read Geekbot's FAQ](https://geekbot.com/faq/) and configure your settings
     1. [ ] N: Complete the setup of your [Yubikey](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/yubikey.md)
     1. [ ] N: read the [infrastructure handbook](https://about.gitlab.com/handbook/engineering/infrastructure/) and pages linked from there. Find something to improve? Make a merge request!
 1. [ ] Accounts:
@@ -76,7 +77,6 @@ N - note there is a lot of good onboarding info in [the handbook](https://about.
     1. [ ] O: add the new production engineer as a 'developer' on [chef-repo](https://ops.gitlab.net/gitlab-cookbooks/chef-repo)
     1. [ ] N: clone the [chef-repo](https://ops.gitlab.net/gitlab-cookbooks/chef-repo) and run `bundle install` to install all the dependencies
     1. [ ] N: chef-repo repository contains a lot of useful materials. You don't need to read all of them, just look at a few examples and be aware that they are here:
-        1. [ ] description of the [deployment process](https://ops.gitlab.net/gitlab-cookbooks/chef-repo/blob/master/doc/deploying.md)
         1. [ ] chef server installation [docs](https://ops.gitlab.net/gitlab-cookbooks/chef-repo/blob/master/doc/set-up-chef-server.md)
     1. [ ] O: run `sudo chef-client` on `chef.gitlab.com` to ensure the new production engineer has SSH access there
     1. [ ] N: create Chef user and Chef key via `ssh chef.gitlab.com` and [chef-server-ctl user-create](https://ops.gitlab.net/gitlab-cookbooks/chef-repo/blob/master/doc/set-up-chef-server.md#creating-users)
@@ -96,6 +96,7 @@ N - note there is a lot of good onboarding info in [the handbook](https://about.
     1. [ ] O: mention the new production engineer in the `production` channel.
     1. [ ] O: mention the new production engineer in the `alerts` channel.
     1. [ ] N: learn who your teammates are and ping them in your onboarding issue - We do mention the people we address to in issues, get used to doing it.
+    1. [ ] N: Add yourself to the [Infrastructure Group Status Update](https://gitlab.com/gitlab-com/gl-infra/infra-report/blob/master/status-report.js)
 1. [ ] Context & Comfort with GitLab's code base:
     1. [ ] N: review issues labeled as `outage` in the infrastructure issue tracker.
     1. [ ] O: point the new production engineer to the ongoing meta issues that define the team strategy.
