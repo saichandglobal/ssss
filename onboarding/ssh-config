@@ -40,12 +40,3 @@ Host gprd-console
 Host gstg-console
   HostName     console-01-sv-gstg.c.gitlab-staging-1.internal
   ProxyCommand ssh lb-bastion.gstg.gitlab.com -W %h:%p
-
-
-# Deprecated Azure Stuff
-Host *.prd.gitlab.com
-    ProxyCommand ssh deploy.gitlab.com -W %h:%p
-Host *.stor.gitlab.com
-    ProxyCommand ssh deploy.gitlab.com -W %h:%p
-Host *.stg.gitlab.com
-    ProxyCommand ssh deploy.stg.gitlab.com -W %h:%p
