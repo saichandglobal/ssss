@@ -49,7 +49,7 @@ N - note there is a lot of good onboarding info in [the handbook](https://about.
     1. [ ] N: get familiar with the dashboards in the [public monitoring infrastructure](https://dashboards.gitlab.com/)
     1. [ ] N: get familiar with [prometheus](https://prometheus.gitlab.com/graph), investigate how to [query](https://prometheus.io/docs/querying/basics/) to get information out of it.
     1. [ ] N: get familiar with [targets](https://prometheus.gitlab.com/targets) and [alerts](https://prometheus.gitlab.com/alerts) within prometheus.
-    1. [ ] N: get familiar with [prometheus alert manager](https://alerts.gitlab.com), look for the documentation of this in the [runbooks](https://gitlab.com/gitlab-com/runbooks).
+    1. [ ] N: get familiar with [prometheus alert manager](https://alerts.ops.gitlab.net/), look for the documentation of this in the [runbooks](https://gitlab.com/gitlab-com/runbooks).
     1. [ ] N: open an [access
        request](https://gitlab.com/gitlab-com/access-requests/issues/new?issuable_template=New+Access+Request)
        to add yourself to the prod-eng-team Slack group. This will have the side
