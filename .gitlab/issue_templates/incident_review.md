@@ -89,6 +89,5 @@ Start with the following:
 
 * [Blameless RCA Guideline](https://about.gitlab.com/handbook/infrastructure/#rca)
 * [5 whys](https://en.wikipedia.org/wiki/5_Whys)
-* 
 
 /label ~IncidentReview
