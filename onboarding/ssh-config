@@ -9,11 +9,6 @@ Host *
   ControlPersist 30m
   ServerAliveInterval 30
 
-# If gitlab.com username is different from SSH username, this needs to be
-# set.  Otherwise git pushes will fail
-Host gitlab.com dev.gitlab.com ops.gitlab.net
-#  User <website user name>
-
 # Set the username and PreferredAuthentications here to avoid duplication
 Host gitlab-*.internal lb-bastion.*.gitlab.com
 #  User                     <unix username>
