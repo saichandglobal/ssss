@@ -10,7 +10,7 @@ Host *
   ServerAliveInterval 30
 
 # Set the username and PreferredAuthentications here to avoid duplication
-Host gitlab-*.internal lb-bastion.*.gitlab.com
+Host *.gitlab-*.internal lb-bastion.*.gitlab.com
 #  User                     <unix username>
   PreferredAuthentications publickey
   # Optional YubiKey cardno
