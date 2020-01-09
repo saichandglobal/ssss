@@ -24,7 +24,7 @@ Make sure the following criteria is met and understood by the project administra
 
 ## Infrastructure Tasks
 
-- [ ] Create a new branch that is **not** the same as the group name. For example, `add-telemetry-group`.
+- [ ] Create a new branch that is **not** the same as the group name and is less than 25 characters long. For example, `add-telemetry-group`.
 - [ ] Create file in https://ops.gitlab.net/gitlab-com/group-projects named `environments/(group name from above).tfvars` by copying an existing file and changing the Administrator and Group Name variables
 - [ ] Once the pipeline succeeds, review the changes are correct and stop the review by activating the `stop_review` job
 - [ ] Merge the change to master
