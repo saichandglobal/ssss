@@ -7,7 +7,7 @@ This project is really only used as an issue tracker for the
 
 ## But I'm here to see how the GitLab.com infrastructure is made
 
-You should read the [production architecture](https://about.gitlab.com/handbook/engineering/infrastructure/production-architecture/) then.
+You should read the [production architecture](https://about.gitlab.com/handbook/engineering/infrastructure/production/architecture/) then.
 
 ### Where and how to look for data
 
