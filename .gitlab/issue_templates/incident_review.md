@@ -87,7 +87,7 @@ Start with the following:
 
 ## Guidelines
 
-* [Blameless RCA Guideline](https://about.gitlab.com/handbook/infrastructure/#rca)
+* [Blameless RCA Guideline](https://about.gitlab.com/handbook/engineering/root-cause-analysis/)
 * [5 whys](https://en.wikipedia.org/wiki/5_Whys)
 
 /label ~IncidentReview
