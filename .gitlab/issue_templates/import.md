@@ -1,10 +1,10 @@
 <!--
-Set the title to Import request (for group): [project]
+Set the title to: Import request (for group): [project]
 -->
 
 /due YYYY-MM-DD
 
-#### Import on: YYYY-MM-DD HH:MM UTC 
+#### Import on: YYYY-MM-DD HH:MM UTC
 #### [Link to project](https://link.here)
 #### Username: `user-to-import-as`
 #### Project path: `fillout/thepath/here`
@@ -18,7 +18,7 @@ Set the title to Import request (for group): [project]
 
 If admin import:
 
-- [ ] Fill out an [access request](https://gitlab.com/gitlab-com/access-requests/issues/new?issuable_template=New%20Access%20Request) and link it above. 
+- [ ] Fill out an [access request](https://gitlab.com/gitlab-com/access-requests/issues/new?issuable_template=New%20Access%20Request) and link it above.
 - [ ] Check for any dodgy emails outside the customer's organization (such as @gitlab.com) using [export file user checker](https://gitlab.com/gitlab-com/support/toolbox/dcef).
 - List the emails of users contained within the import here (or if it's >10 attach, add as a comment):
 
@@ -27,15 +27,23 @@ insert emails or remove this if not applicable
 ```
 
 ### Production
-- [ ] Grab the Slack token from 1Password (search for `Import Slack token`)
-- [ ] Copy the file to `/tmp` and make sure is accessible by the `git` user
-- [ ] Run as **root** on a **tmux** session (Adding slack token, and `-u -p -f` options):
-```sh
-cd /opt/gitlab/embedded/service/gitlab-rails && sudo -u git -H bash -c "EXECJS_RUNTIME=Disabled SLACK_TOKEN='changeme' RAILS_ENV=production /opt/gitlab/embedded/bin/ruby <(curl -s https://gitlab.com/gitlab-com/runbooks/raw/master/scripts/project_import.rb) -u gitlab_username -p namespace/project -f /path/to/export.tar.gz"
-```
-- [ ] Wait for the script to send a message to #annoucements confirming it finished
-- [ ] Exit the tmux session and remove the export file
+
+- [ ] Make sure you have ssh access to a console VM (i.e. `knife search node -i 'roles:gprd-base-console-node'`)
+- [ ] Download the project's tar.gz archive to your local computer (if it's possible, you can download the file directly on the console).
+- [ ] scp the file to the console VM.
+    - [ ] e.g. `scp <project_to_be_imported>.tar.gz console-01-sv-gprd.c.gitlab-production.internal:/tmp/<project_to_be_imported>.tar.gz`
+- [ ] Make sure the file is accessible by the `git` user: `sudo -u git test -r /tmp/<project_to_be_imported>.tar.gz || echo 'git doesnt have access!'`
+- [ ] Switch to **root**
+- [ ] Start a **tmux** session with `sudo tmux`.
+- [ ] Start the import:
+    - [ ] If needed, you can enable logging of all SQL queries performed as part of the import job (once this MR is deployed to production: https://gitlab.com/gitlab-org/gitlab/merge_requests/21268):
+        - [ ] Check if there is enough space in `/var/log` with: `df -Th`
+        - [ ] Enable logging: `export IMPORT_DEBUG='any_string_will_do'`
+        - [ ] Logs will be written to stdout and tmux by default has only 2000 lines of scrollback, so append to the rake command: `| tee /var/log/import.$(date +%Y-%m-%d_%H:%M).log`
+    - [ ] trigger the rake task: `gitlab-rake "gitlab:import_export:import[<user_to_import_as>,<namespace>,<projectname>,<export_file>]"`
+    - for example: `gitlab-rake "gitlab:import_export:import[coyote,acme-corp,road-runner-monitor,/tmp/monitor_project_export.tar.gz]"`
+- [ ] Exit the tmux session, remove the export file, remove the log file
 
 /label ~oncall ~import ~"SRE:On-call"
 
-/confidential 
+/confidential
