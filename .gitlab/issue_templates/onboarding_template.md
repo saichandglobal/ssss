@@ -1,9 +1,9 @@
 Title: Site Reliability Engineer Onboarding  - [Fill in name and start date]
 
-### Welcome to your onboarding issue! 
+### Welcome to your onboarding issue!
 
 We need to keep iterating on this checklist so please submit MR's for any improvements
-that you can think of. The file is located in an issue template in the '[issue template section](https://gitlab.com/gitlab-com/gl-infra/infrastructure/edit/master/.gitlab/issue_templates/onboarding_template.md)'. 
+that you can think of. The file is located in an issue template in the '[issue template section](https://gitlab.com/gitlab-com/gl-infra/infrastructure/edit/master/.gitlab/issue_templates/onboarding_template.md)'.
 
 If an item does not start with an "N", it's yours to do.
 
@@ -19,7 +19,7 @@ Onboarder = O
     1. [ ] N: Read through the onboarding info in [the handbook](https://about.gitlab.com/handbook/engineering/infrastructure/sre-onboarding/).
     1. [ ] N: [Read Geekbot's FAQ](https://geekbot.com/faq/) and configure your settings
     1. [ ] N: Complete the setup of your [Yubikey](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/yubikey.md)
-    1. [ ] N: read the [infrastructure handbook](https://about.gitlab.com/handbook/engineering/infrastructure/) and pages linked from there. 
+    1. [ ] N: read the [infrastructure handbook](https://about.gitlab.com/handbook/engineering/infrastructure/) and pages linked from there.
     1. [ ] N: Find something to improve to the infrastructure handbook and make a merge request.
 1. [ ] **Accounts:**
     1. [ ] O: Create an issue from the SRE Entitlements template in the [Access Request Repo](https://gitlab.com/gitlab-com/access-requests/issues).  This will create accounts for many of the services we use: AWS, Azure, dev, DO, GitLab.com admin, staging, GCP, Chef, Pager Duty, Status.io
@@ -107,12 +107,14 @@ Onboarder = O
     1. [ ] O: Invite the new production engineer in the `alerts` channel.
     1. [ ] N: learn who your teammates are and ping them in your onboarding issue - We do mention the people we address to in issues, get used to doing it.
     1. [ ] N: Add yourself to the [Infrastructure Group Status Update](https://gitlab.com/gitlab-com/gl-infra/infra-report/blob/master/status-report.js)
+1. [ ] **Kubernetes**
+    1. [ ] N: Read and complete the [K8s Operations Howto](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/k8s-operations.md)
 1. [ ] **Context & Comfort with GitLab's code base:**
     1. [ ] N: review issues labeled as `outage` in the infrastructure issue tracker.
     1. [ ] O: point the new production engineer to the ongoing meta issues that define the team strategy.
     1. [ ] N: read about the [application architecture](https://docs.gitlab.com/ce/development/architecture.html)
     1. [ ] N: watch the [gitlab.com infrastructure overview](https://www.youtube.com/watch?v=uCU8jdYzpac) video
     1. [ ] N: check out [the service inventory catalog](https://us-central1-gitlab-infra-automation-stg.cloudfunctions.net/ui/services)
-    1. [ ] N: spin up an [Ephemeral environment](https://ops.gitlab.net/gitlab-com/environments). Play with it. Break it. Destroy it. 
+    1. [ ] N: spin up an [Ephemeral environment](https://ops.gitlab.net/gitlab-com/environments). Play with it. Break it. Destroy it.
     1. [ ] N: contribute a merge request to one of the following repos: gitlab-ce, gitlab-ee, gitaly, workhorse, gitlab-runner (or take a look at the [engineering projects](https://about.gitlab.com/handbook/engineering/projects) for more inspiration). The idea here is to get comfortable with the application architecture and codebase, but not to spend more than 0.5 - 1 day on coding for this task.
     1. [ ] N: Make an improvement to to the [onboarding issue template](https://gitlab.com/gitlab-com/gl-infra/infrastructure/edit/master/.gitlab/issue_templates/onboarding_template.md) or the onboarding info in [the handbook](https://about.gitlab.com/handbook/engineering/infrastructure/sre-onboarding/).
