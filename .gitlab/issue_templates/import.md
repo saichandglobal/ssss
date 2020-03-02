@@ -11,7 +11,7 @@ Set the title to: Import request (for group): [project]
 #### Access Request Issue (admin imports only): [link]()
 #### Ticket: LINK
 
-### Support
+## Support
 - [ ] Provide a temporary secret link to the export from the customer
 - [ ] Confirm the customer has sufficient access to create a project in the namespace they want
 - [ ] Provide the namespace/project path
@@ -26,7 +26,11 @@ If admin import:
 insert emails or remove this if not applicable
 ```
 
-### Production
+### Upon import start
+
+- [ ] If applicable, delete import file once infra has confirmed they have the file or started the import. Otherwise, when sending an update, remind the customer to delete the shared file.
+
+## Production
 
 - [ ] Make sure you have ssh access to a console VM (i.e. `knife search node -i 'roles:gprd-base-console-node'`)
 - [ ] Download the project's tar.gz archive to your local computer (if it's possible, you can download the file directly on the console).
@@ -42,6 +46,7 @@ insert emails or remove this if not applicable
         - [ ] Logs will be written to stdout and tmux by default has only 2000 lines of scrollback, so append to the rake command: `| tee /var/log/import.$(date +%Y-%m-%d_%H:%M).log`
     - [ ] trigger the rake task: `gitlab-rake "gitlab:import_export:import[<user_to_import_as>,<namespace>,<projectname>,<export_file>]"`
     - for example: `gitlab-rake "gitlab:import_export:import[coyote,acme-corp,road-runner-monitor,/tmp/monitor_project_export.tar.gz]"`
+    - [ ] Upon completion, copy or attach the log file to this issue as a comment.
 - [ ] Exit the tmux session, remove the export file, remove the log file
 
 /label ~oncall ~import ~"SRE:On-call"
