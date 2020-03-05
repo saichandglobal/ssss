@@ -1,7 +1,10 @@
 <!--
-**Please note:** if the incident relates to sensitive data, or is security related consider
-labeling this issue with ~security and mark it confidential.
-*** 
+**Please note:** if the incident relates to sensitive data, or is security related consider labeling this issue with ~security and mark it confidential.
+
+***
+
+The purpose of this Incident Review is to serve as a classroom to help us better understand the root causes of an incident. Treating it as a classroom allows us to create the space to let us focus on devising the mechanisms needed to prevent a similar incident from recurring in the future. A root cause can **never be a person** and this Incident Review should be written to refer to the system and the context rather than the specific actors. As placeholders for names, consider the usage of nouns like "technician", "engineer on-call", "developer", etc..
+
 -->
 
 Incident: gitlab-com/gl-infra/production#NNN
