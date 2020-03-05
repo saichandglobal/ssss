@@ -98,6 +98,6 @@ _example:_
 
 ## Guidelines
 
-* [Blameless RCA Guideline](https://about.gitlab.com/handbook/engineering/root-cause-analysis/)
+* [Blameless RCA Guideline](https://about.gitlab.com/handbook/customer-success/professional-services-engineering/workflows/internal/root-cause-analysis.html#meeting-purpose)
 
 /label ~IncidentReview
