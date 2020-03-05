@@ -96,7 +96,7 @@ _example:_
 - _For each issue, include the following:_
     - _<Bare Issue link> - Issue labeled as ~"corrective action"._
     - _Include an estimated date of completion of the corrective action._
-    - _Incldue the named individual who owns the delivery of the corrective action._
+    - _Include the named individual who owns the delivery of the corrective action._
 -->
 
 ## Guidelines
