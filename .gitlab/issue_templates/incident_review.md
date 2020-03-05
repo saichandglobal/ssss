@@ -8,20 +8,22 @@ Incident: gitlab-com/gl-infra/production#NNN
 
 
 ## Summary
-
+<!--
 _A brief summary of what happened. Try to make it as executive-friendly as possible._
+-->
 
 1. Service(s) affected :
-2. Team attribution : 
-3. Minutes downtime or degradation : 
+1. Team attribution : 
+1. Minutes downtime or degradation : 
 
+<!--
 _For calculating duration of event, use the [Platform Metrics Dashboard](https://dashboards.gitlab.net/d/ZUei7TkWz/platform-metrics?orgId=1) to look at appdex and SLO violations._
-
+-->
 
 ## Metrics
-
+<!--
 _Provide any relevant graphs that could help understand the impact of the incident and its dynamics._
-
+-->
 
 ## Customer Impact
 
@@ -54,6 +56,7 @@ _Provide any relevant graphs that could help understand the impact of the incide
 
 
 ## 5 Whys
+<!--
 _This section is meant to dig into lessons learned and corrective actions, it is not limited to 5 and consider how you may dive deeper into each why_
 
 _example:_
@@ -72,26 +75,26 @@ _example:_
    - The system which dedupes alerts inadvertently suppressed this alarm as a duplicate. 
 1. Why did it take 4 hours to resolve the issue in production?
    - The change which carried this escaped bug also contained a database schema change which made rolling the change back impossible. Engineering was engaged immediately by the oncall SRE and conducted a forward fix. 
-
+-->
 
 ## Lessons Learned
-
+<!--
 _Be explicit about what lessons we learned and should carry forward. These usually inform what our corrective actions should be._
 
 _example:_
 1. The results of refactoring activites around our integration tests should be reviewed. (i.e we had 619 tests before refactor but 618 after.)
 2. Our tooling to dedupe alarms should have integration tests to ensure it works against existing and newly added alarms.  
-
+-->
 
 ## Corrective Actions
-
+<!--
 - _Use Lessons Learned as a guideline for creation of Corrective Actions
 - _List issues that have been created as corrective actions from this incident._
 - _For each issue, include the following:_
     - _<Bare Issue link> - Issue labeled as ~"corrective action"._
     - _Include an estimated date of completion of the corrective action._
     - _Incldue the named individual who owns the delivery of the corrective action._
-
+-->
 
 ## Guidelines
 
