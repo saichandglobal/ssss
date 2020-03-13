@@ -49,7 +49,8 @@ _Provide any relevant graphs that could help understand the impact of the incide
 1. How was the root cause diagnosed?
 2. How could time to diagnosis be improved?
 3. Do we have an existing backlog item that would've prevented or greatly reduced the impact of this incident?
-4. Was this incident triggered by a change (deployment of code or change to infrastructure)?
+4. Was this incident triggered by a change (deployment of code or change to infrastructure. _if yes, have you linked the issue which represents the change?_)?
+   
 
 
 ## Timeline
