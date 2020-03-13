@@ -20,7 +20,7 @@ _A brief summary of what happened. Try to make it as executive-friendly as possi
 1. Minutes downtime or degradation : 
 
 <!--
-_For calculating duration of event, use the [Platform Metrics Dashboard](https://dashboards.gitlab.net/d/ZUei7TkWz/platform-metrics?orgId=1) to look at appdex and SLO violations._
+_For calculating duration of event, use the [Platform Metrics Dashboard](https://dashboards.gitlab.net/d/general-triage/general-platform-triage?orgId=1) to look at appdex and SLO violations._
 -->
 
 ## Metrics
