@@ -16,9 +16,9 @@ Onboarder = O
     1. [ ] O: cross-link general onboarding issue in the peopleops issue tracker
     1. [ ] O: Add new team member to the Geekbot standup
     1. [ ] O: Add new team member to the Geekbot retro
-    1. [ ] N: Read through the onboarding info in [the handbook](https://about.gitlab.com/handbook/engineering/infrastructure/sre-onboarding/).
+    1. [ ] N: Read through the onboarding info in [the handbook](https://about.gitlab.com/handbook/engineering/infrastructure/team/reliability/sre-onboarding/).
     1. [ ] N: [Read Geekbot's FAQ](https://geekbot.com/faq/) and configure your settings
-    1. [ ] N: Complete the setup of your [Yubikey](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/yubikey.md)
+    1. [ ] N: Complete the setup of your [Yubikey](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/uncategorized/yubikey.md)
     1. [ ] N: read the [infrastructure handbook](https://about.gitlab.com/handbook/engineering/infrastructure/) and pages linked from there.
     1. [ ] N: Find something to improve to the infrastructure handbook and make a merge request.
 1. [ ] **Accounts:**
