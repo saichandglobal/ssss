@@ -1,11 +1,13 @@
 <!--
   This issue supplements SRE onboarding for tasks that are specific to starting an oncall shift. It is recommended that you create this issue and ensure you are familiar with these items on a regular basis.
-  This checklist is separate from the onboarding issue because the systems we provision and tooling we support evolves over time. If you are already familiar with the item listed, you should feel free to check it without going through the exercise.
+  This checklist is separate from the SRE onboarding issue because the systems we provision and tooling we support evolves over time. Where SRE onboarding covers everything you should *know*, this issue should over everything you should be able to *do* before going oncall.
+
+  If you are already familiar with the item listed, you should feel free to check it without going through the exercise.
 -->
 
 ## Welcome to your oncall onboarding issue!
 
-### Release
+### Delivery
 
 - [ ] Create a hot-patch against production with a single change to a source file that adds a comment. Assign the MR to one of the [current release managers](https://about.gitlab.com/community/release-managers/). [view documentation](https://gitlab.com/gitlab-org/release/docs/-/blob/master/general/deploy/post-deployment-patches.md)
 - [ ] Get the current state of GitLab.com Canary stage using GitLab Chatops.  [view documentation](https://gitlab.com/gitlab-org/release/docs/-/blob/master/general/deploy/canary.md)
