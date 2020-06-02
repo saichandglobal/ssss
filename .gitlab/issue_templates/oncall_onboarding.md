@@ -24,4 +24,4 @@
 
 - [ ] Familiarize yourself with how to create incidents from Slack.
 - [ ] Get the current HAProxy state of all nodes using the command line. [view documentation](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/frontend/haproxy.md)
-- [ ] Join the following slack channels: `#incident-management`, `#production`, `#releases`, `#f_upcoming_release`, `#alerts_general`
+- [ ] Join the following slack channels: `#incident-management`, `#production`, `#releases`, `#f_upcoming_release`, `#alerts_general`, `#alerts`, `#dev-escalation`
