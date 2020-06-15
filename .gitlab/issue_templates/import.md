@@ -49,34 +49,34 @@ insert emails or remove this if not applicable
     - for example: `gitlab-rake "gitlab:import_export:import[coyote,acme-corp,road-runner-monitor,/tmp/monitor_project_export.tar.gz]"`
     - [ ] Upon completion, copy or attach the log file to this issue as a comment.
     - [ ] Check for errors.
-      **WARNING:** The import task may report success (`Done!`) even if there were errors during the import task.
-      Example: `Total number of not imported relations: 202` means that 202 SQL statements (e.g. INSERTs) failed to be imported.
-      The error messages themselves can be fetched via either another rails console session or via db console by SQL query.  Examples:
-      - Rails console:
-        ```ruby
-        [ gprd ] production> imperrs = ImportFailure.where(project_id: 19199833).order(:id)
+      - **WARNING:** The import task may report success (`Done!`) even if there were errors during the import task.
+      - Example: `Total number of not imported relations: 202` means that 202 SQL statements (e.g. INSERTs) failed to be imported.
+      - The error messages themselves can be fetched via either another rails console session or via db console by SQL query.
+        - Rails console:
+          ```ruby
+          [ gprd ] production> imperrs = ImportFailure.where(project_id: 19199833).order(:id)
 
-        [ gprd ] production> imperrs.count
-        => 202
+          [ gprd ] production> imperrs.count
+          => 202
 
-        [ gprd ] production> imperrs.limit(2).each { |imperr| puts "#{imperr.id} : #{imperr.exception_class} : #{imperr.relation_key} : #{imperr.exception_message}" }
-        24501 : ActiveRecord::QueryCanceled : issues : PG::QueryCanceled: ERROR:  canceling statement due to statement timeout
-        24502 : ActiveRecord::QueryCanceled : issues : PG::QueryCanceled: ERROR:  canceling statement due to statement timeout
-        ```
-      - DB console:
-        ```sql
-        gitlabhq_production=# select * from import_failures where project_id = 19199833 order by id limit 3 ;
-        ...
+          [ gprd ] production> imperrs.limit(2).each { |imperr| puts "#{imperr.id} : #{imperr.exception_class} : #{imperr.relation_key} : #{imperr.exception_message}" }
+          24501 : ActiveRecord::QueryCanceled : issues : PG::QueryCanceled: ERROR:  canceling statement due to statement timeout
+          24502 : ActiveRecord::QueryCanceled : issues : PG::QueryCanceled: ERROR:  canceling statement due to statement timeout
+          ```
+        - DB console:
+          ```sql
+          gitlabhq_production=# select * from import_failures where project_id = 19199833 order by id limit 3 ;
+          ...
 
-        gitlabhq_production=# select exception_class, relation_key, count(1) from import_failures where project_id = 19199833 group by 1, 2 order by 1, 2 ;
-                 exception_class         |  relation_key  | count
-        ---------------------------------+----------------+-------
-         ActiveRecord::InvalidForeignKey | issues         |    55
-         ActiveRecord::InvalidForeignKey | merge_requests |    23
-         ActiveRecord::QueryCanceled     | issues         |    83
-         ActiveRecord::QueryCanceled     | merge_requests |    41
-        (4 rows)
-        ```
+          gitlabhq_production=# select exception_class, relation_key, count(1) from import_failures where project_id = 19199833 group by 1, 2 order by 1, 2 ;
+                   exception_class         |  relation_key  | count
+          ---------------------------------+----------------+-------
+           ActiveRecord::InvalidForeignKey | issues         |    55
+           ActiveRecord::InvalidForeignKey | merge_requests |    23
+           ActiveRecord::QueryCanceled     | issues         |    83
+           ActiveRecord::QueryCanceled     | merge_requests |    41
+          (4 rows)
+          ```
 - [ ] Exit the tmux session, remove the export file, remove the log file
 
 /label ~oncall ~import ~"SRE:On-call"
