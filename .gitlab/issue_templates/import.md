@@ -59,7 +59,7 @@ insert emails or remove this if not applicable
 Large imports are prone to a variety of errors, many of which are not trivial to fix.
 If you find import errors, summarize the outcome in the issue, so the customer can be notified and next steps can be assessed.
 
-Import errors may be due to data defects.  These may require the customer to fix their exported data or accept the imcomplete import results.
+Import errors may be due to data defects.  These may require the customer to fix their exported data or accept the incomplete import results.
 Or this may be a clue that the importer's expected schema is out of sync with the export file's schema.
 
 Import errors may be due to timeouts in the database.  This may arise from lock contention or inefficient query plans during data import.
