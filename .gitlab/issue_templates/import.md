@@ -59,14 +59,6 @@ insert emails or remove this if not applicable
 Large imports are prone to a variety of errors, many of which are not trivial to fix.
 If you find import errors, summarize the outcome in the issue, so the customer can be notified and next steps can be assessed.
 
-Import errors may be due to data defects.  These may require the customer to fix their exported data or accept the incomplete import results.
-Or this may be a clue that the importer's expected schema is out of sync with the export file's schema.
-
-Import errors may be due to timeouts in the database.  This may arise from lock contention or inefficient query plans during data import.
-For example, during an INSERT, foreign key constraint checking may stall waiting for a lock held by an unrelated concurrently running transaction.
-Automatic retry logic attempts to work around this, but it may fail.  Retrying the import with a longer `statement_timeout` setting or at
-a different time of day may avoid such lock contention if it was the cause of the timeout.
-
 To view the error messages themselves, you can use either the Rails console or the DB console.
 
 #### Viewing import failure messages via the Rails console
@@ -145,6 +137,30 @@ LIMIT 3
  2020-06-04 22:07:07.23745+00  | issues       | ActiveRecord::InvalidForeignKey |           0 | process_relation_item! | PG::ForeignKeyViolation: ERROR:  insert or update on table "issue_user_mentions" violates foreign key constraint "fk_rails_3861d9fefa"
                                |              |                                 |             |                        | DETAIL:  Key (note_id)=(355679583) is not present in table "notes".
 ```
+
+#### What to do about import errors
+
+Import errors may be due to data defects.  These may require the customer to fix their exported data or accept the incomplete import results.
+Or this may be a clue that the importer's expected schema is out of sync with the export file's schema.
+
+Import errors may be due to timeouts in the database.  This may arise from lock contention or inefficient query plans during data import.
+For example, during an INSERT, foreign key constraint checking may stall waiting for a lock held by an unrelated concurrently running transaction.
+Automatic retry logic attempts to work around this, but it may fail.
+Retrying the import at a different time of day (non-peak hours) may avoid timeouts and lock contention.
+
+Retrying a failed import with a longer `statement_timeout` setting (or any other db session tuning) is difficult and dangerous, so it is *not recommended*.
+Here are the main reasons why it should be avoided:
+* The importer accesses the postgres database through the standard pgbouncer pool, which is configured to lease a db connection to a client
+  for only the duration of a single transaction.
+* Any `SET` statements run by the importer would be leaked into the shared connection pool after the importer's first `COMMIT`.
+* Consequently it would unintentionally be applied to random other database clients and would no longer be applied to the importer.
+* Side-effects would be difficult to trace, which is why we called this dangerous.
+
+If we really have no other options than to attempt running the importer with custom db settings (e.g. `SET statement_timeout = '5m')`, then:
+* Configure the importer to bypass the connection pool, instead connecting directly to the current primary db.
+* This ensures the connection pool will not be tainted, and it allows any db session tuning to be scoped appropriately to the
+  lifespan of the importer's db connection.
+* However, be mindful that this tactic can still be unhealthy for the database as a whole.
 
 
 /label ~oncall ~import ~"SRE:On-call"
