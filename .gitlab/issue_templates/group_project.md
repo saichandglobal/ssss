@@ -31,3 +31,5 @@ Make sure the following criteria is met and understood by the project administra
 - [ ] Create a branch from master named `(group name from above)` and push
 - [ ] Verify that the pipeline completed successfully at https://ops.gitlab.net/gitlab-com/group-projects/pipelines
 - [ ] (Optional) If the group does not start with `group-*` or `gitlab-qa-*k`, add the newly created branch as a protected branch.
+
+/label ~workflow-infra::Triage
