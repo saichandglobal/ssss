@@ -1,36 +1,36 @@
 <!--
-Set the title to: Import request (for group): [project]
+Set the title to: Project Import Request - GROUP_NAME: PROJECT_NAME
 -->
 
-/due YYYY-MM-DD
+## Import Details
 
-#### Import on: YYYY-MM-DD HH:MM UTC
-#### [Link to project](https://link.here)
-#### Username: `user-to-import-as`
-#### Project path: `fillout/thepath/here`
-#### Access Request Issue (admin imports only): [link]()
-#### Ticket: LINK
+- Import Time: 
+  - [ ] ASAP
+  - [ ] Scheduled for YYYY-MM-DD HH:MM UTC
+- Project File (tar.gz) Link: 
+- User to Import As:  <!-- For **Users Not Mapped**: Username of listed user in ticket; For **Users Mapped**, admin user provisioned in the AR -->
+- Project Path:  <!-- The path for where the project should be imported to -->
+- Zendesk Ticket: 
+- **[USERS MAPPED ONLY!]** Access Request Issue: 
 
-## Support
-- [ ] Provide a temporary secret link to the export from the customer
-- [ ] Confirm the customer has sufficient access to create a project in the namespace they want
-- [ ] Provide the namespace/project path
+## To Do - Support
 
-If admin import:
+- [ ] Provided a non-public link to the project export.
+- [ ] Provided the path for the project to be imported.
+- [ ] **[USERS NOT MAPPED ONLY!]** Confirmed the customer has sufficient access to create a project in the target namespace.
+- [ ] **[IF APPLICABLE]** Deleted the project export file once infrastructure has confirmed they have the file or started the import. Otherwise, reminded the requestor to delete the version of it that they shared through Zendesk.
 
-- [ ] Fill out an [access request](https://gitlab.com/gitlab-com/access-requests/issues/new?issuable_template=New%20Access%20Request) and link it above.
-- [ ] Check for any dodgy emails outside the customer's organization (such as @gitlab.com) using [export file user checker](https://gitlab.com/gitlab-com/support/toolbox/dcef).
-- List the emails of users contained within the import here (or if it's >10 attach, add as a comment):
+### Users Mapped Only
+
+- [ ] Created an [access request issue](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Single_Person_Access_Request) and linked it.
+- [ ] Double checked the user list within the export file using [DCEF](https://gitlab.com/gitlab-com/support/toolbox/dcef) for addresses not on the requestor's company domain.
+- [ ] Listed the emails of users contained within the import from DCEF below.
 
 ```
-insert emails or remove this if not applicable
+LIST_OF_EMAILS
 ```
 
-### Upon import start
-
-- [ ] If applicable, delete import file once infra has confirmed they have the file or started the import. Otherwise, when sending an update, remind the customer to delete the shared file.
-
-## Production
+## To Do - Production
 
 - [ ] Make sure you have ssh access to a console VM (i.e. `knife search node -i 'roles:gprd-base-console-node'`)
 - [ ] Download the project's tar.gz archive to your local computer (if it's possible, you can download the file directly on the console).
@@ -162,7 +162,6 @@ If we really have no other options than to attempt running the importer with cus
   lifespan of the importer's db connection.
 * However, be mindful that this tactic can still be unhealthy for the database as a whole.
 
-
-/label ~oncall ~import ~"SRE:On-call"
-
+/label ~"SRE:On-call" ~oncall ~import
 /confidential
+/due YYYY-MM-DD
