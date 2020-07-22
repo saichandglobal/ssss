@@ -4,14 +4,14 @@ Set the title to: Project Import Request - GROUP_NAME: PROJECT_NAME
 
 ## Import Details
 
-- Import Time: 
+- Import Time:
   - [ ] ASAP
   - [ ] Scheduled for YYYY-MM-DD HH:MM UTC
-- Project File (tar.gz) Link: 
+- Project File (tar.gz) Link:
 - User to Import As:  <!-- For **Users Not Mapped**: Username of listed user in ticket; For **Users Mapped**, admin user provisioned in the AR -->
 - Project Path:  <!-- The path for where the project should be imported to -->
-- Zendesk Ticket: 
-- **[USERS MAPPED ONLY!]** Access Request Issue: 
+- Zendesk Ticket:
+- **[USERS MAPPED ONLY!]** Access Request Issue:
 
 ## To Do - Support
 
@@ -43,10 +43,9 @@ LIST_OF_EMAILS
     - [ ] If needed, you can enable logging of all SQL queries performed as part of the import job:
         - [ ] Check if there is enough space in `/var/log` with: `df -Th`
         - [ ] Enable logging: `export IMPORT_DEBUG='any_string_will_do'`
-        - [ ] Logs will be written to stdout and tmux by default has only 2000 lines of scrollback, so append to the rake command: `| tee /var/log/import.$(date +%Y-%m-%d_%H:%M).log`
     - [ ] Run [the rake task](https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/tasks/gitlab/import_export/import.rake), which synchronously runs the import in the foreground:
-      `gitlab-rake "gitlab:import_export:import[<user_to_import_as>,<namespace>,<projectname>,<export_file>]"`
-    - for example: `gitlab-rake "gitlab:import_export:import[coyote,acme-corp,road-runner-monitor,/tmp/monitor_project_export.tar.gz]"`
+      `gitlab-rake "gitlab:import_export:import[<user_to_import_as>,<namespace>,<projectname>,<export_file>]" | tee /var/log/import.$(date +%Y-%m-%d_%H:%M).log`
+    - for example: `gitlab-rake "gitlab:import_export:import[coyote,acme-corp,road-runner-monitor,/tmp/monitor_project_export.tar.gz]" | tee /var/log/import.$(date +%Y-%m-%d_%H:%M).log`
     - [ ] Upon completion, copy or attach the log file to this issue as a comment.
     - [ ] Check for errors.
       - **WARNING:** The import task may report success (`Done!`) even if there were errors during the import task.
@@ -133,7 +132,7 @@ LIMIT 3
           created_at           | relation_key |         exception_class         | retry_count |         source         |                                                           exception_message
 -------------------------------+--------------+---------------------------------+-------------+------------------------+----------------------------------------------------------------------------------------------------------------------------------------
  2020-06-04 22:06:19.82641+00  | issues       | ActiveRecord::QueryCanceled     |           1 | relation_object.save!  | PG::QueryCanceled: ERROR:  canceling statement due to statement timeout
- 2020-06-04 22:07:04.789185+00 | issues       | ActiveRecord::QueryCanceled     |           1 | relation_object.save!  | PG::QueryCanceled: ERROR:  canceling statement due to statement timeout 
+ 2020-06-04 22:07:04.789185+00 | issues       | ActiveRecord::QueryCanceled     |           1 | relation_object.save!  | PG::QueryCanceled: ERROR:  canceling statement due to statement timeout
  2020-06-04 22:07:07.23745+00  | issues       | ActiveRecord::InvalidForeignKey |           0 | process_relation_item! | PG::ForeignKeyViolation: ERROR:  insert or update on table "issue_user_mentions" violates foreign key constraint "fk_rails_3861d9fefa"
                                |              |                                 |             |                        | DETAIL:  Key (note_id)=(355679583) is not present in table "notes".
 ```
