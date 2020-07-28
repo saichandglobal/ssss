@@ -18,6 +18,7 @@
 
 - [ ] Locate the General SLA dashboard and find the panel for `Sidekiq Queue Lengths per Queue`
 - [ ] Ensure you know how to Silence an alert. [view documentation](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/monitoring/alerts_manual.md)
+- [ ] Ensure you can run `make generate` in [runbooks](https://gitlab.com/gitlab-com/runbooks).
 - [ ] Create a visualization in Kibana for all errors grouped by status code.  [view documentation](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/elastic/kibana.md)
 
 ### Reliability
