@@ -25,4 +25,5 @@ please do not edit the below
 /assign @gitlab-com/gl-infra/managers
 /label ~"workflow-infra::Triage" ~"team::Reliability" 
 /label ~"consultation"
+/label ~"infrapm"
 /confidential
