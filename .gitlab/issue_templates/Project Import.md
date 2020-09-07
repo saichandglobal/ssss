@@ -160,7 +160,7 @@ If we really have no other options than to attempt running the importer with cus
   lifespan of the importer's db connection.
 * However, be mindful that this tactic can still be unhealthy for the database as a whole.
 
-/label ~"SRE:On-call" ~oncall ~import ~"workflow-infra::Triage" ~"team::Reliability" 
+/label ~"SRE:On-call" ~oncall ~import ~"workflow-infra::Triage" ~"team::Reliability" ~"priority::1"
 /assign @gitlab-com/gl-infra/managers 
 /confidential
 /due YYYY-MM-DD
