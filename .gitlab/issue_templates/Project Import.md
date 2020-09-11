@@ -5,7 +5,6 @@ Set the title to: Project Import Request - GROUP_NAME: PROJECT_NAME
 ## Import Details
 
 - Import Time:
-  - [ ] ASAP
   - [ ] Scheduled for YYYY-MM-DD HH:MM UTC
 - Project File (tar.gz) Link:
 - User to Import As:  <!-- For **Users Not Mapped**: Username of listed user in ticket; For **Users Mapped**, admin user provisioned in the AR -->
@@ -161,6 +160,8 @@ If we really have no other options than to attempt running the importer with cus
   lifespan of the importer's db connection.
 * However, be mindful that this tactic can still be unhealthy for the database as a whole.
 
-/label ~"SRE:On-call" ~oncall ~import
+/label ~"SRE:On-call" ~oncall ~import ~"workflow-infra::Triage" ~"team::Reliability" ~"priority::1"
+/assign @gitlab-com/gl-infra/managers 
 /confidential
 /due YYYY-MM-DD
+
