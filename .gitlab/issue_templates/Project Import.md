@@ -5,7 +5,7 @@ Set the title to: Project Import Request - GROUP_NAME: PROJECT_NAME
 ## Import Details
 
 - Import Time:
-  - [ ] Scheduled for YYYY-MM-DD HH:MM UTC (note that Reliability needs 3 business days of lead time to accomodate scheduling.)
+  - [ ] Scheduled for YYYY-MM-DD HH:MM UTC
 - Project File (tar.gz) Link:
 - User to Import As:  <!-- For **Users Not Mapped**: Username of listed user in ticket; For **Users Mapped**, admin user provisioned in the AR -->
 - Project Path:  <!-- The path for where the project should be imported to -->
