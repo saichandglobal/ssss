@@ -1,5 +1,5 @@
 <!--
-This template is for GitLab team members to request features related to the backend capabilities of GitLab.com. Concretely, that means anything having to do with availability, reliability, performance, security, scalability, and certifications of GitLab.com. Examples include:
+This template is for GitLab team members to request features related to the operational capabilities or non-functional requirements of GitLab.com. That means anything having to do with availability, reliability, performance, security, scalability, and certifications of GitLab.com. Examples include:
 - .com Disaster Recovery
 - Gitaly Cluster on .com
 - FedRAMP certification
