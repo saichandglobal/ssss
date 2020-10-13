@@ -1,0 +1,46 @@
+<!-- ISSUE TITLING: use the form "YYYY-MM-DD: Scheduled Maintenance: Briefly describe the reason for the maintenance" -->
+
+/label ~external_communication
+
+<!--
+One possible example, as a reference:
+https://gitlab.com/gitlab-com/gl-infra/production/-/issues/1993
+-->
+
+<!--
+Write up a general summary for this scheduled maintenance: what is it about, whether it'll require
+downtime, mention if there is a clear rollback step in case the change fail.
+
+Aditionally, you should clearly state when this maintenance is scheduled (in UTC and perhaps any other
+important timezone for customers), its duration and how the customers will be able to follow updates
+on this maintenance via status.io for example, and frequency of the updates.
+
+Use clear, complete sentences. Provide as much information to help customers as possible. More detail
+and links can be added in the next sections.
+-->
+
+**Why are we carrying out this maintenance?:**
+
+<!--
+Main reasons that justify this scheduled mainteinance. Perhaps also mention how customers will be able
+to benefit of this change - new features, improvements, more stability, etc.
+
+Use clear, complete sentences. Provide as much information to help customers, as possible, including
+links to public issues and assets. 
+-->
+ 
+**Why does it require downtime?**
+
+<!--
+Main and convincing reasons that justify the need for downtime, if downtime is required.
+
+Use clear, complete sentences. Provide as much information to help customers, as possible, including
+links to public issues and assets. 
+-->
+ 
+**Additional Information:**
+
+<!--
+Provide additional info and links to the non-confidential EPICs or Issues further explaining and providing context on this change.
+Link also any existing **design documents** explaining in depth the changes involved in this maintenance.
+-->
