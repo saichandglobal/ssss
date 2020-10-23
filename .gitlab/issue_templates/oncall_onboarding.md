@@ -12,7 +12,7 @@
 - [ ] Create a hot-patch against production with a single change to a source file that adds a comment. Assign the MR to one of the [current release managers](https://about.gitlab.com/community/release-managers/). [view documentation](https://gitlab.com/gitlab-org/release/docs/-/blob/master/general/deploy/post-deployment-patches.md)
 - [ ] Get the current state of GitLab.com Canary stage using GitLab Chatops.  [view documentation](https://gitlab.com/gitlab-org/release/docs/-/blob/master/general/deploy/canary.md)
 - [ ] Find the latest auto-deploy pipeline on ops.gitlab.net and get the current deploy status on all environments using GitLab Chatops. [view documentation](https://gitlab.com/gitlab-org/release/docs/-/blob/master/general/deploy/auto-deploy.md)
-- [ ] List all production pods running in Kubernetes in the `gitlab` namespace. [view documentation](https://gitlab.com/gitlab-com/runbooks/blob/master/docs/uncategorized/k8s-operations.md)
+- [ ] Setup your workstation to ensure you have access to the zonal and regional k8s clusters. [view documentation](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/uncategorized/k8s-oncall-setup.md)
 
 ### Observability
 
@@ -24,4 +24,5 @@
 
 - [ ] Familiarize yourself with how to create incidents from Slack.
 - [ ] Get the current HAProxy state of all nodes using the command line. [view documentation](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/frontend/haproxy.md)
+- [ ] First drain and then ready connections from one of the zonal clusters in staging. [view documentation](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/frontend/haproxy.md#set-server-state)
 - [ ] Join the following slack channels: `#incident-management`, `#production`, `#releases`, `#f_upcoming_release`, `#alerts_general`, `#alerts`, `#dev-escalation`
