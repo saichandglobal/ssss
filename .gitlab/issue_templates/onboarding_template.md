@@ -42,7 +42,6 @@ Onboarder = O
     1. [ ] O: make new production engineer 'co-admin'
         1. Subscriptions -> `Microsoft Azure Sponsorship` -> Access control -> Add -> Add co-administrator -> select the user -> Save
         1. Subscriptions -> `Pay-As-You-Go - Testing Sub` -> Access control -> Add -> Add co-administrator -> select the user -> Save
-    1. [ ] O: make new production engineer 'admin' on [Gitter AWS](https://troupe.signin.aws.amazon.com/console)
     1. [ ] O: make new production engineer 'admin' on [Gitlab-com AWS](https://gitlab-com.signin.aws.amazon.com/console)
 1. [ ] **Tools:**
     1. [ ] N: install the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
@@ -68,10 +67,6 @@ Onboarder = O
     1. [ ] N: submit a fix of documentation to the runbooks.
     1. [ ] N: submit a fix to an alert in the runbooks (or submit a new one).
     1. [ ] N: after having the MR merged, run `chef-client` in prometheus to enable the new alert.
-1. [ ] **Gitter:**
-    1. [ ] N: clone [gitter-infrastructure](https://gitlab.com/gitlab-com/gl-infra/gitter-infrastructure)
-    1. [ ] N: Add your public key to the path `ansible/roles/base/files/authorized_keys/<username>` and submit an MR
-    1. [ ] O: Ensure a successful ansible run to install the users key into the infrastructure
 1. [ ] **SSH:**
     1. [ ] N: [create an SSH user](https://ops.gitlab.net/gitlab-cookbooks/chef-repo/blob/master/README.md#add-a-new-system-admin) and send an MR to [chef-repo](https://ops.gitlab.net/gitlab-cookbooks/chef-repo) - ensure you are providing the ssh key from the yubikey setup
     1. [ ] O: Merge the MR, and then run `knife data bag from file users <username>.json`
