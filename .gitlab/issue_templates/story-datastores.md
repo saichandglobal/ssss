@@ -1,4 +1,4 @@
-## Summary:
+## Summary
 <!--High level summary of what is the challenge - or work - that we want address and manage with this issue -->
 
 ## Current Situation
