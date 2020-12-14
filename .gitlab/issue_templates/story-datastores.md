@@ -9,11 +9,10 @@
 Add sufficient detail here, so others can continue the work from these instructions, or collaborate with this work
 -->
 
-## Additional background and comments:
+## Additional background and comments
 <!--Add here any additional information and resources relevant to manage this work, that we might have skipped in the previous
 sections (to keep them as clear as possible)
  -->
-
 
 ## Acceptance Criteria
 <!--List out work items necessary to arrive at the desired outcome above, as atomically as possible -->
