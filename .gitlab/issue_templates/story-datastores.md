@@ -24,4 +24,6 @@ sections (to keep them as clear as possible)
 
 /CC [Mentions to other people]
 
+/estimate 4h <!--Adjust the estimate of work needed and also add a weight for complexity-->
+
 /label ~"workflow-infra::Triage" ~"team::Datastores" 
