@@ -15,7 +15,13 @@ sections (to keep them as clear as possible)
  -->
 
 ## Acceptance Criteria
-<!--List out work items necessary to arrive at the desired outcome above, as atomically as possible -->
+<!--List out work items necessary to arrive at the desired outcome above, as atomically as possible. Work item examples for 
+the Datastores team could be:
+- [ ] Tested in staging
+- [ ] Update the documentation (runbooks, handbook)
+- [ ] Metrics and alerts are updated
+- [ ] Rolled out to production
+ -->
 - [ ] Criteria 1
 - [ ] Criteria 2
 - [ ] Criteria 3
