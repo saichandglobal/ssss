@@ -25,6 +25,14 @@ Where usage is due to API limitations, please add links to issues where API enha
 
 [+Details+]
 
+**Desired Outcome**
+
+Please describe if you need information about their usage patterns, or if a bypass is needed.  
+
+If a rate-limiting bypass is needed, further justification may be requested. 
+
+[+Details+]
+
 
 <!--
 please do not edit the below
