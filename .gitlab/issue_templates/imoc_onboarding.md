@@ -15,7 +15,7 @@ The [current responsibilities of an IMOC are locate in the handbook](https://abo
 - [ ] Volunteer is briefed via a sync meeting about their first shadow rotation
 - [ ] Volunteer is debriefed after first shadow rotation and has made a determination to go forward or not.
   - [ ] If going forward, they are added to the volunteer schedule and given access to adjust
-  - [ ] If notgoing forward, they are removed from Pagerduty.
+  - [ ] If not going forward, they are removed from Pagerduty.
 
 /assign @dawsmith @brentnewton 
 /label ~"workflow-infra::Triage" ~"team::Reliability" 
