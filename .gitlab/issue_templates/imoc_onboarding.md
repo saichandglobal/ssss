@@ -6,7 +6,7 @@ The [current responsibilities of an IMOC are locate in the handbook](https://abo
 
 ##### IMOC Volunteer Details
 - Volunteer - {+ GitLab username +}
-- Ideal 8 hour shift (in UTC, example "800-1600") - {+ 8 hour shift +}  ()
+- Ideal 8 hour shift (in UTC, example "800-1600") - {+ 8 hour shift +}
 
 ##### IMOC Shadow Setup
 - [ ] Volunteer has filled out their ideal 8 hour shift
