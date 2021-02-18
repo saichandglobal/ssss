@@ -7,6 +7,26 @@
 
 ## Welcome to your oncall onboarding issue!
 
+### Asking for help
+
+Make sure you know how to:
+- [ ] Page IMOC
+- [ ] Page CMOC
+- [ ] Page Security
+- [ ] Page Dev
+- [ ] Page DB team: https://about.gitlab.com/handbook/engineering/infrastructure/database/#ongres-third-party-support
+
+### Tools
+
+- [ ] Woodhouse
+- [ ] sre-oncall Slack bot
+
+### Security
+
+- [ ] Explain all traffic policing mechanisms we have available: https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/rate-limiting/README.md
+- [ ] How to block a user?
+- [ ] How to add a rate limit for a path?
+
 ### Delivery
 
 - [ ] Create a hot-patch against production with a single change to a source file that adds a comment. Assign the MR to one of the [current release managers](https://about.gitlab.com/community/release-managers/). [view documentation](https://gitlab.com/gitlab-org/release/docs/-/blob/master/general/deploy/post-deployment-patches.md)
@@ -17,6 +37,7 @@
 ### Observability
 
 - [ ] Locate the General SLA dashboard and find the panel for `Sidekiq Queue Lengths per Queue`
+- [ ] Read the SLI apdex troubleshooting tutorial: https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/uncategorized/apdex-alerts-guide.md
 - [ ] Ensure you know how to Silence an alert. [view documentation](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/monitoring/alerts_manual.md)
 - [ ] Create a visualization in Kibana for all errors grouped by status code.  [view documentation](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/elastic/kibana.md)
 
