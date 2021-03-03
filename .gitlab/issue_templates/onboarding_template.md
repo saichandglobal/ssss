@@ -89,7 +89,7 @@ Onboarder = O
     1. [ ] O: add new Chef user to config/vault_admins.yml and run `rake update_vault_admins`
 1. [ ] **Console access:**
     1. [ ] N: Ensure that you can run a rails console as described in the
-       [runbook](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/staging-environment.md#run-a-rails-console-in-staging-environment).
+       [runbook](https://gitlab.com/gitlab-com/runbooks/blob/master/docs/uncategorized/staging-environment.md#run-a-rails-console-in-staging-environment).
 1. [ ] **Terraform:**
     1. [ ] N: clone the [terraform repo](https://ops.gitlab.net/gitlab-com/gitlab-com-infrastructure)
     1. [ ] N: Complete the [_Getting Started_](https://ops.gitlab.net/gitlab-com/gitlab-com-infrastructure#getting-started) guide
@@ -100,7 +100,7 @@ Onboarder = O
     1. [ ] N: learn who your teammates are and ping them in your onboarding issue - We do mention the people we address to in issues, get used to doing it.
     1. [ ] N: Add yourself to the [Infrastructure Group Status Update](https://gitlab.com/gitlab-com/gl-infra/infra-report/blob/master/status-report.js)
 1. [ ] **Kubernetes**
-    1. [ ] N: Read and complete the [K8s Operations Howto](https://gitlab.com/gitlab-com/runbooks/blob/master/howto/k8s-operations.md)
+    1. [ ] N: Read and complete the [K8s Operations Howto](https://gitlab.com/gitlab-com/runbooks/blob/master/docs/uncategorized/k8s-operations.md)
 1. [ ] **Context & Comfort with GitLab's code base:**
     1. [ ] N: review issues labeled as `outage` in the infrastructure issue tracker.
     1. [ ] O: point the new production engineer to the ongoing meta issues that define the team strategy.
