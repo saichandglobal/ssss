@@ -121,6 +121,7 @@ Onboarder = O
     1. [ ] N: review issues labeled as `outage` in the infrastructure issue tracker.
     1. [ ] O: point the new production engineer to the ongoing meta issues that define the team strategy.
     1. [ ] N: read about the [application architecture](https://docs.gitlab.com/ce/development/architecture.html)
+    1. [ ] N: checkout the diagrams showing a before and after we moved some of the services to Kubernets [here](https://gitlab.com/gitlab-com/runbooks/-/tree/hp-api/docs/api#architecture).
     1. [ ] N: watch the [gitlab.com infrastructure overview](https://www.youtube.com/watch?v=uCU8jdYzpac) video
     1. [ ] N: check out [the service inventory catalog](https://us-central1-gitlab-infra-automation-stg.cloudfunctions.net/ui/services)
     1. [ ] N: spin up an [Ephemeral environment](https://ops.gitlab.net/gitlab-com/environments). Play with it. Break it. Destroy it.
