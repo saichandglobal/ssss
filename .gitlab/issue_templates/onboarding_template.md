@@ -20,7 +20,7 @@ Onboarder = O
     1. [ ] N: [Read Geekbot's FAQ](https://geekbot.com/faq/) and configure your settings
     1. [ ] N: Complete the setup of your [Yubikey](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/uncategorized/yubikey.md)
     1. [ ] N: read the [infrastructure handbook](https://about.gitlab.com/handbook/engineering/infrastructure/) and pages linked from there.
-    1. [ ] N: Find something to improve to the infrastructure handbook and make a merge request.
+    1. [ ] N: Make a merge request to add yourself to your team's page, example, [Reliability](https://about.gitlab.com/handbook/engineering/infrastructure/team/reliability/), [Delivery](https://about.gitlab.com/handbook/engineering/infrastructure/team/delivery/) or [Scalability](https://about.gitlab.com/handbook/engineering/infrastructure/team/scalability/).
 1. [ ] **Accounts:**
     1. [ ] O: Create an issue from the SRE Entitlements template in the [Access Request Repo](https://gitlab.com/gitlab-com/access-requests/issues).  This will create accounts for many of the services we use: AWS, Azure, dev, DO, GitLab.com admin, staging, GCP, Chef, Pager Duty, Status.io
     1. [ ] N: comment in the access request issue with your desired Unix username and your SSH public key. Tip: use the same username you use on your laptop.
