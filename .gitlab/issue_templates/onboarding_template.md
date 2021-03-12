@@ -93,9 +93,28 @@ Onboarder = O
     1. [ ] N: clone the [terraform repo](https://ops.gitlab.net/gitlab-com/gitlab-com-infrastructure)
     1. [ ] N: Complete the [_Getting Started_](https://ops.gitlab.net/gitlab-com/gitlab-com-infrastructure#getting-started) guide
 1. [ ] **Communications:**
-    1. [ ] O: Invite the new production engineer in the `production` channel.
-    1. [ ] O: Invite the new production engineer in the `infrastructure-lounge` channel.
-    1. [ ] O: Invite the new production engineer in the `alerts` channel.
+    1. [ ] O: Invite the new production engineer to specialized Slack channels:
+          - [ ] Oncall channels:
+              - `production`
+              - `ongres-gitlab`
+              - `mgcp_gitlab_ops`
+              - `incident-management`
+              - `alerts`
+              - `announcements`
+              - `dev-escalation`
+              - `feed_alerts-general`
+              - `cloud-provider-alerts`
+          - [ ] Infrastructure channels:
+              - `sre_observability`
+              - `sre_coreinfra`
+              - `sre_datastores`
+              - `infrastructure-lounge`
+              - `infra-lounge-social`
+              - `infra-read-feed`
+              - `g_delivery`
+              - `g_scalability`
+              - `infra_capacity-planning`
+              - `kubernetes`
     1. [ ] N: learn who your teammates are and ping them in your onboarding issue - We do mention the people we address to in issues, get used to doing it.
     1. [ ] N: Add yourself to the [Infrastructure Group Status Update](https://gitlab.com/gitlab-com/gl-infra/infra-report/blob/master/status-report.js)
 1. [ ] **Kubernetes**
