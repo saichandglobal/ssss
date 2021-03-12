@@ -63,13 +63,6 @@ Onboarder = O
         1. [ ] description of our [logging infrastructure](https://gitlab.com/gitlab-com/runbooks/-/tree/master/docs/logging)
     1. [ ] N: submit a fix to an alert in the runbooks (or submit a new one).
     1. [ ] N: after having the MR merged, run `chef-client` in prometheus to enable the new alert.
-1. [ ] **SSH:**
-    1. [ ] N: [create an SSH user](https://ops.gitlab.net/gitlab-cookbooks/chef-repo/blob/master/README.md#add-a-new-system-admin) and send an MR to [chef-repo](https://ops.gitlab.net/gitlab-cookbooks/chef-repo) - ensure you are providing the ssh key from the yubikey setup
-    1. [ ] O: Merge the MR, and then run `knife data bag from file users <username>.json`
-    2. [ ] N: wait for chef to propagate your public key to the bastion servers and all the rest of the infrastructure nodes
-1. [ ] **Bastion setup for SSH:**
-    1. [ ] N: obtain a base known-good SSH config for GitLab infrastructure: `curl https://gitlab.com/gitlab-com/gl-infra/infrastructure/raw/master/onboarding/ssh-config >> $HOME/.ssh/config`
-    1. [ ] N: try to ssh into a host and make sure it works. Example: `knife status | grep dashboard`, get one of the hosts' name and ssh into it
 1. [ ] **Chef:**
     1. [ ] O: add the new production engineer as a 'developer' on [chef-repo](https://ops.gitlab.net/gitlab-cookbooks/chef-repo)
     1. [ ] N: clone the [chef-repo](https://ops.gitlab.net/gitlab-cookbooks/chef-repo) and run `bundle install` to install all the dependencies
@@ -83,6 +76,13 @@ Onboarder = O
     1. [ ] N: create chef-repo/.chef/knife.rb from [knife.rb.example](https://ops.gitlab.net/gitlab-cookbooks/chef-repo/blob/master/knife.rb.example)
     1. [ ] N: test your chef setup with `knife status`
     1. [ ] O: add new Chef user to config/vault_admins.yml and run `rake update_vault_admins`
+1. [ ] **SSH:**
+    1. [ ] N: [create an SSH user](https://ops.gitlab.net/gitlab-cookbooks/chef-repo/blob/master/README.md#add-a-new-system-admin) and send an MR to [chef-repo](https://ops.gitlab.net/gitlab-cookbooks/chef-repo) - ensure you are providing the ssh key from the yubikey setup
+    1. [ ] O: Merge the MR, and then run `knife data bag from file users <username>.json`
+    2. [ ] N: wait for chef to propagate your public key to the bastion servers and all the rest of the infrastructure nodes
+1. [ ] **Bastion setup for SSH:**
+    1. [ ] N: obtain a base known-good SSH config for GitLab infrastructure: `curl https://gitlab.com/gitlab-com/gl-infra/infrastructure/raw/master/onboarding/ssh-config >> $HOME/.ssh/config`
+    1. [ ] N: try to ssh into a host and make sure it works. Example: `knife status | grep dashboard`, get one of the hosts' name and ssh into it
 1. [ ] **Console access:**
     1. [ ] N: Ensure that you can run a rails console as described in the
        [runbook](https://gitlab.com/gitlab-com/runbooks/blob/master/docs/uncategorized/staging-environment.md#run-a-rails-console-in-staging-environment).
