@@ -59,11 +59,8 @@ Onboarder = O
 1. [ ] **Runbooks and Alerts:**
     1. [ ] O: add new production engineer as 'maintainer' to [runbooks](https://gitlab.com/gitlab-com/runbooks/project_members).
     1. [ ] N: clone and get familiar with the [runbooks repo](https://gitlab.com/gitlab-com/runbooks) . There are a lot of useful materials in it which will help you become familiar with the infrastructure. Depending on your role, you will find some parts more useful than others. Here are some examples, you don't need to read these now, just make sure you know they are here:
-        1. [ ] directory with [howto](https://gitlab.com/gitlab-com/runbooks/tree/master/howto) docs
-        1. [ ] description of our [logging infrastructure](https://gitlab.com/gitlab-com/runbooks/tree/master/logging/doc)
-        1. [ ] directory with all [troubleshooting](https://gitlab.com/gitlab-com/runbooks/tree/master/troubleshooting) docs
-        1. [ ] [troubleshooting prometheus](https://gitlab.com/gitlab-com/runbooks/blob/master/troubleshooting/prometheus-is-down.md)
-    1. [ ] N: submit a fix of documentation to the runbooks.
+        1. [ ] Checkout the [docs](https://gitlab.com/gitlab-com/runbooks/-/tree/master/docs) which is presumably the most updated directory at the time of this writing.
+        1. [ ] description of our [logging infrastructure](https://gitlab.com/gitlab-com/runbooks/-/tree/master/docs/logging)
     1. [ ] N: submit a fix to an alert in the runbooks (or submit a new one).
     1. [ ] N: after having the MR merged, run `chef-client` in prometheus to enable the new alert.
 1. [ ] **SSH:**
