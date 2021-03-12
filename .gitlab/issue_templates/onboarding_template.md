@@ -119,7 +119,7 @@ Onboarder = O
 1. [ ] **Kubernetes**
     1. [ ] N: Read and complete the [K8s Operations Howto](https://gitlab.com/gitlab-com/runbooks/blob/master/docs/uncategorized/k8s-operations.md)
 1. [ ] **Context & Comfort with GitLab's code base:**
-    1. [ ] N: review issues labeled as `outage` in the infrastructure issue tracker.
+    1. [ ] N: review issues labeled as `outage` in the [infrastructure issue tracker](https://gitlab.com/groups/gitlab-com/gl-infra/-/issues?scope=all&utf8=%E2%9C%93&state=closed&label_name%5B%5D=outage).
     1. [ ] O: point the new production engineer to the ongoing meta issues that define the team strategy.
     1. [ ] N: read about the [application architecture](https://docs.gitlab.com/ce/development/architecture.html)
     1. [ ] N: checkout the diagrams showing a before and after we moved some of the services to Kubernets [here](https://gitlab.com/gitlab-com/runbooks/-/tree/hp-api/docs/api#architecture).
