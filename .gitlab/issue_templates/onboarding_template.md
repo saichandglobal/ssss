@@ -113,6 +113,7 @@ Onboarder = O
               - `g_scalability`
               - `infra_capacity-planning`
               - `kubernetes`
+    1. [ ] N: Subscribe to the [infrastructure calendar](gitlab.com_oji6dki1frc8g8qq9feuu1jtd0@group.calendar.google.com), and checkout the [meetings](https://about.gitlab.com/handbook/engineering/infrastructure/#meetings) that are scheduled periodically.
     1. [ ] N: Introduce yourself to the team in the `#infrastructure-lounge` slack channel.
     1. [ ] N: learn who your teammates are and ping them in your onboarding issue - We do mention the people we address to in issues, get used to doing it.
     1. [ ] N: Add yourself to the [Infrastructure Group Status Update](https://gitlab.com/gitlab-com/gl-infra/infra-report/blob/master/status-report.js)
