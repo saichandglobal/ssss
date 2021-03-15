@@ -127,7 +127,7 @@ Onboarder = O
     1. [ ] O: point the new production engineer to the ongoing meta issues that define the team strategy.
     1. [ ] N: read about the [application architecture](https://docs.gitlab.com/ce/development/architecture.html)
     1. [ ] N: checkout the diagrams showing a before and after we moved some of the services to Kubernets [here](https://gitlab.com/gitlab-com/runbooks/-/tree/hp-api/docs/api#architecture).
-    1. [ ] N: watch the [gitlab.com infrastructure overview](https://www.youtube.com/watch?v=uCU8jdYzpac) video
+    1. [ ] N: watch the [gitlab.com infrastructure overview](https://www.youtube.com/watch?v=uCU8jdYzpac), keeping in mind that it was recorded a few years ago, and some of the info is no longer applicable, example, [GitLab Takeoff](https://gitlab.com/gitlab-org/takeoff) is deprecated in favor of the [Deployer](https://ops.gitlab.net/gitlab-com/gl-infra/deployer).
     1. [ ] N: check out [the service inventory catalog](https://gitlab.com/gitlab-com/runbooks/-/blob/master/services/service-catalog.yml)
     1. [ ] N: Setup the [GitLab Development Kit (GDK)](https://gitlab.com/gitlab-org/gitlab-development-kit/-/tree/master/) locally. Play with it. Break it. Destroy it.
     1. [ ] N: contribute a merge request to each of the following repos: gitlab-ce, gitlab-ee, gitaly, workhorse, gitlab-runner (or take a look at the [engineering projects](https://about.gitlab.com/handbook/engineering/projects) for more inspiration). The idea here is to get comfortable with the application architecture and codebase.
