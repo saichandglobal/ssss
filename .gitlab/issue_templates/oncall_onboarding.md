@@ -10,11 +10,11 @@
 ### Asking for help
 
 Make sure you know how to:
-- [ ] Page IMOC
-- [ ] Page CMOC
-- [ ] Page Security
-- [ ] Page Dev
-- [ ] Page DB team: https://about.gitlab.com/handbook/engineering/infrastructure/database/#ongres-third-party-support
+- [ ] Page IMOC by typing `/pd trigger` in slack, then choosing `GitLab Production - IMOC` under `Impacted Service`.
+- [ ] Page CMOC by typing `/pd trigger` in slack, then choosing `GitLab Production - CMOC` under `Impacted Service`.
+- [ ] Page Security by typing `/security Please joing us for incident#123` in slack. [Handbook](https://about.gitlab.com/handbook/engineering/security/#engaging-the-security-on-call).
+- [ ] Page Dev by typing `/devoncall incident-issue-url into #dev-escalation`. [Handbook](https://about.gitlab.com/handbook/engineering/development/processes/Infra-Dev-Escalation/process.html#weekdays).
+- [ ] Page DB team: Open your PagerDuty mobile App, navigate to MENU > Escalation policies > Production Database Assistance > Level 1 , and click on the preferred contact method. [Handbook](https://about.gitlab.com/handbook/engineering/infrastructure/database/#ongres-third-party-support)
 
 ### Tools
 
