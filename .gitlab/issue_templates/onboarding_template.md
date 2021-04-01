@@ -52,6 +52,7 @@ Onboarder = O
     1. [ ] N: get familiar with the dashboards in the [public monitoring infrastructure](https://dashboards.gitlab.com/)
     1. [ ] N: get familiar with [prometheus](https://thanos.gitlab.net/graph), investigate how to [query](https://prometheus.io/docs/querying/basics/) to get information out of it.
     1. [ ] N: get familiar with [prometheus alert manager](https://alerts.gitlab.net), checkout the documentation of this in the [runbooks](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/monitoring/alerts_manual.md).
+    1. [ ] N: Checkout [Lifecycle of an Alert](https://www.youtube.com/watch?v=KXs50X2Td2I) for an intro to our implementation of prometheus, thanos, alertmanager and more.
     1. [ ] N: open an [access
        request](https://gitlab.com/gitlab-com/access-requests/issues/new?issuable_template=New+Access+Request)
        to add yourself to the prod-eng-team Slack group. This will have the side
