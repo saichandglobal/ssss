@@ -19,13 +19,13 @@ Make sure you know how to:
 ### Tools
 
 - [ ] [Woodhouse](https://gitlab.com/gitlab-com/gl-infra/woodhouse/)
-- [ ] sre-oncall Slack bot: /sre-oncall [handover]. [Source](https://about.gitlab.com/handbook/engineering/infrastructure/team/reliability/on-call-handover/).
+- [ ] sre-oncall Slack bot: `/sre-oncall [handover]`. [Source](https://about.gitlab.com/handbook/engineering/infrastructure/team/reliability/on-call-handover/).
 
 ### Security
 
 - [ ] Explain all traffic policing mechanisms we have available: https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/rate-limiting/README.md
 - [ ] How to block a user? [Runbook for dealing with CI/CD Abuse](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/ci-runners/ci-apdex-violating-slo.md#abuse).
-- [ ] How to add a rate limit for a path?
+- [ ] How to add a rate limit for a path? [Rate Limiting in details](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/rate-limiting/README.md).
 - [ ] Disabling things in HAProxy. [Project import - Block example](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/frontend/block-things-in-haproxy.md#block-project-imports-using-blacklist)
 
 ### Delivery
