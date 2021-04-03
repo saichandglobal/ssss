@@ -19,7 +19,7 @@ Make sure you know how to:
 ### Tools
 
 - [ ] [Woodhouse](https://gitlab.com/gitlab-com/gl-infra/woodhouse/)
-- [ ] sre-oncall Slack bot: `/sre-oncall [handover]`. [Source](https://about.gitlab.com/handbook/engineering/infrastructure/team/reliability/on-call-handover/).
+- [ ] sre-oncall Slack bot: `/sre-oncall handover`. [Source](https://about.gitlab.com/handbook/engineering/infrastructure/team/reliability/on-call-handover/).
 
 ### Security
 
