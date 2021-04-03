@@ -25,7 +25,7 @@ Make sure you know how to:
 
 - [ ] Explain all traffic policing mechanisms we have available: https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/rate-limiting/README.md
 - [ ] How to block a user? [Runbook for dealing with CI/CD Abuse](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/ci-runners/ci-apdex-violating-slo.md#abuse).
-- [ ] How to add a rate limit for a path? [Rate Limiting in details](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/rate-limiting/README.md).
+- [ ] How to add a rate limit for a path? [From the Runbook](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/rate-limiting/README.md#how-tos).
 - [ ] Disabling things in HAProxy. [Project import - Block example](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/frontend/block-things-in-haproxy.md#block-project-imports-using-blacklist)
 
 ### Delivery
