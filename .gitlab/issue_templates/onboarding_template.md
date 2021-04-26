@@ -78,7 +78,7 @@ Onboarder = O
         An error occurred while installing openssl (2.2.0), and Bundler cannot continue.
         Make sure that `gem install openssl -v '2.2.0' --source 'https://rubygems.org/'` succeeds before bundling.
         ```
-        * You can solve it by reinstalling Ruby and pointing it to the local installation of openssl ([source](https://github.com/rvm/rvm/issues/4562#issuecomment-536304690)):
+        * If you have `rvm` installed, you can solve it by reinstalling Ruby and pointing it to the local installation of openssl ([source](https://github.com/rvm/rvm/issues/4562#issuecomment-536304690)):
         ```
         export PKG_CONFIG_PATH=/usr/local/opt/openssl/lib/pkgconfig
         rvm install 2.6.3 --with-openssl-dir=/usr/local/opt/openssl --with-openssl-lib=/usr/local/opt/openssl/lib --with-openssl-include=/usr/local/opt/openssl/include
