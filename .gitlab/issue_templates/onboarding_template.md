@@ -73,6 +73,16 @@ Onboarder = O
     1. [ ] O: add the new production engineer as a 'developer' on [ops chef-repo](https://ops.gitlab.net/gitlab-cookbooks/chef-repo)
     1. [ ] O: add the new production engineer as a 'maintainer' on  [.com chef-repo](https://gitlab.com/gitlab-cookbooks/chef-repo)
     1. [ ] N: clone the [chef-repo](https://ops.gitlab.net/gitlab-cookbooks/chef-repo) and run `bundle install` to install all the dependencies
+        * If you face the following error on MacOS:
+        ```
+        An error occurred while installing openssl (2.2.0), and Bundler cannot continue.
+        Make sure that `gem install openssl -v '2.2.0' --source 'https://rubygems.org/'` succeeds before bundling.
+        ```
+        * You can solve it by reinstalling Ruby and pointing it to the local installation of openssl ([source](https://github.com/rvm/rvm/issues/4562#issuecomment-536304690)):
+        ```
+        export PKG_CONFIG_PATH=/usr/local/opt/openssl/lib/pkgconfig
+        rvm install 2.6.3 --with-openssl-dir=/usr/local/opt/openssl --with-openssl-lib=/usr/local/opt/openssl/lib --with-openssl-include=/usr/local/opt/openssl/include
+        ```
     1. [ ] N: chef-repo repository contains a lot of useful materials. You don't need to read all of them, just look at a few examples and be aware that they are here:
         1. [ ] chef server installation [docs](https://ops.gitlab.net/gitlab-cookbooks/chef-repo/blob/master/doc/set-up-chef-server.md)
     1. [ ] O: run `sudo chef-client` on `chef-01-inf-ops.c.gitlab-ops.internal` to ensure the new production engineer has SSH access there
