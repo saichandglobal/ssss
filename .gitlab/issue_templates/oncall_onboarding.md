@@ -21,6 +21,13 @@ Make sure you know how to:
 - [ ] [Woodhouse](https://gitlab.com/gitlab-com/gl-infra/woodhouse/)
 - [ ] sre-oncall Slack bot: `/sre-oncall handover`. [Source](https://about.gitlab.com/handbook/engineering/infrastructure/team/reliability/on-call-handover/).
 
+### Incident Management
+
+- [ ] To declare an incident via Slack: `/incident declare`.
+- [ ] When you're ready, add yourself to the [EOC Shadow PD Schedule](https://gitlab.pagerduty.com/schedules#PZEBYO0).
+- [ ] Checkout an example Alert in `#production`, Explore the `Runbook`, `Dashboard`, the discription and the related `Prometheus graph` by clicking `show more`. Note that any of these links could be outdated, so proceed your evaluation with caution.
+- [ ] Understand when an Incident Review is required by viewing [The Incident Review Handbook](https://about.gitlab.com/handbook/engineering/infrastructure/incident-review/#incident-review).
+
 ### Security
 
 - [ ] Explain all traffic policing mechanisms we have available: https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/rate-limiting/README.md
@@ -38,7 +45,7 @@ Make sure you know how to:
 ### Observability
 
 - [ ] Locate the General SLA dashboard and find the panel for `Sidekiq Queue Lengths per Queue`
-- [ ] Read the SLI apdex troubleshooting tutorial: https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/uncategorized/apdex-alerts-guide.md
+- [ ] Read the SLI apdex troubleshooting tutorial: https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/monitoring/apdex-alerts-guide.md
 - [ ] Ensure you know how to Silence an alert. [view documentation](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/monitoring/alerts_manual.md)
 - [ ] Create a visualization in Kibana for all errors grouped by status code.  [view documentation](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/elastic/kibana.md)
 
