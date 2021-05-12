@@ -27,7 +27,9 @@ clone_group() {
     done
 }
 
-for group in gitlab-cookbooks gl-infr gitlab-restore gitlab-com gitlab-org; do
+# Add more groups as desired, ex `gitlab-restore gitlab-com gitlab-org`.
+# These two are a good starting point without being too much
+for group in gitlab-cookbooks gl-infra; do
     dir="$WORKSPACE/$group"
     mkdir -p "$dir"
     cd "$dir"
