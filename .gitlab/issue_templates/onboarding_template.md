@@ -15,14 +15,13 @@ Onboarder = O
     1. [ ] O: create this issue and mark it confidential
     1. [ ] O: cross-link general onboarding issue in the peopleops issue tracker
     1. [ ] O: Add new team member to the Geekbot standup
-    1. [ ] O: Add new team member to the Geekbot retro
     1. [ ] N: Read through the onboarding info in [the handbook](https://about.gitlab.com/handbook/engineering/infrastructure/team/reliability/sre-onboarding/).
     1. [ ] N: [Read Geekbot's FAQ](https://geekbot.com/faq/) and configure your settings
     1. [ ] N: Complete the setup of your [Yubikey](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/uncategorized/yubikey.md)
     1. [ ] N: read the [infrastructure handbook](https://about.gitlab.com/handbook/engineering/infrastructure/) and pages linked from there.
     1. [ ] N: Make a merge request to add yourself to your team's page, example, [Reliability](https://about.gitlab.com/handbook/engineering/infrastructure/team/reliability/), [Delivery](https://about.gitlab.com/handbook/engineering/infrastructure/team/delivery/) or [Scalability](https://about.gitlab.com/handbook/engineering/infrastructure/team/scalability/).
 1. [ ] **Accounts:**
-    1. [ ] O: Create an issue from the SRE Entitlements template in the [Access Request Repo](https://gitlab.com/gitlab-com/access-requests/issues).  This will create accounts for many of the services we use: AWS, Azure, dev, DO, GitLab.com admin, staging, GCP, Chef, Pager Duty, Status.io
+    1. [ ] O: Create an issue from the SRE Entitlements template in the [Access Request Repo](https://gitlab.com/gitlab-com/access-requests/issues).  This will create accounts for many of the services we use: AWS, Azure, dev, DO, GitLab.com admin, staging, GCP, Chef, Pager Duty
     1. [ ] N: comment in the access request issue with your desired Unix username and your SSH public key. Tip: use the same username you use on your laptop.
     1. [ ] N: You should receive a GitLab `admin` account via a 'plussed' email address (`yourGitLabHandle+admin@gitlab.com`). Set this account password and configure multi factor security on this account.
     1. [ ] N: Accept the invitation and configure [Pager Duty](https://gitlab.pagerduty.com/) timezone and phone number and other details
@@ -135,3 +134,28 @@ Onboarder = O
     1. [ ] N: Setup the [GitLab Development Kit (GDK)](https://gitlab.com/gitlab-org/gitlab-development-kit/-/tree/master/) locally. Play with it. Break it. Destroy it.
     1. [ ] N: contribute a merge request to each of the following repos: gitlab-ce, gitlab-ee, gitaly, workhorse, gitlab-runner (or take a look at the [engineering projects](https://about.gitlab.com/handbook/engineering/projects) for more inspiration). The idea here is to get comfortable with the application architecture and codebase.
     1. [ ] N: Make an improvement to to the [onboarding issue template](https://gitlab.com/gitlab-com/gl-infra/infrastructure/edit/master/.gitlab/issue_templates/onboarding_template.md) or the onboarding info in [the handbook](https://about.gitlab.com/handbook/engineering/infrastructure/sre-onboarding/).
+
+
+    Ending Goals for your onboarding:
+    1. Feel comfortable knowing where to look for how to contribute to various parts of GitLab.com
+    2. Feel ready to join the on-call rotation.
+
+    For knowing where to look, complete MRs for each of the following areas:
+    1. Our Infrastructure as code - https://ops.gitlab.net/gitlab-com/gitlab-com-infrastructure
+    1. Our Configuration management - 
+    1. Our GKE / K8s setup - K8s workloads
+    1. Monitoring 
+        - make a graph in jsonnet
+        - understand the dashboards we use to get a general sense of how things are running on GitLab.com
+    1. Logging - Understand the log shipping infrastructure and how you would add a new log/index
+      - How to make a visualization in Kibana
+    1. Runbooks
+
+    For Joining oncall:
+    1. Alerting - find silences and create them
+    1. Join the [shadow rotation in PagerDuty]() for a few days and shadow a current oncall 
+    1. Join the [shadow rotation in PagerDuty]() a second time and communicate with the EOC that you will take primary with them as a fallback. Record a log of:
+      - how many alerts you acknowledge 
+      - how many alerts felt actionable
+      - how many alerts "made sense", where you knew what you needed to do or where to look  
+      - Ideally, you are ready to join when the ratio of made sense to acknowledge is above 80% with working on at least 10 alerts.
