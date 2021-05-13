@@ -142,14 +142,17 @@ Onboarder = O
 
     For knowing where to look, complete MRs for each of the following areas:
     1. Our Infrastructure as code - https://ops.gitlab.net/gitlab-com/gitlab-com-infrastructure
-    1. Our Configuration management - 
+    1. Our Configuration management: 
+        - make a cookbook change to https://gitlab.com/gitlab-cookbooks/gitlab-server
+        - roll it out via https://ops.gitlab.net/gitlab-cookbooks/chef-repo 
     1. Our GKE / K8s setup - K8s workloads
+        - https://gitlab.com/gitlab-com/gl-infra/k8s-workloads/gitlab-com 
     1. Monitoring 
         - make a graph in jsonnet
         - understand the dashboards we use to get a general sense of how things are running on GitLab.com
     1. Logging - Understand the log shipping infrastructure and how you would add a new log/index
       - How to make a visualization in Kibana
-    1. Runbooks
+    1. Runbooks - https://gitlab.com/gitlab-com/runbooks
 
     For Joining oncall:
     1. Alerting - find silences and create them
