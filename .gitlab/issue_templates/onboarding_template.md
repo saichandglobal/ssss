@@ -127,6 +127,7 @@ Onboarder = O
 1. [ ] **Context & Comfort with GitLab's code base:**
     1. [ ] N: review issues labeled as `outage` in the [infrastructure issue tracker](https://gitlab.com/groups/gitlab-com/gl-infra/-/issues?scope=all&utf8=%E2%9C%93&state=closed&label_name%5B%5D=outage).
     1. [ ] O: point the new production engineer to the ongoing meta issues that define the team strategy.
+    1. [ ] O: Schedule a synchronous [architecture overview session](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/onboarding/architecture.md).
     1. [ ] N: read about the [application architecture](https://docs.gitlab.com/ce/development/architecture.html)
     1. [ ] N: checkout the diagrams showing a before and after we moved some of the services to Kubernets [here](https://gitlab.com/gitlab-com/runbooks/-/tree/hp-api/docs/api#architecture).
     1. [ ] N: Read the [Life of a web request](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/00d0fb19b0e7d90c32b9c73dc8d0faff86c05117/source/handbook/engineering/infrastructure/tutorials/overview_life_of_a_web_request.html.md) and the [Life of a GIT request](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/9636e8addd6c1130accd4e157991f714f48262aa/source/handbook/engineering/infrastructure/tutorials/overview_life_of_a_git_request.html.md) tutorials.
