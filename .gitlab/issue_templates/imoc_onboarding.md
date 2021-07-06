@@ -15,7 +15,8 @@ The [current responsibilities of an IMOC are locate in the handbook](https://abo
 
 ### Reading
 1. Understanding how to work with the CMOC: the support team has a [great write up](/handbook/support/workflows/cmoc_workflows.html) on the Communications Manager On-Call (CMOC) workflows.
-2. Google has a few chapters on Incident response in their SRE books:
+2. [SRE Shadow blog post](https://about.gitlab.com/blog/2020/04/13/lm-sre-shadow/) so you have a feel of what working with the EOC is like. 
+3. Google has a few chapters on Incident response in their SRE books:
   a. Good thoughts on the life of the engineers on call.
    * [Being On call](https://sre.google/sre-book/being-on-call/)
    * [Effective Troubleshooting](https://sre.google/sre-book/effective-troubleshooting/)
@@ -25,12 +26,13 @@ The [current responsibilities of an IMOC are locate in the handbook](https://abo
    * [Workbook examples of incident response](https://sre.google/workbook/incident-response/)
    * [Incident Review](https://sre.google/sre-book/postmortem-culture/) and [Learning from Failure](https://sre.google/workbook/postmortem-culture/)
   c. [Being Oncall examples](https://sre.google/workbook/on-call/)
+4. The [IMOC Checklist](https://gitlab.com/gitlab-com/runbooks/-/blob/master/incidents/general_incidents.md#imoc-checklist) in our runbooks.
 
 ## Getting going as an IMOC
 After the reading and video above, you should start shadowing existing IMOCs.  
 
 Things you will need:
-1. An account on GitLab's PagerDuty account (via access Request)
+1. An account on GitLab's PagerDuty account (via Access Request)
 2. The PagerDuty App on your phone
 3. Join the following channels on slack: #incident-management, #production, #feed_alerts-general, #abuse, #dev-escalation
 4. Make sure you can login to the [dashboards site](https://dashboards.gitlab.net/d/RZmbBr7mk/gitlab-triage)
