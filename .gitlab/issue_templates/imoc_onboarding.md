@@ -36,6 +36,7 @@ Things you will need:
 4. Make sure you can login to the [dashboards site](https://dashboards.gitlab.net/d/RZmbBr7mk/gitlab-triage)
 5. Make sure you can login to [kibana](https://log.gprd.gitlab.net/) 
 6. Familiarize yourself with the [dev escalation process](/handbook/engineering/development/processes/Infra-Dev-Escalation/process.html)
+7. Make sure you can login to https://ops.gitlab.net/
 
 We have an [IMOC Shadow Schedule](https://gitlab.pagerduty.com/schedules#P3HRRXW) which people can join.
 When you are on this schedule, you will be paged in parallel with the current IMOC on duty.  
