@@ -23,7 +23,7 @@ The new project will use https://gitlab.com/gitlab-com/gl-infra/templates/projec
 * Reference issue / epic for why this project needs to be created:
 
 ## Procedure
-- [ ] Get sign-off by a Manager in the Infrastructure department that this new project will be necessary who will confirm the location and whether the new project is necessary
+- [ ] Get sign-off by a Manager in the Infrastructure department that this new project will be necessary at the project path path above.
 - [ ] In the https://gitlab.com/gitlab-com/gl-infra group [create a new project from a group template](https://gitlab.com/projects/new?namespace_id=1112072#create_from_template). Under the "group" tab, select the `project-with-ops-mirror` template.
 - [ ] Set the visibility level to "Public" and fill in a short description, select "Create Project" which will clone the project using the template.
 - [ ] Create a blank project (with no README) with visibility "internal" on ops.gitlab.net using the same project path as the project on GitLab.com. Ensure `MIRROR: true` is set as a CI variable.
