@@ -12,6 +12,7 @@ The new project will use https://gitlab.com/gitlab-com/gl-infra/templates/projec
 - CI configuration that will ensure that pipelines run on ops.gitlab.net and post back a note on MRs to the ops pipeline
 - Public pipelines disabled
 - Default branch of `main` with no direct pushes to the `main` branch
+- Issues disabled
 
 ## Before you begin
 
