@@ -16,11 +16,10 @@ The new project will use https://gitlab.com/gitlab-com/gl-infra/templates/projec
 
 ## Before you begin
 
-- [ ] Confirm that a public project can be created on GitLab.com for this infrastructure project to allow for contributions outside of the Infrastructure department
-- [ ] Fill in the link to the new project path and links to an epic/issue for why this project needs to be created
+- [ ] Fill in the project path below and reference the epic or issues for why this new project is necessary
 
-* **Link to project**:
-* Reference issue / epic for why this project needs to be created:
+- **Link to project**: {+ TODO +}
+- Reference issue / epic for why this project needs to be created: {+ TODO +}
 
 ## Procedure
 - [ ] Get sign-off by a Manager in the Infrastructure department that this new project will be necessary at the project path path above.
