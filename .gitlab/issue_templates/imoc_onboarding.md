@@ -6,7 +6,7 @@ The [current responsibilities of an IMOC are locate in the handbook](https://abo
 
 ## IMOC Volunteer Details
 - Volunteer - {+ GitLab username +}
-- Ideal 8 hour shift (in UTC, example "800-1600") - {+ 8 hour shift +}
+- Ideal 8 hour shift (in UTC, example "04:00 - 16:00 UTC") - {+ 8 hour shift +} (see handbook for [details](https://about.gitlab.com/handbook/engineering/infrastructure/incident-manager-onboarding/index.html#what-are-the-expected-commitments-and-how-do-i-balance-my-normal-job-responsibilities))
 
 ## Learning about Incident Management 
 
@@ -61,5 +61,5 @@ and has been very helpful for new people getting used to things.
   - [ ] If going forward, they are added to the volunteer schedule and given access to adjust
   - [ ] If not going forward, they are removed from Pagerduty.
 
-/assign @dawsmith @brentnewton 
+/assign @gitlab-com/gl-infra/managers 
 /label ~"workflow-infra::Triage" ~"team::Reliability" 
