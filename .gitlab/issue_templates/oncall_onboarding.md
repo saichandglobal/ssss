@@ -40,7 +40,7 @@ Make sure you know how to:
 - [ ] Create a hot-patch against production with a single change to a source file that adds a comment. Assign the MR to one of the [current release managers](https://about.gitlab.com/community/release-managers/). [view documentation](https://gitlab.com/gitlab-org/release/docs/-/blob/master/general/deploy/post-deployment-patches.md)
 - [ ] Get the current state of GitLab.com Canary stage using GitLab Chatops.  [view documentation](https://gitlab.com/gitlab-org/release/docs/-/blob/master/general/deploy/canary.md)
 - [ ] Find the latest auto-deploy pipeline on ops.gitlab.net and get the current deploy status on all environments using GitLab Chatops. [view documentation](https://gitlab.com/gitlab-org/release/docs/-/blob/master/general/deploy/auto-deploy.md)
-- [ ] Setup your workstation to ensure you have access to the zonal and regional k8s clusters. [view documentation](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/uncategorized/k8s-oncall-setup.md)
+- [ ] Setup your workstation to ensure you have access to the zonal and regional k8s clusters. [view documentation](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/kube/k8s-oncall-setup.md)
 
 ### Observability
 
