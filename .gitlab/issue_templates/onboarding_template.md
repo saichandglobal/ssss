@@ -96,7 +96,6 @@ Onboarder = O
     1. [ ] O: Invite the new production engineer to specialized Slack channels:
           - [ ] Oncall channels:
               - `production`
-              - `ongres-gitlab`
               - `mgcp_gitlab_ops`
               - `incident-management`
               - `alerts`
