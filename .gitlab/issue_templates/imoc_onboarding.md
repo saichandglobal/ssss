@@ -1,12 +1,12 @@
-<!-- title the issue: IMOC Rotation Volunteer - Volunteer Name -->
+<!-- title the issue: IMOC Rotation - Team Member Name -->
 
-We will be using this information to assemble a schedule for shadowing and a longer term volunteer schedule, if you remain interested after your shadow rotation. We appreciate your time and your willingness to participate in capacity as an Incident Manager On-Call (IMOC), during the weekdays.
+We will be using this information to update schedules and to assist with training. We appreciate your time and your willingness to participate as an Incident Manager On-Call (IMOC).
 
-The [current responsibilities of an IMOC are locate in the handbook](https://about.gitlab.com/handbook/engineering/infrastructure/incident-management/#incident-manager-on-call-imoc-responsibilities) and as part of the volunteer program, you will be reverse-shadowed by a regular IMOC, should you require additional support.
+The [current responsibilities of an IMOC are located in the handbook](https://about.gitlab.com/handbook/engineering/infrastructure/incident-management/#incident-manager-on-call-imoc-responsibilities) and as part of the IMOC training, you will be reverse-shadowed by a regular IMOC to help you learn and to provide support if you need it.
 
-## IMOC Volunteer Details
-- Volunteer - {+ GitLab username +}
-- Ideal 8 hour shift (in UTC, example "04:00 - 16:00 UTC") - {+ 8 hour shift +} (see handbook for [details](https://about.gitlab.com/handbook/engineering/infrastructure/incident-manager-onboarding/index.html#what-are-the-expected-commitments-and-how-do-i-balance-my-normal-job-responsibilities))
+## IMOC Details
+- Team Member - {+ GitLab username +}
+- General region - APAC, EMEA, or AMER?
 
 ## Learning about Incident Management 
 
@@ -42,7 +42,6 @@ Things you will need:
 
 We have an [IMOC Shadow Schedule](https://gitlab.pagerduty.com/schedules#P3HRRXW) which people can join.
 When you are on this schedule, you will be paged in parallel with the current IMOC on duty.  
-You can pick times that work for you at first.  Ideally it would be good to shadow for at least 5 incidents, which could take about a month depending on external factors.
 
 After a few incidents, schedule a debrief chat with the IMOCs you shadowed.  Walk through the incidents and ask
 any questions you have about how the incident went.
@@ -53,13 +52,10 @@ with a fall back / escalation point should you need help.  This is what we do to
 and has been very helpful for new people getting used to things.
 
 ##### IMOC Shadow Setup Checklist
-- [ ] Volunteer has filled out their ideal 8 hour shift
-- [ ] Volunteer is setup in Pagerduty
+- [ ] New IMOC is setup in Pagerduty
 - [ ] A current IMOC is assigned as their onboarding team member and made a DRI of this issue with the volunteer.
-- [ ] Volunteer is briefed via a sync meeting about their first shadow rotation
-- [ ] Volunteer is debriefed after first shadow rotation and has made a determination to go forward or not.
-  - [ ] If going forward, they are added to the volunteer schedule and given access to adjust
-  - [ ] If not going forward, they are removed from Pagerduty.
+- [ ] New IMOC is briefed via a sync meeting about their first shadow rotation.
+- [ ] New IMOC is debriefed after first shadow rotation.
 
 /assign @gitlab-com/gl-infra/managers 
 /label ~"workflow-infra::Triage" ~"team::Reliability" 
