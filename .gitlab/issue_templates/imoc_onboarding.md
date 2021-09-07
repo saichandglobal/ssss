@@ -34,11 +34,12 @@ After the reading and video above, you should start shadowing existing IMOCs.
 Things you will need:
 1. An account on GitLab's PagerDuty account (via Access Request)
 2. The PagerDuty App on your phone
-3. Join the following channels on slack: #incident-management, #production, #feed_alerts-general, #abuse, #dev-escalation
-4. Make sure you can login to the [dashboards site](https://dashboards.gitlab.net/d/RZmbBr7mk/gitlab-triage)
-5. Make sure you can login to [kibana](https://log.gprd.gitlab.net/) 
-6. Familiarize yourself with the [dev escalation process](/handbook/engineering/development/processes/Infra-Dev-Escalation/process.html)
-7. Make sure you can login to https://ops.gitlab.net/
+3. Join the following channels on Slack: #incident-management, #production, #feed_alerts-general, #abuse, #dev-escalation
+4. If you're starting as an IMOC Shadow, also joining the #imoc_shadows channel on Slack.
+5. Make sure you can login to the [dashboards site](https://dashboards.gitlab.net/d/RZmbBr7mk/gitlab-triage)
+6. Make sure you can login to [kibana](https://log.gprd.gitlab.net/) 
+7. Familiarize yourself with the [dev escalation process](/handbook/engineering/development/processes/Infra-Dev-Escalation/process.html)
+8. Make sure you can login to https://ops.gitlab.net/
 
 We have an [IMOC Shadow Schedule](https://gitlab.pagerduty.com/schedules#P3HRRXW) which people can join.
 When you are on this schedule, you will be paged in parallel with the current IMOC on duty.  
