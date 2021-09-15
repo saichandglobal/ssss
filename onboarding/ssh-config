@@ -26,7 +26,7 @@ Host lb-bastion.*.gitlab.com
   StrictHostKeyChecking   no
 
 Host *.gitlab-*.internal
-  ProxyCommand bash -c "ssh lb-bastion.`echo %h | cut -d\".\" -f1|awk -F- '{print $NF}'`.gitlab.com -W %h:%p"
+  ProxyCommand bash -c "ssh lb-bastion.`echo %h | cut -d\".\" -f1|awk -F- '{print \$NF}'`.gitlab.com -W %h:%p"
 
 # Console aliases
 Host gprd-console
