@@ -65,7 +65,7 @@ Onboarder = O
     1. [ ] N: submit a fix to an alert in the runbooks (or submit a new one).
     1. [ ] N: after having the MR merged, run `chef-client` in prometheus to enable the new alert.
 1. [ ] **SSH:**
-    1. [ ] N: [create an SSH user](https://ops.gitlab.net/gitlab-cookbooks/chef-repo/blob/master/README.md#add-a-new-system-admin) and send an MR to [chef-repo](https://ops.gitlab.net/gitlab-cookbooks/chef-repo) - ensure you are providing the ssh key from the yubikey setup
+    1. [ ] N: [create an SSH user](https://gitlab.com/gitlab-com/gl-infra/chef-repo/blob/master/README.md#add-a-new-system-admin) and send an MR to [chef-repo](https://gitlab.com/gitlab-com/gl-infra/chef-repo) - ensure you are providing the ssh key from the yubikey setup
     1. [ ] O: Merge the MR, and then run `knife data bag from file users <username>.json`
     1. [ ] N: wait for chef to propagate your public key to the bastion servers and all the rest of the infrastructure nodes
 1. [ ] **Chef:**
@@ -76,11 +76,11 @@ Onboarder = O
     1. [ ] N: chef-repo repository contains a lot of useful materials. You don't need to read all of them, just look at a few examples and be aware that they are here:
         1. [ ] chef server installation [docs](https://ops.gitlab.net/gitlab-cookbooks/chef-repo/blob/master/doc/set-up-chef-server.md)
     1. [ ] O: run `sudo chef-client` on `chef-01-inf-ops.c.gitlab-ops.internal` to ensure the new production engineer has SSH access there
-    1. [ ] N: create Chef user and Chef key via `ssh chef-01-inf-ops.c.gitlab-ops.internal` and [chef-server-ctl user-create](https://ops.gitlab.net/gitlab-cookbooks/chef-repo/blob/master/doc/set-up-chef-server.md#creating-users)
+    1. [ ] N: create Chef user and Chef key via `ssh chef-01-inf-ops.c.gitlab-ops.internal` and [chef-server-ctl user-create](https://gitlab.com/gitlab-com/gl-infra/chef-repo/blob/master/doc/set-up-chef-server.md#creating-users)
     1. [ ] N: copy the Chef key, change directory to the cloned chef-repo repository on your machine, create a directory named: .chef, create a file with your SSH user name (with a .pem extension) and paste the Chef key. Chef workstation tools such as `knife` and `chef` will need the .pem key to be able to talk to the Chef server.
     1. [ ] N: add your Chef user to the 'gitlab', 'staging', and 'dev-resources' organizations with `chef-server-ctl org-user-add`
-    1. [ ] O: make the new chef user admin with [knife acl](https://ops.gitlab.net/gitlab-cookbooks/chef-repo/blob/master/doc/set-up-chef-server.md#add-users-to-the-admins-group-of-the-gitlab-organization)
-    1. [ ] N: create chef-repo/.chef/knife.rb from [knife.rb.example](https://ops.gitlab.net/gitlab-cookbooks/chef-repo/blob/master/knife.rb.example)
+    1. [ ] O: make the new chef user admin with [knife acl](https://gitlab.com/gitlab-com/gl-infra/chef-repo/blob/master/doc/set-up-chef-server.md#add-users-to-the-admins-group-of-the-gitlab-organization)
+    1. [ ] N: create chef-repo/.chef/knife.rb from [knife.rb.example](https://gitlab.com/gitlab-com/gl-infra/chef-repo/blob/master/knife.rb.example)
     1. [ ] N: test your chef setup with `knife status`
     1. [ ] O: add new Chef user to config/vault_admins.yml and run `rake update_vault_admins`
 1. [ ] **Bastion setup for SSH:**
