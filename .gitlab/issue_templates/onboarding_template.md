@@ -120,7 +120,6 @@ Onboarder = O
     1. [ ] N: Read the different sections in the [K8s Operations](https://gitlab.com/gitlab-com/runbooks/blob/master/docs/kube/k8s-operations.md) page.
     1. [ ] N: Checkout Scenario 3 Youtube recording in [this Firedrill doc](https://docs.google.com/document/d/1uZHz1w3NC6yhSPpuWiUftoz2pIaMtnXhKGvn4O3Fe1U/edit#heading=h.o4psext022tb) to give you an idea of the k8s-related issues you might encounter in gitlab.com.
 1. [ ] **Context & Comfort with GitLab's code base:**
-    1. [ ] N: review issues labeled as `outage` in the [infrastructure issue tracker](https://gitlab.com/groups/gitlab-com/gl-infra/-/issues?scope=all&utf8=%E2%9C%93&state=closed&label_name%5B%5D=outage).
     1. [ ] O: point the new production engineer to the ongoing meta issues that define the team strategy.
     1. [ ] O: Schedule a synchronous [architecture overview session](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/onboarding/architecture.md).
     1. [ ] N: read about the [application architecture](https://docs.gitlab.com/ce/development/architecture.html)
