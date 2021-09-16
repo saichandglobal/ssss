@@ -65,7 +65,8 @@ Onboarder = O
     1. [ ] N: submit a fix to an alert in the runbooks (or submit a new one).
     1. [ ] N: after having the MR merged, run `chef-client` in prometheus to enable the new alert.
 1. [ ] **SSH:**
-    1. [ ] N: [create an SSH user](https://ops.gitlab.net/gitlab-cookbooks/chef-repo/blob/master/README.md#add-a-new-system-admin) and send an MR to [chef-repo](https://ops.gitlab.net/gitlab-cookbooks/chef-repo) - ensure you are providing the ssh key from the yubikey setup
+    1. [ ] N: [create an SSH user](https://gitlab.com/gitlab-com/gl-infra/chef-repo/blob/master/README.md#add-a-new-system-admin) and send an MR to [chef-repo](https://gitlab.com/gitlab-com/gl-infra/chef-repo) - ensure you are providing the ssh key from the yubikey setup
+    1. [ ] N: obtain a base known-good SSH config for GitLab infrastructure: `curl https://gitlab.com/gitlab-com/gl-infra/infrastructure/raw/master/onboarding/ssh-config >> $HOME/.ssh/config`
     1. [ ] O: Merge the MR, and then run `knife data bag from file users <username>.json`
     1. [ ] N: wait for chef to propagate your public key to the bastion servers and all the rest of the infrastructure nodes
 1. [ ] **Chef:**
@@ -76,15 +77,14 @@ Onboarder = O
     1. [ ] N: chef-repo repository contains a lot of useful materials. You don't need to read all of them, just look at a few examples and be aware that they are here:
         1. [ ] chef server installation [docs](https://ops.gitlab.net/gitlab-cookbooks/chef-repo/blob/master/doc/set-up-chef-server.md)
     1. [ ] O: run `sudo chef-client` on `chef-01-inf-ops.c.gitlab-ops.internal` to ensure the new production engineer has SSH access there
-    1. [ ] N: create Chef user and Chef key via `ssh chef-01-inf-ops.c.gitlab-ops.internal` and [chef-server-ctl user-create](https://ops.gitlab.net/gitlab-cookbooks/chef-repo/blob/master/doc/set-up-chef-server.md#creating-users)
+    1. [ ] N: create Chef user and Chef key via `ssh chef-01-inf-ops.c.gitlab-ops.internal` and [chef-server-ctl user-create](https://gitlab.com/gitlab-com/gl-infra/chef-repo/blob/master/doc/set-up-chef-server.md#creating-users)
     1. [ ] N: copy the Chef key, change directory to the cloned chef-repo repository on your machine, create a directory named: .chef, create a file with your SSH user name (with a .pem extension) and paste the Chef key. Chef workstation tools such as `knife` and `chef` will need the .pem key to be able to talk to the Chef server.
     1. [ ] N: add your Chef user to the 'gitlab', 'staging', and 'dev-resources' organizations with `chef-server-ctl org-user-add`
-    1. [ ] O: make the new chef user admin with [knife acl](https://ops.gitlab.net/gitlab-cookbooks/chef-repo/blob/master/doc/set-up-chef-server.md#add-users-to-the-admins-group-of-the-gitlab-organization)
-    1. [ ] N: create chef-repo/.chef/knife.rb from [knife.rb.example](https://ops.gitlab.net/gitlab-cookbooks/chef-repo/blob/master/knife.rb.example)
+    1. [ ] O: make the new chef user admin with [knife acl](https://gitlab.com/gitlab-com/gl-infra/chef-repo/blob/master/doc/set-up-chef-server.md#add-users-to-the-admins-group-of-the-gitlab-organization)
+    1. [ ] N: create chef-repo/.chef/knife.rb from [knife.rb.example](https://gitlab.com/gitlab-com/gl-infra/chef-repo/blob/master/knife.rb.example)
     1. [ ] N: test your chef setup with `knife status`
     1. [ ] O: add new Chef user to config/vault_admins.yml and run `rake update_vault_admins`
 1. [ ] **Bastion setup for SSH:**
-    1. [ ] N: obtain a base known-good SSH config for GitLab infrastructure: `curl https://gitlab.com/gitlab-com/gl-infra/infrastructure/raw/master/onboarding/ssh-config >> $HOME/.ssh/config`
     1. [ ] N: try to ssh into a host and make sure it works. Example: `knife status | grep dashboard`, get one of the hosts' name and ssh into it
 1. [ ] **Console access:**
     1. [ ] N: Ensure that you can run a rails console as described in the
@@ -96,7 +96,6 @@ Onboarder = O
     1. [ ] O: Invite the new production engineer to specialized Slack channels:
           - [ ] Oncall channels:
               - `production`
-              - `mgcp_gitlab_ops`
               - `incident-management`
               - `alerts`
               - `announcements`
@@ -104,9 +103,6 @@ Onboarder = O
               - `feed_alerts-general`
               - `cloud-provider-alerts`
           - [ ] Infrastructure channels:
-              - `sre_observability`
-              - `sre_coreinfra`
-              - `sre_datastores`
               - `infrastructure-lounge`
               - `infra-lounge-social`
               - `infra-read-feed`
@@ -114,21 +110,20 @@ Onboarder = O
               - `g_scalability`
               - `infra_capacity-planning`
               - `kubernetes`
-    1. [ ] N: Subscribe to the [infrastructure calendar](gitlab.com_oji6dki1frc8g8qq9feuu1jtd0@group.calendar.google.com), and checkout the [meetings](https://about.gitlab.com/handbook/engineering/infrastructure/#meetings) that are scheduled periodically.
+    1. [ ] N: Subscribe to the [infrastructure calendar](https://calendar.google.com/calendar/embed?src=gitlab.com_oji6dki1frc8g8qq9feuu1jtd0%40group.calendar.google.com), and checkout the [meetings](https://about.gitlab.com/handbook/engineering/infrastructure/#meetings) that are scheduled periodically.
     1. [ ] N: Introduce yourself to the team in the `#infrastructure-lounge` slack channel.
     1. [ ] N: learn who your teammates are and ping them in your onboarding issue - We do mention the people we address to in issues, get used to doing it.
     1. [ ] N: Add yourself to the [Infrastructure Group Status Update](https://gitlab.com/gitlab-com/gl-infra/infra-report/blob/master/status-report.js)
 1. [ ] **Kubernetes**
-    1. [ ] N: Complete your [Kubernetes Access Setup](https://gitlab.com/gitlab-com/runbooks/blob/master/docs/uncategorized/k8s-oncall-setup.md).
-         - You can use any of the setup methods, the easiest being [Accessing the clusters via console servers](https://gitlab.com/gitlab-com/runbooks/blob/master/docs/uncategorized/k8s-oncall-setup.md#accessing-clusters-via-console-servers).
-    1. [ ] N: Read the different sections in the [K8s Operations Howto](https://gitlab.com/gitlab-com/runbooks/blob/master/docs/uncategorized/k8s-operations.md) page.
+    1. [ ] N: Complete your [Kubernetes Access Setup](https://gitlab.com/gitlab-com/runbooks/blob/master/docs/kube/k8s-oncall-setup.md).
+         - You can use any of the setup methods, the easiest being [Accessing the clusters via console servers](https://gitlab.com/gitlab-com/runbooks/blob/master/docs/kube/k8s-oncall-setup.md#accessing-clusters-via-console-servers).
+    1. [ ] N: Read the different sections in the [K8s Operations](https://gitlab.com/gitlab-com/runbooks/blob/master/docs/kube/k8s-operations.md) page.
     1. [ ] N: Checkout Scenario 3 Youtube recording in [this Firedrill doc](https://docs.google.com/document/d/1uZHz1w3NC6yhSPpuWiUftoz2pIaMtnXhKGvn4O3Fe1U/edit#heading=h.o4psext022tb) to give you an idea of the k8s-related issues you might encounter in gitlab.com.
 1. [ ] **Context & Comfort with GitLab's code base:**
-    1. [ ] N: review issues labeled as `outage` in the [infrastructure issue tracker](https://gitlab.com/groups/gitlab-com/gl-infra/-/issues?scope=all&utf8=%E2%9C%93&state=closed&label_name%5B%5D=outage).
     1. [ ] O: point the new production engineer to the ongoing meta issues that define the team strategy.
     1. [ ] O: Schedule a synchronous [architecture overview session](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/onboarding/architecture.md).
     1. [ ] N: read about the [application architecture](https://docs.gitlab.com/ce/development/architecture.html)
-    1. [ ] N: checkout the diagrams showing a before and after we moved some of the services to Kubernets [here](https://gitlab.com/gitlab-com/runbooks/-/tree/hp-api/docs/api#architecture).
+    1. [ ] N: checkout the diagrams showing a before and after we moved some of the services to Kubernets [here](https://gitlab.com/gitlab-com/runbooks/-/tree/master/docs/api#architecture).
     1. [ ] N: Read the [Life of a web request](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/00d0fb19b0e7d90c32b9c73dc8d0faff86c05117/source/handbook/engineering/infrastructure/tutorials/overview_life_of_a_web_request.html.md) and the [Life of a GIT request](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/9636e8addd6c1130accd4e157991f714f48262aa/source/handbook/engineering/infrastructure/tutorials/overview_life_of_a_git_request.html.md) tutorials.
     1. [ ] N: watch the [gitlab.com infrastructure overview](https://www.youtube.com/watch?v=uCU8jdYzpac), keeping in mind that it was recorded a few years ago, and some of the info is no longer applicable, example, [GitLab Takeoff](https://gitlab.com/gitlab-org/takeoff) is deprecated in favor of the [Deployer](https://ops.gitlab.net/gitlab-com/gl-infra/deployer).
     1. [ ] N: check out [the service inventory catalog](https://gitlab.com/gitlab-com/runbooks/-/blob/master/services/service-catalog.yml)
