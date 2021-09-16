@@ -119,9 +119,9 @@ Onboarder = O
     1. [ ] N: learn who your teammates are and ping them in your onboarding issue - We do mention the people we address to in issues, get used to doing it.
     1. [ ] N: Add yourself to the [Infrastructure Group Status Update](https://gitlab.com/gitlab-com/gl-infra/infra-report/blob/master/status-report.js)
 1. [ ] **Kubernetes**
-    1. [ ] N: Complete your [Kubernetes Access Setup](https://gitlab.com/gitlab-com/runbooks/blob/master/docs/uncategorized/k8s-oncall-setup.md).
-         - You can use any of the setup methods, the easiest being [Accessing the clusters via console servers](https://gitlab.com/gitlab-com/runbooks/blob/master/docs/uncategorized/k8s-oncall-setup.md#accessing-clusters-via-console-servers).
-    1. [ ] N: Read the different sections in the [K8s Operations Howto](https://gitlab.com/gitlab-com/runbooks/blob/master/docs/uncategorized/k8s-operations.md) page.
+    1. [ ] N: Complete your [Kubernetes Access Setup](https://gitlab.com/gitlab-com/runbooks/blob/master/docs/kube/k8s-oncall-setup.md).
+         - You can use any of the setup methods, the easiest being [Accessing the clusters via console servers](https://gitlab.com/gitlab-com/runbooks/blob/master/docs/kube/k8s-oncall-setup.md#accessing-clusters-via-console-servers).
+    1. [ ] N: Read the different sections in the [K8s Operations](https://gitlab.com/gitlab-com/runbooks/blob/master/docs/kube/k8s-operations.md) page.
     1. [ ] N: Checkout Scenario 3 Youtube recording in [this Firedrill doc](https://docs.google.com/document/d/1uZHz1w3NC6yhSPpuWiUftoz2pIaMtnXhKGvn4O3Fe1U/edit#heading=h.o4psext022tb) to give you an idea of the k8s-related issues you might encounter in gitlab.com.
 1. [ ] **Context & Comfort with GitLab's code base:**
     1. [ ] N: review issues labeled as `outage` in the [infrastructure issue tracker](https://gitlab.com/groups/gitlab-com/gl-infra/-/issues?scope=all&utf8=%E2%9C%93&state=closed&label_name%5B%5D=outage).
