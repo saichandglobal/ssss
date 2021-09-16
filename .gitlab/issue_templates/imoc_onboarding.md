@@ -6,7 +6,7 @@ The [current responsibilities of an IMOC are locate in the handbook](https://abo
 
 ## IMOC Volunteer Details
 - Volunteer - {+ GitLab username +}
-- Ideal 8 hour shift (in UTC, example "04:00 - 16:00 UTC") - {+ 8 hour shift +} (see handbook for [details](https://about.gitlab.com/handbook/engineering/infrastructure/incident-manager-onboarding/index.html#what-are-the-expected-commitments-and-how-do-i-balance-my-normal-job-responsibilities))
+- Ideal 4 hour shift (in UTC, example "04:00 - 16:00 UTC") - {+ 8 hour shift +} (see handbook for [details](https://about.gitlab.com/handbook/engineering/infrastructure/incident-manager-onboarding/index.html#what-are-the-expected-commitments-and-how-do-i-balance-my-normal-job-responsibilities))
 
 ## Learning about Incident Management 
 
@@ -15,8 +15,9 @@ The [current responsibilities of an IMOC are locate in the handbook](https://abo
 
 ### Reading
 1. Understanding how to work with the CMOC: the support team has a [great write up](/handbook/support/workflows/cmoc_workflows.html) on the Communications Manager On-Call (CMOC) workflows.
-2. [SRE Shadow blog post](https://about.gitlab.com/blog/2020/04/13/lm-sre-shadow/) so you have a feel of what working with the EOC is like. 
-3. Google has a few chapters on Incident response in their SRE books:
+2. The [IMOC Onboarding handbook page](https://about.gitlab.com/handbook/engineering/infrastructure/incident-manager-onboarding/)
+3. [SRE Shadow blog post](https://about.gitlab.com/blog/2020/04/13/lm-sre-shadow/) so you have a feel of what working with the EOC is like. 
+4. Google has a few chapters on Incident response in their SRE books:
   a. Good thoughts on the life of the engineers on call.
    * [Being On call](https://sre.google/sre-book/being-on-call/)
    * [Effective Troubleshooting](https://sre.google/sre-book/effective-troubleshooting/)
@@ -26,12 +27,12 @@ The [current responsibilities of an IMOC are locate in the handbook](https://abo
    * [Workbook examples of incident response](https://sre.google/workbook/incident-response/)
    * [Incident Review](https://sre.google/sre-book/postmortem-culture/) and [Learning from Failure](https://sre.google/workbook/postmortem-culture/)
   c. [Being Oncall examples](https://sre.google/workbook/on-call/)
-4. The [IMOC Checklist](https://gitlab.com/gitlab-com/runbooks/-/blob/master/incidents/general_incidents.md#imoc-checklist) in our runbooks.
+5. The [IMOC Checklist](https://gitlab.com/gitlab-com/runbooks/-/blob/master/incidents/general_incidents.md#imoc-checklist) in our runbooks.
 
 ## Getting going as an IMOC
 After the reading and video above, you should start shadowing existing IMOCs.  
 
-Things you will need:
+Things you will need: (note, you can do the Access Request and start shadowing / joining channels while you wait on the Access Request)
 1. An account on GitLab's PagerDuty account (via Access Request)
 2. The PagerDuty App on your phone
 3. Join the following channels on Slack: #incident-management, #production, #feed_alerts-general, #abuse, #dev-escalation
@@ -54,7 +55,6 @@ with a fall back / escalation point should you need help.  This is what we do to
 and has been very helpful for new people getting used to things.
 
 ##### IMOC Shadow Setup Checklist
-- [ ] Volunteer has filled out their ideal 8 hour shift
 - [ ] Volunteer is setup in Pagerduty
 - [ ] A current IMOC is assigned as their onboarding team member and made a DRI of this issue with the volunteer.
 - [ ] Volunteer is briefed via a sync meeting about their first shadow rotation
