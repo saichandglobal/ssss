@@ -16,7 +16,6 @@ The [current responsibilities of an IMOC are locate in the handbook](https://abo
   a. [Visualization Tools Playlist](https://www.youtube.com/playlist?list=PL05JrBw4t0KrDIsPQ68htUUbvCgt9JeQj) (internal)
   b. [How to search for an issues in Kibana](https://youtu.be/fKmwH0aNUQQ)
   c. [How to investigate a Sentry 500 Error in Kibana](https://youtu.be/o02t3V3vHMs)
-  d. 
 
 ### Reading
 1. Understanding how to work with the CMOC: the support team has a [great write up](/handbook/support/workflows/cmoc_workflows.html) on the Communications Manager On-Call (CMOC) workflows.
