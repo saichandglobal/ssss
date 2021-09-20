@@ -4,8 +4,38 @@
 
   If you are already familiar with the item listed, you should feel free to check it without going through the exercise.
 -->
+Title: Site Reliability Engineer Onboarding Issue 3 - Oncall Onboarding
+[Fill in name and start date]
 
 ## Welcome to your oncall onboarding issue!
+
+This is the third and final of your onboarding issues.
+
+In order to join oncall, at a high level you should:
+    1. Alerting - know how to find silences and create them.
+    1. Join the [shadow rotation in PagerDuty](https://gitlab.pagerduty.com/schedules#PZEBYO0) for a few days and shadow a current oncall.
+    1. Join the [shadow rotation in PagerDuty](https://gitlab.pagerduty.com/schedules#PZEBYO0) a second time and communicate with the EOC that you will take primary with them as a fallback. Record a log of:
+      - how many alerts you acknowledge
+      - how many alerts felt actionable
+      - how many alerts "made sense", where you knew what you needed to do or where to look
+      - Ideally, you are ready to join when the ratio of made sense to acknowledge is above 80% with working on at least 10 alerts.
+
+
+### Generalized investigation steps during an incident
+
+An incident starts with trying to efficiently identify the nature of the problem, drilling down from:
+
+- PagerDuty alert
+- Grafana dashboard for the alerting service
+- Kibana log events for that service, often starting with one of the quick links from the Grafana dashboard
+- Possibly looking at other Grafana dashboards if the above indicates that the alerting service is having trouble due to its dependency on another service (e.g. Rails having lots of SQL statement timeouts may indicate trouble on the database or its connection pooler).
+
+Once we identify the affected component and the nature of its problem, that usually gives us enough info to understand what kind of solutions are likely to be helpful -- and that may mean getting help from domain experts in whatever component of the app code or infrastructure that we identified as contributing causes of the incident.
+
+Remember that you are not alone. At any point you can ask for help from other SREs in the #infrastructure-lounge channel, someone will be happy to join you in zoom. You can also escalate to the Incident Manager On Call (IMOC) at any time, if you need a second opinion, a different perspective, need help knowing who to reach out to on other teams, etc.
+
+The rest of this issue gives some practical steps/exercises for things you should know how to do.
+
 
 ### Asking for help
 
@@ -26,6 +56,7 @@ Make sure you know how to:
 - [ ] When you're ready, add yourself to the [EOC Shadow PD Schedule](https://gitlab.pagerduty.com/schedules#PZEBYO0).
 - [ ] Checkout an example Alert in `#production`, Explore the `Runbook`, `Dashboard`, the discription and the related `Prometheus graph` by clicking `show more`. Note that any of these links could be outdated, so proceed your evaluation with caution.
 - [ ] Understand when an Incident Review is required by viewing [The Incident Review Handbook](https://about.gitlab.com/handbook/engineering/infrastructure/incident-review/#incident-review).
+- [ ] Checkout Scenario 3 Youtube recording in [this Firedrill doc](https://docs.google.com/document/d/1uZHz1w3NC6yhSPpuWiUftoz2pIaMtnXhKGvn4O3Fe1U/edit#heading=h.o4psext022tb) to give you an idea of the k8s-related issues you might encounter in gitlab.com.
 
 ### Security
 
