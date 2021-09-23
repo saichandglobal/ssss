@@ -58,6 +58,7 @@ and has been very helpful for new people getting used to things.
 - [ ] Volunteer is setup in Pagerduty
 - [ ] A current IMOC is assigned as their onboarding team member and made a DRI of this issue with the volunteer.
 - [ ] Volunteer is briefed via a sync meeting about their first shadow rotation
+- [ ] Volunteer watches the `#incident-management` channel looking for messages from the Woodhouse app announcing "paging IMOC" to selectively join and learn from observing an active incident.
 - [ ] Volunteer is debriefed after first shadow rotation and has made a determination to go forward or not.
   - [ ] If going forward, they are added to the volunteer schedule and given access to adjust
   - [ ] If not going forward, they are removed from Pagerduty.
