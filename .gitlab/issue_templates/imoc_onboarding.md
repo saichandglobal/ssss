@@ -49,7 +49,7 @@ An IMOC:
     1. If the team of responders is stuck and not sure what to do you should ask probing questions to help unblock the team’s thinking.  Assign people to investigatory tasks as you generate ideas.
     1. Some example probing questions:
         1. What is the current impact on users? Is the service unavailable, slow, partially available?
-        1. Can we rollback to a known good version?  Can someone confirm if that is safe?  Even if we don’t know exactly what’s causing a rollback may restore service while we continue investigating.
+        1. Can we rollback to a known good version?  Can someone confirm if that is safe?  Even if we don’t yet know exactly what’s causing this could a rollback may restore service while we continue investigating?
         1. When did the impact start?  Can we learn anything from the timing?  Is this correlated with a new deploy, or an increase in traffic volume?
         1. Does anyone have a theory as to what’s causing this?  Let’s brainstorm some possible areas we can investigate.
         1. Can the affected service be safely restarted?  Can someone confirm if that is safe? 
