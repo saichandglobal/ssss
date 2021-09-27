@@ -35,6 +35,7 @@ An IMOC:
 
 1. [ ] An IMOC should not directly engaging in debugging, troubleshooting, or creating technical fixes.  These activities should be delegated to the EOC and other responding engineers so the IMOC can maintain operational awareness, communicate status, and coordinate the response. 
 
+See also the description of [Roles and Responsibilities](/handbook/engineering/infrastructure/incident-management/#roles-and-responsibilities) in our Incident Management documentation.
 
 ### What does an IMOC do during an incident?
 
