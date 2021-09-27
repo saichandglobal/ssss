@@ -30,9 +30,10 @@ Onboarder = O
     1. [ ] N: Accept the invitation and configure [Pager Duty](https://gitlab.pagerduty.com/) timezone and phone number and other details
     1. [ ] N: Verify your access to Rackspace - this is where you can make tickets for issues with GCP
 1. [ ] **Permissions:**
-    1. [ ] O: add new production engineer as 'developer' to the [gitlab-com](https://gitlab.com/groups/gitlab-com/-/group_members) group.
-    1. [ ] O: add new production engineer as 'developer' to the [gitlab-org](https://gitlab.com/groups/gitlab-org/-/group_members) group.
-    1. [ ] O: add new production engineer as 'owner' to the [gl-infra](https://gitlab.com/groups/gitlab-com/gl-infra/-/group_members) group.
+    1. [ ] O: Check the new production engineer has been added to the following groups/with permissions by the Employment Bot:
+         1. [ ] 'developer' in [gitlab-com](https://gitlab.com/groups/gitlab-com/-/group_members).
+         1. [ ] 'developer' in [gitlab-org](https://gitlab.com/groups/gitlab-org/-/group_members).
+    1. [ ] O: add new production engineers as 'owner' in [gl-infra](https://gitlab.com/groups/gitlab-com/gl-infra/-/group_members).
     1. [ ] O: add new production engineer as 'owner' to the [cookbooks](https://gitlab.com/groups/gitlab-cookbooks/-/group_members) group
     1. [ ] O: add new production engineer as 'owner' to the [reliability](https://ops.gitlab.net/groups/gitlab-com/reliability/-/group_members) group on the Ops instance.
     1. [ ] O: invite the new production engineer to [Azure Active Directory](https://portal.azure.com/?reAuth=true#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
