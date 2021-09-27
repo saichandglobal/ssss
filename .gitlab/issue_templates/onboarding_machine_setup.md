@@ -24,7 +24,7 @@ Onboarder = O
     1. [ ] N: Complete the setup of your [Yubikey](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/uncategorized/yubikey.md) Note: this setup can take at least a day to complete, and we encourage you to get help if things are unclear or you run into an issue.
   
 1. [ ] **Accounts:**
-    1. [ ] O: Create an issue from the SRE Entitlements template in the [Access Request Repo](https://gitlab.com/gitlab-com/access-requests/issues).  This will create accounts for many of the services we use: AWS, Azure, dev, DO, GitLab.com admin, staging, GCP, Chef, Pager Duty
+    1. [ ] O: Check that by the start of Day 2 that an issue has been auto-created in the [Access Request Repo](https://gitlab.com/gitlab-com/team-member-epics/access-requests) by the employment bot.  This will create accounts for many of the services we use: AWS, Azure, dev, DO, GitLab.com admin, staging, GCP, Chef, Pager Duty
     1. [ ] N: comment in the access request issue with your desired Unix username and your SSH public key. Tip: use the same username you use on your laptop.
     1. [ ] N: You should receive a GitLab `admin` account via a 'plussed' email address (ex `yourGitLabHandle+admin@gitlab.com`). Set this account password and configure multi factor security on this account.
     1. [ ] N: Accept the invitation and configure [Pager Duty](https://gitlab.pagerduty.com/) timezone and phone number and other details
