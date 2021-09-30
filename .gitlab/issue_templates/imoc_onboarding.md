@@ -46,7 +46,7 @@ See also the description of [Roles and Responsibilities](/handbook/engineering/i
     1. Ask the CMOC for an update on new customer reports every 5-10 mins.
     1. Screenshot (or ask others to screenshot) charts showing changes in impact.
     1. Report a status updates summary regularly (every 5-30 min) in the incident slack channel.  These updates provide critical information that help the team members across the company coordinate our response
-1.[ ] If You’re Stuck Ask Probing Questions 
+1. [ ] If You’re Stuck Ask Probing Questions 
     1. If the team of responders is stuck and not sure what to do you should ask probing questions to help unblock the team’s thinking.  Assign people to investigatory tasks as you generate ideas.
     1. Some example probing questions:
         1. What is the current impact on users? Is the service unavailable, slow, partially available?
