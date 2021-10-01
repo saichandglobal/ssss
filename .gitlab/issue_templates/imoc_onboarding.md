@@ -83,6 +83,8 @@ See also the description of [Roles and Responsibilities](/handbook/engineering/i
    * [Incident Review](https://sre.google/sre-book/postmortem-culture/) and [Learning from Failure](https://sre.google/workbook/postmortem-culture/)
   c. [Being Oncall examples](https://sre.google/workbook/on-call/)
 4. The [Incident Manager Checklist](https://gitlab.com/gitlab-com/runbooks/-/blob/master/incidents/general_incidents.md#imoc-checklist) in our runbooks.
+5. If you have additional questions about the Incident Manager role, incident response or incident review, please join the #imoc_general Slack channel.
+
 
 ## Getting going as an Incident Manager
 After the reading and video above, you should start shadowing existing Incident Managers.  
