@@ -1,14 +1,14 @@
-<!-- title the issue: IMOC Rotation Volunteer - Volunteer Name -->
+<!-- title the issue: Incident Manager Onboarding - Team Member Name -->
 
-This issue is for training and onboarding to be a GitLab Incident Manager On Call (IMOC).
+This issue is for training and onboarding to be a GitLab Incident Manager.
 
 
-## Introduction to IMOC
+## Introduction to Incident Manager
 
 ### The goal of incident response:
 
 - [ ] The goal of the incident response process is to mitigate customer and/or business impact and restore service to its previous condition.  We should favor mitigating the impact over understanding the underlying cause.
-- [ ] Example: An IMOC may decide to initiate a rollback to a known good version, even if the underlying cause of the problem is unknown.  
+- [ ] Example: An Incident Manager may decide to initiate a rollback to a known good version, even if the underlying cause of the problem is unknown.  
 
 ### There are some basic principles of incident response you should be aware of: 
 
@@ -20,9 +20,9 @@ This issue is for training and onboarding to be a GitLab Incident Manager On Cal
 [Source: https://sre.google/workbook/incident-response/](https://sre.google/workbook/incident-response/)
 
 
-### What is the role of IMOC?
+### What is the role of Incident Manager?
 
-An IMOC:
+An Incident Manager:
 
 1. [ ] Commands and coordinates the incident response, delegating roles as needed. 
 1. [ ] Communicates effectively.
@@ -31,13 +31,13 @@ An IMOC:
 
 [Source: https://sre.google/workbook/incident-response/](https://sre.google/workbook/incident-response/)
 
-### What is not part of IMOC role?
+### What is not part of Incident Manager role?
 
-1. [ ] An IMOC should not directly engaging in debugging, troubleshooting, or creating technical fixes.  These activities should be delegated to the EOC and other responding engineers so the IMOC can maintain operational awareness, communicate status, and coordinate the response. 
+1. [ ] An Incident Manager should not directly engaging in debugging, troubleshooting, or creating technical fixes.  These activities should be delegated to the EOC and other responding engineers so the Incident Manager can maintain operational awareness, communicate status, and coordinate the response. 
 
 See also the description of [Roles and Responsibilities](/handbook/engineering/infrastructure/incident-management/#roles-and-responsibilities) in our Incident Management documentation.
 
-### What does an IMOC do during an incident?
+### What does an Incident Manager do during an incident?
 
 1. [ ] Don’t Panic 
     1. Incident management can sometimes feel stressful.  Don’t panic.  Assemble the team of people you need to support you, follow the process, and don’t panic.
@@ -56,9 +56,9 @@ See also the description of [Roles and Responsibilities](/handbook/engineering/i
         1. Can the affected service be safely restarted?  Can someone confirm if that is safe? 
         1. Do we need to escalate this and/or pull in more people to help? 
 1. [ ] Get out of the way (but still report status)
-    1. As IMOC you need to interrupt people to get status, assign tasks, and ensure we are making progress towards a resolution.  However it is also important to provide EOC and any other engaged engineers with time to work and investigate.  If someone should be heads down doing debugging or technical investigation make sure they have space to work.   Set a timer and ask them for a short update at regular intervals.
+    1. As Incident Manager you need to interrupt people to get status, assign tasks, and ensure we are making progress towards a resolution.  However it is also important to provide EOC and any other engaged engineers with time to work and investigate.  If someone should be heads down doing debugging or technical investigation make sure they have space to work.   Set a timer and ask them for a short update at regular intervals.
 1. [ ] Escalate if you are not making progress
-    1. If you find that the current group of responders is blocked and not making acceptable progress towards a resolution it is time to escalate.  Page in additional IMOC and EOC support and reach out to key individuals that may be able to help.  You can also engage with leaders to help coordinate.
+    1. If you find that the current group of responders is blocked and not making acceptable progress towards a resolution it is time to escalate.  Page in additional Incident Manager and EOC support and reach out to key individuals that may be able to help.  You can also engage with leaders to help coordinate.
 
 
 
@@ -82,10 +82,10 @@ See also the description of [Roles and Responsibilities](/handbook/engineering/i
    * [Workbook examples of incident response](https://sre.google/workbook/incident-response/)
    * [Incident Review](https://sre.google/sre-book/postmortem-culture/) and [Learning from Failure](https://sre.google/workbook/postmortem-culture/)
   c. [Being Oncall examples](https://sre.google/workbook/on-call/)
-4. The [IMOC Checklist](https://gitlab.com/gitlab-com/runbooks/-/blob/master/incidents/general_incidents.md#imoc-checklist) in our runbooks.
+4. The [Incident Manager Checklist](https://gitlab.com/gitlab-com/runbooks/-/blob/master/incidents/general_incidents.md#imoc-checklist) in our runbooks.
 
-## Getting going as an IMOC
-After the reading and video above, you should start shadowing existing IMOCs.  
+## Getting going as an Incident Manager
+After the reading and video above, you should start shadowing existing Incident Managers.  
 
 Things you will need:
 1. [ ] An account on GitLab's PagerDuty account (via Access Request)
