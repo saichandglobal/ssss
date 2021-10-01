@@ -95,7 +95,7 @@ Things you will need:
 3. [ ] Join the following channels on Slack: #incident-management, #production, #feed_alerts-general, #abuse, #dev-escalation
 5. [ ] Make sure you can login to the [dashboards site](https://dashboards.gitlab.net/d/RZmbBr7mk/gitlab-triage)
 6. [ ] Make sure you can login to [kibana](https://log.gprd.gitlab.net/) 
-7. [ ] Familiarize yourself with the [dev escalation process](/handbook/engineering/development/processes/Infra-Dev-Escalation/process.html)
+7. [ ] Familiarize yourself with the [dev escalation process](https://about.gitlab.com/handbook/engineering/development/processes/Infra-Dev-Escalation/process.html)
 8. [ ] Make sure you can login to https://ops.gitlab.net/
 
 
