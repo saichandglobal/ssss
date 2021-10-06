@@ -90,13 +90,13 @@ See also the description of [Roles and Responsibilities](/handbook/engineering/i
 After the reading and video above, you should start shadowing existing Incident Managers.  
 
 Things you will need:
-1. [ ] An account on GitLab's PagerDuty account (via Access Request)
-2. [ ] The PagerDuty App on your phone
+1. [ ] Request an account with `limited user` permissions on GitLab's PagerDuty account (via an [Access Request](https://gitlab.com/gitlab-com/team-member-epics/access-requests)) 
+2. [ ] Install the PagerDuty App on your phone
 3. [ ] Join the following channels on Slack: #incident-management, #production, #feed_alerts-general, #abuse, #dev-escalation
-5. [ ] Make sure you can login to the [dashboards site](https://dashboards.gitlab.net/d/RZmbBr7mk/gitlab-triage)
-6. [ ] Make sure you can login to [kibana](https://log.gprd.gitlab.net/) 
-7. [ ] Familiarize yourself with the [dev escalation process](https://about.gitlab.com/handbook/engineering/development/processes/Infra-Dev-Escalation/process.html)
-8. [ ] Make sure you can login to https://ops.gitlab.net/
+4. [ ] Make sure you can login to the [dashboards site](https://dashboards.gitlab.net/d/RZmbBr7mk/gitlab-triage)
+5. [ ] Make sure you can login to [kibana](https://log.gprd.gitlab.net/) 
+6. [ ] Familiarize yourself with the [dev escalation process](https://about.gitlab.com/handbook/engineering/development/processes/Infra-Dev-Escalation/process.html)
+7. [ ] Make sure you can login to https://ops.gitlab.net/
 
 
 /assign @gitlab-com/gl-infra/managers 
