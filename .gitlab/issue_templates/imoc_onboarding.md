@@ -68,6 +68,10 @@ See also the description of [Roles and Responsibilities](/handbook/engineering/i
 
 ### Videos
 1. [A good talk about incident response](https://www.youtube.com/watch?v=4ZHFPiRXJls) from PagerDuty.
+2. There are some video resources in the [Monitoring handbook page](https://about.gitlab.com/handbook/engineering/monitoring/) that can be helpful like: 
+  a. [Visualization Tools Playlist](https://www.youtube.com/playlist?list=PL05JrBw4t0KrDIsPQ68htUUbvCgt9JeQj) (internal)
+  b. [How to search for an issues in Kibana](https://youtu.be/fKmwH0aNUQQ)
+  c. [How to investigate a Sentry 500 Error in Kibana](https://youtu.be/o02t3V3vHMs)
 
 ### Reading
 1. Understanding how to work with the CMOC: the support team has a [great write up](/handbook/support/workflows/cmoc_workflows.html) on the CMOC workflows.
