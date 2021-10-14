@@ -73,7 +73,7 @@ Onboarder = O
     1. [ ] O: make the new chef user admin with [knife acl](https://gitlab.com/gitlab-com/gl-infra/chef-repo/blob/master/doc/set-up-chef-server.md#add-users-to-the-admins-group-of-the-gitlab-organization)
     1. [ ] N: create chef-repo/.chef/knife.rb from [knife.rb.example](https://gitlab.com/gitlab-com/gl-infra/chef-repo/blob/master/knife.rb.example)
     1. [ ] N: test your chef setup with `knife status`
-    1. [ ] O: add new Chef user to config/vault_admins.yml and run `rake update_vault_admins`
+    1. [ ] O: in the chef-repo, add the new Chef user to config/vault_admins.yml, then run `rake update_vault_admins`.  This will run for a while (hours, not minutes) and then create an MR you can have approved and merged.  It will output "WARNING: Vault admin must be an array" a lot; this is not a problem
 1. [ ] **Bastion setup for SSH:**
     1. [ ] N: obtain a base known-good SSH config for GitLab infrastructure: `curl https://gitlab.com/gitlab-com/gl-infra/infrastructure/raw/master/onboarding/ssh-config >> $HOME/.ssh/config`
     1. [ ] N: try to ssh into a host and make sure it works. Example: `knife status | grep dashboard`, get one of the hosts' name and ssh into it
