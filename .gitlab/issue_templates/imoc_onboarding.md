@@ -35,7 +35,7 @@ An Incident Manager:
 
 1. [ ] An Incident Manager should not be directly engaging in debugging, troubleshooting, or creating technical fixes.  These activities should be delegated to the GitLab Engineer On-Call (EOC) and other responding engineers so the Incident Manager can maintain operational awareness, communicate status, and coordinate the response. 
 
-See also the description of [Roles and Responsibilities](/handbook/engineering/infrastructure/incident-management/#roles-and-responsibilities) in our Incident Management documentation.
+See also the description of [Roles and Responsibilities](https://about.gitlab.com/handbook/engineering/infrastructure/incident-management/#roles-and-responsibilities) in our Incident Management documentation.
 
 ### What does an Incident Manager do during an incident?
 
