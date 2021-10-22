@@ -39,4 +39,4 @@ Apply the appropriate services associate with this corrective action if appliabl
 * [ ] assign a severity label (this is the highest sev of related incidents, defaults to 'severity::4')
 * [ ] assign a priority (this will default to 'priority::4')
 
-/label ~"team::Reliability" ~"ac::triage" ~"severity::4" ~"priority::4" ~"corrective action" 
+/label ~"team::Reliability" ~"ca::triage" ~"severity::4" ~"priority::4" ~"corrective action" 
