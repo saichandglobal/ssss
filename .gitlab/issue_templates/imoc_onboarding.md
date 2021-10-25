@@ -1,17 +1,79 @@
-<!-- title the issue: IMOC Rotation Volunteer - Volunteer Name -->
+<!-- title the issue: Incident Manager Onboarding - Team Member Name -->
 
-We will be using this information to assemble a schedule for shadowing and a longer term volunteer schedule, if you remain interested after your shadow rotation. We appreciate your time and your willingness to participate in capacity as an Incident Manager On-Call (IMOC), during the weekdays.
+This issue is for training and onboarding to be a GitLab Incident Manager.
 
-The [current responsibilities of an IMOC are locate in the handbook](https://about.gitlab.com/handbook/engineering/infrastructure/incident-management/#incident-manager-on-call-imoc-responsibilities) and as part of the volunteer program, you will be reverse-shadowed by a regular IMOC, should you require additional support.
 
 ## IMOC Volunteer Details
 - Volunteer - {+ GitLab username +}
 - Ideal 4 hour shift (in UTC, example "04:00 - 16:00 UTC") - {+ 8 hour shift +} (see handbook for [details](https://about.gitlab.com/handbook/engineering/infrastructure/incident-manager-onboarding/index.html#what-are-the-expected-commitments-and-how-do-i-balance-my-normal-job-responsibilities))
 
-## Learning about Incident Management 
+### The goal of incident response:
+
+- [ ] The goal of the incident response process is to mitigate customer and/or business impact and restore service to its previous condition.  We should favor mitigating the impact over understanding the underlying cause.
+- [ ] Example: An Incident Manager may decide to initiate a rollback to a known good version, even if the underlying cause of the problem is unknown.  
+
+### There are some basic principles of incident response you should be aware of: 
+
+1. Maintain a clear line of command.
+1. Designate clearly defined roles.
+1. Keep a working record of debugging and mitigation as you go.
+1. Declare incidents early and often.
+
+[Source: https://sre.google/workbook/incident-response/](https://sre.google/workbook/incident-response/)
+
+
+### What is the role of Incident Manager?
+
+An Incident Manager:
+
+1. [ ] Commands and coordinates the incident response, delegating roles as needed. 
+1. [ ] Communicates effectively.
+1. [ ] Stays in control of the incident response.
+1. [ ] Works with other responders to resolve the incident.
+
+[Source: https://sre.google/workbook/incident-response/](https://sre.google/workbook/incident-response/)
+
+### What is not part of Incident Manager role?
+
+1. [ ] An Incident Manager should not be directly engaging in debugging, troubleshooting, or creating technical fixes.  These activities should be delegated to the GitLab Engineer On-Call (EOC) and other responding engineers so the Incident Manager can maintain operational awareness, communicate status, and coordinate the response. 
+
+See also the description of [Roles and Responsibilities](https://about.gitlab.com/handbook/engineering/infrastructure/incident-management/#roles-and-responsibilities) in our Incident Management documentation.
+
+### What does an Incident Manager do during an incident?
+
+1. [ ] Don’t Panic 
+    1. Incident management can sometimes feel stressful.  Don’t panic.  Assemble the team of people you need to support you, follow the process, and don’t panic.
+1. [ ] Clearly Communicate Current Status
+    1. In the early stages of an incident, ask for an update from the EOC and any other engaged engineers every 5-10 mins.  
+    1. Ask the Communications Manager On-Call (CMOC) for an update on new customer reports every 5-10 mins.
+    1. Screenshot (or ask others to screenshot) charts showing changes in impact.
+    1. Report a status updates summary regularly (every 5-30 min) in the incident Slack channel.  These updates provide critical information that help the team members across the company coordinate our response
+1. [ ] If You’re Stuck Ask Probing Questions 
+    1. If the team of responders is stuck and not sure what to do, you should ask probing questions to help unblock the team’s thinking.  Assign people to investigatory tasks as you generate ideas.
+    1. Some example probing questions:
+        1. What is the current impact on users? Is the service unavailable, slow, partially available?
+        1. Can we rollback to a known good version?  Can someone confirm if that is safe?  Even if we don’t yet know exactly what’s causing this could a rollback restore service while we continue investigating?
+        1. When did the impact start?  Can we learn anything from the timing?  Is this correlated with a new deploy, or an increase in traffic volume?
+        1. Does anyone have a theory as to what’s causing this?  Let’s brainstorm some possible areas we can investigate.
+        1. Can the affected service be safely restarted?  Can someone confirm if that is safe? 
+        1. Do we need to escalate this and/or pull in more people to help? 
+1. [ ] Get out of the way (but still report status)
+    1. As Incident Manager, you need to interrupt people to get status, assign tasks, and ensure we are making progress towards a resolution.  However, it is also important to provide EOC and any other engaged engineers with time to work and investigate.  If someone should be heads down doing debugging or technical investigation, make sure they have space to work.   Set a timer and ask them for a short update at regular intervals.
+1. [ ] Escalate if you are not making progress
+    1. If you find that the current group of responders is blocked and not making acceptable progress towards a resolution, it is time to escalate.  Page in additional Incident Manager and EOC support and reach out to key individuals that may be able to help.  You can also engage with leaders to help coordinate.
+
+
+
+
+
+## Additional Learning about Incident Management 
 
 ### Videos
 1. [A good talk about incident response](https://www.youtube.com/watch?v=4ZHFPiRXJls) from PagerDuty.
+2. There are some video resources in the [Monitoring handbook page](https://about.gitlab.com/handbook/engineering/monitoring/) that can be helpful like: 
+  a. [Visualization Tools Playlist](https://www.youtube.com/playlist?list=PL05JrBw4t0KrDIsPQ68htUUbvCgt9JeQj) (internal)
+  b. [How to search for an issues in Kibana](https://youtu.be/fKmwH0aNUQQ)
+  c. [How to investigate a Sentry 500 Error in Kibana](https://youtu.be/o02t3V3vHMs)
 
 ### Reading
 1. Understanding how to work with the CMOC: the support team has a [great write up](/handbook/support/workflows/cmoc_workflows.html) on the Communications Manager On-Call (CMOC) workflows.
@@ -27,10 +89,12 @@ The [current responsibilities of an IMOC are locate in the handbook](https://abo
    * [Workbook examples of incident response](https://sre.google/workbook/incident-response/)
    * [Incident Review](https://sre.google/sre-book/postmortem-culture/) and [Learning from Failure](https://sre.google/workbook/postmortem-culture/)
   c. [Being Oncall examples](https://sre.google/workbook/on-call/)
-5. The [IMOC Checklist](https://gitlab.com/gitlab-com/runbooks/-/blob/master/incidents/general_incidents.md#imoc-checklist) in our runbooks.
+4. The [Incident Manager Checklist](https://gitlab.com/gitlab-com/runbooks/-/blob/master/incidents/general_incidents.md#imoc-checklist) in our runbooks.
+5. If you have additional questions about the Incident Manager role, incident response or incident review, please join the #imoc_general Slack channel.
 
-## Getting going as an IMOC
-After the reading and video above, you should start shadowing existing IMOCs.  
+
+## Getting going as an Incident Manager
+After the reading and video above, you should start shadowing existing Incident Managers.  
 
 Things you will need: (note, you can do the Access Request and start shadowing / joining channels while you wait on the Access Request)
 1. An account on GitLab's PagerDuty account (via Access Request)
