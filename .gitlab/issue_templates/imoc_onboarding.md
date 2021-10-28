@@ -69,17 +69,17 @@ See also the description of [Roles and Responsibilities](https://about.gitlab.co
 ## Additional Learning about Incident Management 
 
 ### Videos
-1. [A good talk about incident response](https://www.youtube.com/watch?v=4ZHFPiRXJls) from PagerDuty.
-2. There are some video resources in the [Monitoring handbook page](https://about.gitlab.com/handbook/engineering/monitoring/) that can be helpful like: 
+1. [ ] [A good talk about incident response](https://www.youtube.com/watch?v=4ZHFPiRXJls) from PagerDuty.
+2. [ ] There are some video resources in the [Monitoring handbook page](https://about.gitlab.com/handbook/engineering/monitoring/) that can be helpful like: 
   a. [Visualization Tools Playlist](https://www.youtube.com/playlist?list=PL05JrBw4t0KrDIsPQ68htUUbvCgt9JeQj) (internal)
   b. [How to search for an issues in Kibana](https://youtu.be/fKmwH0aNUQQ)
   c. [How to investigate a Sentry 500 Error in Kibana](https://youtu.be/o02t3V3vHMs)
 
 ### Reading
-1. Understanding how to work with the CMOC: the support team has a [great write up](/handbook/support/workflows/cmoc_workflows.html) on the Communications Manager On-Call (CMOC) workflows.
-2. The [IMOC Onboarding handbook page](https://about.gitlab.com/handbook/engineering/infrastructure/incident-manager-onboarding/)
-3. [SRE Shadow blog post](https://about.gitlab.com/blog/2020/04/13/lm-sre-shadow/) so you have a feel of what working with the EOC is like. 
-4. Google has a few chapters on Incident response in their SRE books:
+1. [ ] Understanding how to work with the CMOC: the support team has a [great write up](/handbook/support/workflows/cmoc_workflows.html) on the Communications Manager On-Call (CMOC) workflows.
+2. [ ] The [IMOC Onboarding handbook page](https://about.gitlab.com/handbook/engineering/infrastructure/incident-manager-onboarding/)
+3. [ ] [SRE Shadow blog post](https://about.gitlab.com/blog/2020/04/13/lm-sre-shadow/) so you have a feel of what working with the EOC is like. 
+4. [ ] Google has a few chapters on Incident response in their SRE books:
   a. Good thoughts on the life of the engineers on call.
    * [Being On call](https://sre.google/sre-book/being-on-call/)
    * [Effective Troubleshooting](https://sre.google/sre-book/effective-troubleshooting/)
@@ -89,7 +89,7 @@ See also the description of [Roles and Responsibilities](https://about.gitlab.co
    * [Workbook examples of incident response](https://sre.google/workbook/incident-response/)
    * [Incident Review](https://sre.google/sre-book/postmortem-culture/) and [Learning from Failure](https://sre.google/workbook/postmortem-culture/)
   c. [Being Oncall examples](https://sre.google/workbook/on-call/)
-4. The [Incident Manager Checklist](https://gitlab.com/gitlab-com/runbooks/-/blob/master/incidents/general_incidents.md#imoc-checklist) in our runbooks.
+4. [ ] The [Incident Manager Checklist](https://gitlab.com/gitlab-com/runbooks/-/blob/master/incidents/general_incidents.md#imoc-checklist) in our runbooks.
 5. If you have additional questions about the Incident Manager role, incident response or incident review, please join the #imoc_general Slack channel.
 
 
@@ -97,14 +97,14 @@ See also the description of [Roles and Responsibilities](https://about.gitlab.co
 After the reading and video above, you should start shadowing existing Incident Managers.  
 
 Things you will need: (note, you can do the Access Request and start shadowing / joining channels while you wait on the Access Request)
-1. An account on GitLab's PagerDuty account (via Access Request)
-2. The PagerDuty App on your phone
-3. Join the following channels on Slack: #incident-management, #production, #feed_alerts-general, #abuse, #dev-escalation
-4. If you're starting as an IMOC Shadow, also joining the #imoc_shadows channel on Slack.
-5. Make sure you can login to the [dashboards site](https://dashboards.gitlab.net/d/RZmbBr7mk/gitlab-triage)
-6. Make sure you can login to [kibana](https://log.gprd.gitlab.net/) 
-7. Familiarize yourself with the [dev escalation process](/handbook/engineering/development/processes/Infra-Dev-Escalation/process.html)
-8. Make sure you can login to https://ops.gitlab.net/
+1. [ ] An account on GitLab's PagerDuty account (via Access Request)
+2. [ ] The PagerDuty App on your phone
+3. [ ] Join the following channels on Slack: #incident-management, #production, #feed_alerts-general, #abuse, #dev-escalation
+4. [ ] If you're starting as an IMOC Shadow, also joining the #imoc_shadows channel on Slack.
+5. [ ] Make sure you can login to the [dashboards site](https://dashboards.gitlab.net/d/RZmbBr7mk/gitlab-triage)
+6. [ ] Make sure you can login to [kibana](https://log.gprd.gitlab.net/) 
+7. [ ] Familiarize yourself with the [dev escalation process](/handbook/engineering/development/processes/Infra-Dev-Escalation/process.html)
+8. [ ] Make sure you can login to https://ops.gitlab.net/
 
 We have an [IMOC Shadow Schedule](https://gitlab.pagerduty.com/schedules#P3HRRXW) which people can join.
 When you are on this schedule, you will be paged in parallel with the current IMOC on duty.  
