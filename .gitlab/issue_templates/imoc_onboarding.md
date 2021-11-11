@@ -103,7 +103,7 @@ Things you will need: (note, you can do the Access Request and start shadowing /
 4. [ ] If you're starting as an IMOC Shadow, also joining the #imoc_general channel on Slack.
 5. [ ] Make sure you can login to the [dashboards site](https://dashboards.gitlab.net/d/RZmbBr7mk/gitlab-triage)
 6. [ ] Make sure you can login to [kibana](https://log.gprd.gitlab.net/) 
-7. [ ] Familiarize yourself with the [dev escalation process](/handbook/engineering/development/processes/Infra-Dev-Escalation/process.html)
+7. [ ] Familiarize yourself with the [dev escalation process](https://about.gitlab.com/handbook/engineering/development/processes/Infra-Dev-Escalation/process.html)
 8. [ ] Make sure you can login to https://ops.gitlab.net/
 
 We have an [IMOC Shadow Schedule](https://gitlab.pagerduty.com/schedules#P3HRRXW) which people can join.
