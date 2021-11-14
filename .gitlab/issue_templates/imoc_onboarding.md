@@ -76,7 +76,7 @@ See also the description of [Roles and Responsibilities](https://about.gitlab.co
   c. [How to investigate a Sentry 500 Error in Kibana](https://youtu.be/o02t3V3vHMs)
 
 ### Reading
-1. [ ] Understanding how to work with the CMOC: the support team has a [great write up](/handbook/support/workflows/cmoc_workflows.html) on the Communications Manager On-Call (CMOC) workflows.
+1. [ ] Understanding how to work with the CMOC: the support team has a [great write up](https://about.gitlab.com/handbook/support/workflows/cmoc_workflows.html) on the Communications Manager On-Call (CMOC) workflows.
 2. [ ] The [IMOC Onboarding handbook page](https://about.gitlab.com/handbook/engineering/infrastructure/incident-manager-onboarding/)
 3. [ ] [SRE Shadow blog post](https://about.gitlab.com/blog/2020/04/13/lm-sre-shadow/) so you have a feel of what working with the EOC is like. 
 4. [ ] Google has a few chapters on Incident response in their SRE books:
