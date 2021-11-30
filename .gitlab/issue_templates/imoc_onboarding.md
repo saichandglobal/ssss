@@ -10,7 +10,7 @@ This issue is for training and onboarding to be a GitLab Incident Manager.
 ### The goal of incident response:
 
 - [ ] The goal of the incident response process is to mitigate customer and/or business impact and restore service to its previous condition.  We should favor mitigating the impact over understanding the underlying cause.
-- [ ] Example: An Incident Manager may decide to initiate a rollback to a known good version, even if the underlying cause of the problem is unknown.  
+- [ ] Example: The Engineer On-Call may decide to initiate a rollback to a known good version, even if the underlying cause of the problem is unknown.  
 
 ### There are some basic principles of incident response you should be aware of: 
 
@@ -39,15 +39,35 @@ An Incident Manager:
 
 See also the description of [Roles and Responsibilities](https://about.gitlab.com/handbook/engineering/infrastructure/incident-management/#roles-and-responsibilities) in our Incident Management documentation.
 
+### How does an Incident Manager effectively engage with the Engineer On-Call?
+
+During a high-profile and high-impact incident (e.g severity 1), one of your primary responsibilities as Incident Manager is to help lower the stress levels of the Engineer On-Call.
+
+Some methods that can be employed to accomplish this:
+
+1. [ ] Act as a servant leader; ask the EOC what they need.
+    1. Do you need me to bring in someone from team X / dev escalations / CMOC?
+1. [ ] Manage the incident room to keep interruptions to a minimum.
+    1. The purpose of the incident Zoom is for coordinating the technical investigation and mitigation.
+    1. Assist the CMOC with drafting status page updates off-call in a Slack thread, to keep the Zoom call focused.
+    1. If Directors or VPs join the incident call, direct their questions to Slack or a separate Zoom call.
+    1. Interrupt the EOC to ask for an update or a clarification when needed.
+    1. When the investigation is ongoing, get out of the way.
+1. [ ] Manage the incident issue.
+    1. During a user-facing incident we may get lots of user reports and other comments on the incident issue.
+    1. When this happens, you will probably want to lock the incident issue to keep the information focused.
+    1. This helps the EOC and everyone working on the incident to understand the current status and ongoing threads of investigation.
+    1. Avoiding audience participation can also help lower the stress of everyone involved.
+
 ### What does an Incident Manager do during an incident?
 
 1. [ ] Don’t Panic 
     1. Incident management can sometimes feel stressful.  Don’t panic.  Assemble the team of people you need to support you, follow the process, and don’t panic.
 1. [ ] Clearly Communicate Current Status
-    1. In the early stages of an incident, ask for an update from the EOC and any other engaged engineers every 5-10 mins.  
-    1. Ask the Communications Manager On-Call (CMOC) for an update on new customer reports every 5-10 mins.
+    1. In the early stages of an incident, ask for an update from the EOC and any other engaged engineers every 20-30 mins.  
+    1. Ask the Communications Manager On-Call (CMOC) for an update on new customer reports if we don't yet have clear data.
     1. Screenshot (or ask others to screenshot) charts showing changes in impact.
-    1. Report a status updates summary regularly (every 5-30 min) in the incident Slack channel.  These updates provide critical information that help the team members across the company coordinate our response
+    1. Report a status updates summary regularly (every 15-20 min) in the incident Slack channel.  These updates provide critical information that help the team members across the company coordinate our response
 1. [ ] If You’re Stuck Ask Probing Questions 
     1. If the team of responders is stuck and not sure what to do, you should ask probing questions to help unblock the team’s thinking.  Assign people to investigatory tasks as you generate ideas.
     1. Some example probing questions:
@@ -60,7 +80,7 @@ See also the description of [Roles and Responsibilities](https://about.gitlab.co
 1. [ ] Get out of the way (but still report status)
     1. As Incident Manager, you need to interrupt people to get status, assign tasks, and ensure we are making progress towards a resolution.  However, it is also important to provide EOC and any other engaged engineers with time to work and investigate.  If someone should be heads down doing debugging or technical investigation, make sure they have space to work.   Set a timer and ask them for a short update at regular intervals.
 1. [ ] Escalate if you are not making progress
-    1. If you find that the current group of responders is blocked and not making acceptable progress towards a resolution, it is time to escalate.  Page in additional Incident Manager and EOC support and reach out to key individuals that may be able to help.  You can also engage with leaders to help coordinate.
+    1. If you find that the current group of responders is blocked and not making acceptable progress towards a resolution, it is time to escalate.  Page in additional Incident Manager and Engineering support and reach out to key individuals that may be able to help.  You can also engage with leaders to help coordinate.
 
 
 
