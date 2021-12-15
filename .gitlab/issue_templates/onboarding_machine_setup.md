@@ -22,10 +22,11 @@ Onboarder = O
     1. [ ] N: Read through the onboarding info in [the handbook](https://about.gitlab.com/handbook/engineering/infrastructure/team/reliability/sre-onboarding/).
     1. [ ] N: [Read Geekbot's FAQ](https://geekbot.com/faq/) and configure your settings
     1. [ ] N: Complete the setup of your [Yubikey](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/uncategorized/yubikey.md) Note: this setup can take at least a day to complete, and we encourage you to get help if things are unclear or you run into an issue.
-  
+    1. [ ] N: (Optional) After finishing the 1st Yubikey setup, schedule a 2 hours meeting with your Onboarder to setup the 2nd Yubikey
+
 1. [ ] **Accounts:**
     1. [ ] O: Check that by the start of Day 2 that an issue has been auto-created in the [Access Request Repo](https://gitlab.com/gitlab-com/team-member-epics/access-requests) by the employment bot.  This will create accounts for many of the services we use: AWS, Azure, dev, DO, GitLab.com admin, staging, GCP, Chef, Pager Duty
-    1. [ ] N: comment in the access request issue with your desired Unix username and your SSH public key. Tip: use the same username you use on your laptop.
+    1. [ ] N: comment in the access request issue with your desired Unix username and your SSH public key (if you have a 2nd Yubikey, publish both public SSH keys). Tip: use the same username you use on your laptop.
     1. [ ] N: You should receive a GitLab `admin` account via a 'plussed' email address (ex `yourGitLabHandle+admin@gitlab.com`). Set this account password and configure multi factor security on this account.
     1. [ ] N: Accept the invitation and configure [Pager Duty](https://gitlab.pagerduty.com/) timezone and phone number and other details
     1. [ ] N: Verify your access to Rackspace - this is where you can make tickets for issues with GCP
@@ -59,6 +60,8 @@ Onboarder = O
    1. [ ] N: [create an SSH user](https://gitlab.com/gitlab-com/gl-infra/chef-repo/blob/master/README.md#add-a-new-system-admin) and send an MR to [chef-repo](https://gitlab.com/gitlab-com/gl-infra/chef-repo) - ensure you are providing the ssh key from the yubikey setup
     1. [ ] O: Merge the MR, and then run `knife data bag from file users <username>.json`
     1. [ ] N: wait for chef to propagate your public key to the bastion servers and all the rest of the infrastructure nodes
+1. [ ] **Bastion setup for SSH:**
+    1. [ ] N: obtain a base known-good SSH config for GitLab infrastructure: `curl https://gitlab.com/gitlab-com/gl-infra/infrastructure/raw/master/onboarding/ssh-config >> $HOME/.ssh/config`
 1. [ ] **Chef:**
     1. :warning: These steps assume the previous SSH section was completed
     1. [ ] O: add the new production engineer as a 'developer' on [ops chef-repo](https://ops.gitlab.net/gitlab-com/gl-infra/chef-repo)
@@ -76,8 +79,6 @@ Onboarder = O
     1. [ ] N: create chef-repo/.chef/knife.rb from [knife.rb.example](https://gitlab.com/gitlab-com/gl-infra/chef-repo/blob/master/knife.rb.example)
     1. [ ] N: test your chef setup with `knife status`
     1. [ ] O: in the chef-repo, add the new Chef user to config/vault_admins.yml, then run `rake update_vault_admins`.  This will run for a while (hours, not minutes) and then create an MR you can have approved and merged.  It will output "WARNING: Vault admin must be an array" a lot; this is not a problem
-1. [ ] **Bastion setup for SSH:**
-    1. [ ] N: obtain a base known-good SSH config for GitLab infrastructure: `curl https://gitlab.com/gitlab-com/gl-infra/infrastructure/raw/master/onboarding/ssh-config >> $HOME/.ssh/config`
     1. [ ] N: try to ssh into a host and make sure it works. Example: `knife status | grep dashboard`, get one of the hosts' name and ssh into it
 1. [ ] **Console access:**
     1. [ ] N: Ensure that you can run a rails console as described in the
@@ -110,7 +111,7 @@ Onboarder = O
     1. [ ] N: Add yourself to the [Infrastructure Group Status Update](https://gitlab.com/gitlab-com/gl-infra/infra-report/blob/master/status-report.js)
 1. [ ] **Kubernetes**
     1. [ ] N: Complete your [Kubernetes Access Setup](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/kube/k8s-oncall-setup.md).
-         - You can use any of the setup methods, the easiest being [Accessing the clusters via console servers](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/kube/k8s-oncall-setup.md#accessing-clusters-via-console-servers).
+         - You can use any of the setup methods
 1. [ ] **Next Onboarding Issue**
     1. [ ] N: Create a new issue and assign it to yourself, using the [Gather Context](https://gitlab.com/gitlab-com/gl-infra/infrastructure/edit/master/.gitlab/issue_templates/onboarding_gather_context.md) issue template.
     
