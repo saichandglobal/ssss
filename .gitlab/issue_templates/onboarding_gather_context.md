@@ -38,7 +38,7 @@ Also be sure to schedule some coffee chats with team mates to connect and get to
     1. [ ] Review our Configuration management: 
         1. [ ] [cookbooks](https://gitlab.com/gitlab-cookbooks/gitlab-server)
         1. [ ] [chef repo](https://ops.gitlab.net/gitlab-cookbooks/chef-repo)
-        
+
 1. [ ] **Making Changes**
     1. [ ] Issues and Epics
         1. [ ] Review issues labeled as `outage` in the [infrastructure issue tracker](https://gitlab.com/groups/gitlab-com/gl-infra/-/issues?scope=all&utf8=%E2%9C%93&state=closed&label_name%5B%5D=outage).
@@ -48,7 +48,7 @@ Also be sure to schedule some coffee chats with team mates to connect and get to
     1. [ ] Setup the [GitLab Development Kit (GDK)](https://gitlab.com/gitlab-org/gitlab-development-kit/-/tree/master/) locally. Play with it. Break it. Destroy it.
     1. [ ] Get comfortable making Merge or Access Requests
         1. [ ] Make a merge request to add yourself to your team's page, example, [Reliability](https://about.gitlab.com/handbook/engineering/infrastructure/team/reliability/), [Delivery](https://about.gitlab.com/handbook/engineering/infrastructure/team/delivery/) or [Scalability](https://about.gitlab.com/handbook/engineering/infrastructure/team/scalability/).
-        1. [ ] Open an [access request](https://gitlab.com/gitlab-com/access-requests/issues/new?issuable_template=New+Access+Request) to add yourself to the prod-eng-team Slack group. This will have the side effect of familiarizing yourself with access requests. Note that this is a Slack *group*, not a Slack channel.
+        1. [ ] Open an [access request](https://gitlab.com/gitlab-com/access-requests/issues/new?issuable_template=New+Access+Request) to add yourself to the prod-eng-team Slack group. This will have the side effect of familiarizing yourself with access requests. Note that this is a Slack *group*, not a Slack channel. Mention `@gitlab-com/business-technology/team-member-enablement` in the MR. ([AR docs](https://about.gitlab.com/handbook/business-technology/team-member-enablement/onboarding-access-requests/access-requests/))
         1. [ ] Submit a fix to an alert in the runbooks (or submit a new one).
             1. [ ] After having the above alert MR merged, run `chef-client` in prometheus to enable the new alert.
         1. [ ] Contribute a merge request to each of the following repos: gitlab-ce, gitlab-ee, gitaly, workhorse, gitlab-runner (or take a look at the [engineering projects](https://about.gitlab.com/handbook/engineering/projects) for more inspiration). The idea here is to get comfortable with the application architecture and codebase.
