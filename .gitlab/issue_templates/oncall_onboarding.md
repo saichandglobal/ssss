@@ -12,14 +12,13 @@ Title: Site Reliability Engineer Onboarding Issue 3 - Oncall Onboarding
 This is the third and final of your onboarding issues.
 
 In order to join oncall, at a high level you should:
-    1. Alerting - know how to find silences and create them.
-    1. Join the [shadow rotation in PagerDuty](https://gitlab.pagerduty.com/schedules#PZEBYO0) for a few days and shadow a current oncall.
-    1. Join the [shadow rotation in PagerDuty](https://gitlab.pagerduty.com/schedules#PZEBYO0) a second time and communicate with the EOC that you will take primary with them as a fallback. Record a log of:
-      - how many alerts you acknowledge
-      - how many alerts felt actionable
-      - how many alerts "made sense", where you knew what you needed to do or where to look
-      - Ideally, you are ready to join when the ratio of made sense to acknowledge is above 80% with working on at least 10 alerts.
-
+1. Alerting - know how to find silences and create them.
+1. Join the [shadow rotation in PagerDuty](https://gitlab.pagerduty.com/schedules#PZEBYO0) for a few days and shadow a current oncall.
+1. Join the [shadow rotation in PagerDuty](https://gitlab.pagerduty.com/schedules#PZEBYO0) a second time and communicate with the EOC that you will take primary with them as a fallback. Record a log of:
+    - how many alerts you acknowledge
+    - how many alerts felt actionable
+    - how many alerts "made sense", where you knew what you needed to do or where to look
+    - Ideally, you are ready to join when the ratio of made sense to acknowledge is above 80% with working on at least 10 alerts.
 
 ### Generalized investigation steps during an incident
 
