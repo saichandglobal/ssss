@@ -47,6 +47,8 @@
 
 <!--
   All items must be completed prior to the closure of this issue.
+
+  Google doc can be created in [drill folder](https://drive.google.com/drive/folders/1Tuu88Kz9cx71Sn6WFLbah8prPG4PY7Hz?ths=true)
 -->
 
 - [ ] Google Doc created: {+ Link to Google Doc +}
