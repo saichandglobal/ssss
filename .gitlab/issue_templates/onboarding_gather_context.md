@@ -45,7 +45,7 @@ Also be sure to schedule some coffee chats with team mates to connect and get to
         1. [ ] Ask your onboarding buddy to point you to the ongoing Epics that define the team strategy. [Example](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/509)
         1. [ ] Familiarize yourself with the [team board](https://gitlab.com/groups/gitlab-com/gl-infra/-/boards/1433541?label_name[]=team%3A%3AReliability)
    
-    1. [ ] Setup the [GitLab Development Kit (GDK)](https://gitlab.com/gitlab-org/gitlab-development-kit/-/tree/master/) locally. Play with it. Break it. Destroy it.
+    1. [ ] Setup the [GitLab Development Kit (GDK)](https://gitlab.com/gitlab-org/gitlab-development-kit/) locally. Play with it. Break it. Destroy it.
     1. [ ] Get comfortable making Merge or Access Requests
         1. [ ] Make a merge request to add yourself to your team's page, example, [Reliability](https://about.gitlab.com/handbook/engineering/infrastructure/team/reliability/), [Delivery](https://about.gitlab.com/handbook/engineering/infrastructure/team/delivery/) or [Scalability](https://about.gitlab.com/handbook/engineering/infrastructure/team/scalability/).
         1. [ ] Open an [access request](https://gitlab.com/gitlab-com/access-requests/issues/new?issuable_template=New+Access+Request) to add yourself to the prod-eng-team Slack group. This will have the side effect of familiarizing yourself with access requests. Note that this is a Slack *group*, not a Slack channel. Mention `@gitlab-com/business-technology/team-member-enablement` in the MR. ([AR docs](https://about.gitlab.com/handbook/business-technology/team-member-enablement/onboarding-access-requests/access-requests/))
