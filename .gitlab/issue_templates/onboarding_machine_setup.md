@@ -15,10 +15,12 @@ New team member = N
 
 Onboarder = O
 
+Manager = M
+
 1. [ ] **Getting Started**
     1. [ ] O: create this issue and mark it confidential
     1. [ ] O: cross-link general onboarding issue in the peopleops issue tracker
-    1. [ ] O: Add new team member to the Geekbot standup
+    1. [ ] M: Add new team member to the Geekbot standup
     1. [ ] N: Read through the onboarding info in [the handbook](https://about.gitlab.com/handbook/engineering/infrastructure/team/reliability/sre-onboarding/).
     1. [ ] N: [Read Geekbot's FAQ](https://geekbot.com/faq/) and configure your settings
     1. [ ] N: Complete the setup of your [Yubikey](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/uncategorized/yubikey.md) Note: this setup can take at least a day to complete, and we encourage you to get help if things are unclear or you run into an issue.
@@ -40,10 +42,10 @@ Onboarder = O
     1. [ ] O: invite the new production engineer to [Azure Active Directory](https://portal.azure.com/?reAuth=true#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
         1. Azure AD -> Users and Groups -> All Users -> New Guest User -> Enter email and invite.
     1. [ ] N: create your account with the invitation.
-    1. [ ] O: add new production engineer to the [Azure](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade) subscription
+    1. [ ] M: add new production engineer to the [Azure](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade) subscription
         1. Subscriptions -> `Microsoft Azure Sponsorship` -> Access control -> Add -> Add role assignment -> select a role and the user -> Save
         1. Subscriptions -> `Pay-As-You-Go - Testing Sub` -> Access control -> Add -> Add role assignment -> select a role and the user -> Save
-    1. [ ] O: make new production engineer 'co-admin'
+    1. [ ] M: make new production engineer 'co-admin'
         1. Subscriptions -> `Microsoft Azure Sponsorship` -> Access control -> Add -> Add co-administrator -> select the user -> Save
         1. Subscriptions -> `Pay-As-You-Go - Testing Sub` -> Access control -> Add -> Add co-administrator -> select the user -> Save
     1. [ ] O: make new production engineer 'admin' on [Gitlab-com AWS](https://gitlab-com.signin.aws.amazon.com/console)
@@ -64,7 +66,7 @@ Onboarder = O
     1. [ ] N: obtain a base known-good SSH config for GitLab infrastructure: `curl https://gitlab.com/gitlab-com/gl-infra/infrastructure/raw/master/onboarding/ssh-config >> $HOME/.ssh/config`
 1. [ ] **Chef:**
     1. :warning: These steps assume the previous SSH section was completed
-    1. [ ] O: add the new production engineer as a 'developer' on [ops chef-repo](https://ops.gitlab.net/gitlab-com/gl-infra/chef-repo)
+    1. [ ] M: add the new production engineer as a 'developer' on [ops chef-repo](https://ops.gitlab.net/gitlab-com/gl-infra/chef-repo)
     1. [ ] O: add the new production engineer as a 'maintainer' on  [.com chef-repo](https://gitlab.com/gitlab-com/gl-infra/chef-repo)
     1. [ ] N: clone the [chef-repo](https://gitlab.com/gitlab-com/gl-infra/chef-repo) and run `bundle install` to install all the dependencies.
         - Note: if you encounter the error `OpenSSL library could not be found.`      
