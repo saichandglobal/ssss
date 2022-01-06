@@ -2,10 +2,11 @@
 
 This issue is for training and onboarding to be a GitLab Incident Manager.
 
+The "Incident Manager" role has previously been referred to as "IMOC" (Incident Manager On Call) and references to this previous name may still be found in some documents or tools.
 
-## IMOC Volunteer Details
-- Volunteer - {+ GitLab username +}
-- Ideal 4 hour shift (in UTC, example "04:00 - 16:00 UTC") - {+ 8 hour shift +} (see handbook for [details](https://about.gitlab.com/handbook/engineering/infrastructure/incident-manager-onboarding/index.html#what-are-the-expected-commitments-and-how-do-i-balance-my-normal-job-responsibilities))
+## IM Onboarder Details
+- Onboarder - {+ GitLab username +}
+- Ideal 4 hour shift (in UTC, example "04:00 - 8:00 UTC") - {+ 4 hour shift +} (see handbook for [details](https://about.gitlab.com/handbook/engineering/infrastructure/incident-manager-onboarding/index.html#what-are-the-expected-commitments-and-how-do-i-balance-my-normal-job-responsibilities))
 
 ### The goal of incident response:
 
@@ -97,7 +98,7 @@ Some methods that can be employed to accomplish this:
 
 ### Reading
 1. [ ] Understanding how to work with the CMOC: the support team has a [great write up](https://about.gitlab.com/handbook/support/workflows/cmoc_workflows.html) on the Communications Manager On-Call (CMOC) workflows.
-2. [ ] The [IMOC Onboarding handbook page](https://about.gitlab.com/handbook/engineering/infrastructure/incident-manager-onboarding/)
+2. [ ] The [IM Onboarding handbook page](https://about.gitlab.com/handbook/engineering/infrastructure/incident-manager-onboarding/)
 3. [ ] [SRE Shadow blog post](https://about.gitlab.com/blog/2020/04/13/lm-sre-shadow/) so you have a feel of what working with the EOC is like. 
 4. [ ] Google has a few chapters on Incident response in their SRE books:
   a. Good thoughts on the life of the engineers on call.
@@ -120,31 +121,32 @@ Things you will need: (note, you can do the Access Request and start shadowing /
 1. [ ] An account on GitLab's PagerDuty account (via Access Request)
 2. [ ] The PagerDuty App on your phone
 3. [ ] Join the following channels on Slack: #incident-management, #production, #feed_alerts-general, #abuse, #dev-escalation
-4. [ ] If you're starting as an IMOC Shadow, also joining the #imoc_general channel on Slack.
+4. [ ] If you're starting as an IM Shadow, also joining the #imoc_general channel on Slack.
 5. [ ] Make sure you can login to the [dashboards site](https://dashboards.gitlab.net/d/RZmbBr7mk/gitlab-triage)
 6. [ ] Make sure you can login to [kibana](https://log.gprd.gitlab.net/) 
 7. [ ] Familiarize yourself with the [dev escalation process](https://about.gitlab.com/handbook/engineering/development/processes/Infra-Dev-Escalation/process.html)
 8. [ ] Make sure you can login to https://ops.gitlab.net/
 
-We have an [IMOC Shadow Schedule](https://gitlab.pagerduty.com/schedules#P3HRRXW) which people can join.
-When you are on this schedule, you will be paged in parallel with the current IMOC on duty.  
+We have an [IM Shadow Schedule](https://gitlab.pagerduty.com/schedules#P3HRRXW) which people can join.
+When you are on this schedule, you will be paged in parallel with the current IM on duty.  
 You can pick times that work for you at first.  Ideally it would be good to shadow for at least 5 incidents, which could take about a month depending on external factors.
 
-After a few incidents, schedule a debrief chat with the IMOCs you shadowed.  Walk through the incidents and ask
+After a few incidents, schedule a debrief chat with the IMs you shadowed.  Walk through the incidents and ask
 any questions you have about how the incident went.
 
-When you feel ready, coordinate with an IMOC for a "reverse shadow".  Schedule yourself in the shadow rotation, 
-this time coordinating with the current IMOC knowing who will take primary.  This way, you can handle some incidents
+When you feel ready, coordinate with an IM for a "reverse shadow".  Schedule yourself in the shadow rotation, 
+this time coordinating with the current IM knowing who will take primary.  This way, you can handle some incidents
 with a fall back / escalation point should you need help.  This is what we do to onboard SREs in the oncall rotation 
 and has been very helpful for new people getting used to things.
 
-##### IMOC Shadow Setup Checklist
-- [ ] Volunteer is setup in Pagerduty
-- [ ] A current IMOC is assigned as their onboarding team member and made a DRI of this issue with the volunteer.
-- [ ] Volunteer is briefed via a sync meeting about their first shadow rotation
-- [ ] Volunteer watches the `#incident-management` channel looking for messages from the Woodhouse app announcing "paging IMOC" to selectively join and learn from observing an active incident.
-- [ ] Volunteer is debriefed after first shadow rotation and has made a determination to go forward or not.
-  - [ ] If going forward, they are added to the volunteer schedule and given access to adjust
+##### IM Shadow Setup Checklist
+- [ ] Onboarder is setup in Pagerduty
+- [ ] Onboarder has joined #imoc-general
+- [ ] A current IM is assigned as their onboarding team member and made a DRI of this issue with the Onboarder. Ideally this should be an Infrastructure Engineering Manager.
+- [ ] Onboarder is briefed via a sync meeting about their first shadow rotation
+- [ ] Onboarder watches the `#incident-management` channel looking for messages from the Woodhouse app announcing "paging IMOC" to selectively join and learn from observing an active incident.
+- [ ] Onboarder is debriefed after first shadow rotation and has made a determination to go forward or not.
+  - [ ] If going forward, they are added to the Pagerduty IM schedule and given access to adjust
   - [ ] If not going forward, they are removed from Pagerduty.
 
 /assign @gitlab-com/gl-infra/managers 
