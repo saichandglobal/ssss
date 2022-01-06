@@ -119,13 +119,15 @@ After the reading and video above, you should start shadowing existing Incident 
 
 Things you will need: (note, you can do the Access Request and start shadowing / joining channels while you wait on the Access Request)
 1. [ ] An account on GitLab's PagerDuty account (via Access Request)
-2. [ ] The PagerDuty App on your phone
-3. [ ] Join the following channels on Slack: #incident-management, #production, #feed_alerts-general, #abuse, #dev-escalation
-4. [ ] If you're starting as an IM Shadow, also joining the #imoc_general channel on Slack.
-5. [ ] Make sure you can login to the [dashboards site](https://dashboards.gitlab.net/d/RZmbBr7mk/gitlab-triage)
-6. [ ] Make sure you can login to [kibana](https://log.gprd.gitlab.net/) 
-7. [ ] Familiarize yourself with the [dev escalation process](https://about.gitlab.com/handbook/engineering/development/processes/Infra-Dev-Escalation/process.html)
-8. [ ] Make sure you can login to https://ops.gitlab.net/
+1. [ ] The PagerDuty App on your phone
+1. [ ] Join the following channels on Slack: #incident-management, #production, #feed_alerts-general, #abuse, #dev-escalation
+1. [ ] If you're starting as an IM Shadow, also joining the #imoc_general channel on Slack.
+1. [ ] Make sure you can login to the [dashboards site](https://dashboards.gitlab.net/d/RZmbBr7mk/gitlab-triage)
+1. [ ] Make sure you can login to [kibana](https://log.gprd.gitlab.net/) 
+1. [ ] Familiarize yourself with the [dev escalation process](https://about.gitlab.com/handbook/engineering/development/processes/Infra-Dev-Escalation/process.html)
+1. [ ] Make sure you can login to https://ops.gitlab.net/
+1. [ ] Request to be added to the [IMOC Google group](https://groups.google.com/a/gitlab.com/g/imoc).
+1. [ ] Subscribe to the [IMOC shared calendar](https://calendar.google.com/calendar/u/0?cid=Y19xdjMwbThwNGZ2bW03OHMyMG4zbXJ2ajlyb0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t)
 
 We have an [IM Shadow Schedule](https://gitlab.pagerduty.com/schedules#P3HRRXW) which people can join.
 When you are on this schedule, you will be paged in parallel with the current IM on duty.  
