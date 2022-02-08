@@ -31,3 +31,4 @@
 * [ ] Remove user from [Grafana](https://dashboards.gitlab.net).
 * [ ] Remove SSH keys from Gitter Ansible: https://gitlab.com/gitlab-com/gl-infra/gitter-infrastructure/tree/master/ansible/roles/base/files/authorized_keys
 * [ ] Remove user from Status.io
+* [ ] Remove user from the [Infrastructure Group Status Update](https://gitlab.com/gitlab-com/gl-infra/infra-report/blob/master/status-report.js)
