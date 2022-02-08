@@ -5,7 +5,7 @@
   If you are already familiar with the item listed, you should feel free to check it without going through the exercise.
 -->
 Title: Site Reliability Engineer Onboarding Issue 3 - Oncall Onboarding
-[Fill in name and start date]
+Maina Ng'ang'a 02-08-2021
 
 ## Welcome to your oncall onboarding issue!
 
