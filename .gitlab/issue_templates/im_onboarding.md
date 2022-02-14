@@ -47,41 +47,41 @@ During a high-profile and high-impact incident (e.g severity 1), one of your pri
 Some methods that can be employed to accomplish this:
 
 1. [ ] Act as a servant leader; ask the EOC what they need.
-    1. Do you need me to bring in someone from team X / dev escalations / CMOC?
+   1. Do you need me to bring in someone from team X / dev escalations / CMOC?
 1. [ ] Manage the incident room to keep interruptions to a minimum.
-    1. The purpose of the incident Zoom is for coordinating the technical investigation and mitigation.
-    1. Assist the CMOC with drafting status page updates off-call in a Slack thread, to keep the Zoom call focused.
-    1. If Directors or VPs join the incident call, direct their questions to Slack or a separate Zoom call.
-    1. Interrupt the EOC to ask for an update or a clarification when needed.
-    1. When the investigation is ongoing, get out of the way.
+   1. The purpose of the incident Zoom is for coordinating the technical investigation and mitigation.
+   1. Assist the CMOC with drafting status page updates off-call in a Slack thread, to keep the Zoom call focused.
+   1. If Directors or VPs join the incident call, direct their questions to Slack or a separate Zoom call.
+   1. Interrupt the EOC to ask for an update or a clarification when needed.
+   1. When the investigation is ongoing, get out of the way.
 1. [ ] Manage the incident issue.
-    1. During a user-facing incident we may get lots of user reports and other comments on the incident issue.
-    1. When this happens, you will probably want to lock the incident issue to keep the information focused.
-    1. This helps the EOC and everyone working on the incident to understand the current status and ongoing threads of investigation.
-    1. Avoiding audience participation can also help lower the stress of everyone involved.
+   1. During a user-facing incident we may get lots of user reports and other comments on the incident issue.
+   1. When this happens, you will probably want to lock the incident issue to keep the information focused.
+   1. This helps the EOC and everyone working on the incident to understand the current status and ongoing threads of investigation.
+   1. Avoiding audience participation can also help lower the stress of everyone involved.
 
 ### What does an Incident Manager do during an incident?
 
 1. [ ] Don’t Panic 
-    1. Incident management can sometimes feel stressful.  Don’t panic.  Assemble the team of people you need to support you, follow the process, and don’t panic.
+   1. Incident management can sometimes feel stressful.  Don’t panic.  Assemble the team of people you need to support you, follow the process, and don’t panic.
 1. [ ] Clearly Communicate Current Status
-    1. In the early stages of an incident, ask for an update from the EOC and any other engaged engineers every 20-30 mins.  
-    1. Ask the Communications Manager On-Call (CMOC) for an update on new customer reports if we don't yet have clear data.
-    1. Screenshot (or ask others to screenshot) charts showing changes in impact.
-    1. Report a status updates summary regularly (every 15-20 min) in the incident Slack channel.  These updates provide critical information that help the team members across the company coordinate our response
+   1. In the early stages of an incident, ask for an update from the EOC and any other engaged engineers every 20-30 mins.  
+   1. Ask the Communications Manager On-Call (CMOC) for an update on new customer reports if we don't yet have clear data.
+   1. Screenshot (or ask others to screenshot) charts showing changes in impact.
+   1. Report a status updates summary regularly (every 15-20 min) in the incident Slack channel.  These updates provide critical information that help the team members across the company coordinate our response
 1. [ ] If You’re Stuck Ask Probing Questions 
-    1. If the team of responders is stuck and not sure what to do, you should ask probing questions to help unblock the team’s thinking.  Assign people to investigatory tasks as you generate ideas.
-    1. Some example probing questions:
-        1. What is the current impact on users? Is the service unavailable, slow, partially available?
-        1. Can we rollback to a known good version?  Can someone confirm if that is safe?  Even if we don’t yet know exactly what’s causing this could a rollback restore service while we continue investigating?
-        1. When did the impact start?  Can we learn anything from the timing?  Is this correlated with a new deploy, or an increase in traffic volume?
-        1. Does anyone have a theory as to what’s causing this?  Let’s brainstorm some possible areas we can investigate.
-        1. Can the affected service be safely restarted?  Can someone confirm if that is safe? 
-        1. Do we need to escalate this and/or pull in more people to help? 
+   1. If the team of responders is stuck and not sure what to do, you should ask probing questions to help unblock the team’s thinking.  Assign people to investigatory tasks as you generate ideas.
+   1. Some example probing questions:
+      1. What is the current impact on users? Is the service unavailable, slow, partially available?
+      1. Can we rollback to a known good version?  Can someone confirm if that is safe?  Even if we don’t yet know exactly what’s causing this could a rollback restore service while we continue investigating?
+      1. When did the impact start?  Can we learn anything from the timing?  Is this correlated with a new deploy, or an increase in traffic volume?
+      1. Does anyone have a theory as to what’s causing this?  Let’s brainstorm some possible areas we can investigate.
+      1. Can the affected service be safely restarted?  Can someone confirm if that is safe? 
+      1. Do we need to escalate this and/or pull in more people to help? 
 1. [ ] Get out of the way (but still report status)
-    1. As Incident Manager, you need to interrupt people to get status, assign tasks, and ensure we are making progress towards a resolution.  However, it is also important to provide EOC and any other engaged engineers with time to work and investigate.  If someone should be heads down doing debugging or technical investigation, make sure they have space to work.   Set a timer and ask them for a short update at regular intervals.
+   1. As Incident Manager, you need to interrupt people to get status, assign tasks, and ensure we are making progress towards a resolution.  However, it is also important to provide EOC and any other engaged engineers with time to work and investigate.  If someone should be heads down doing debugging or technical investigation, make sure they have space to work.   Set a timer and ask them for a short update at regular intervals.
 1. [ ] Escalate if you are not making progress
-    1. If you find that the current group of responders is blocked and not making acceptable progress towards a resolution, it is time to escalate.  Page in additional Incident Manager and Engineering support and reach out to key individuals that may be able to help.  You can also engage with leaders to help coordinate.
+   1. If you find that the current group of responders is blocked and not making acceptable progress towards a resolution, it is time to escalate.  Page in additional Incident Manager and Engineering support and reach out to key individuals that may be able to help.  You can also engage with leaders to help coordinate.
 
 
 
@@ -92,26 +92,26 @@ Some methods that can be employed to accomplish this:
 ### Videos
 1. [ ] [A good talk about incident response](https://www.youtube.com/watch?v=4ZHFPiRXJls) from PagerDuty.
 2. [ ] There are some video resources in the [Monitoring handbook page](https://about.gitlab.com/handbook/engineering/monitoring/) that can be helpful like: 
-  a. [Visualization Tools Playlist](https://www.youtube.com/playlist?list=PL05JrBw4t0KrDIsPQ68htUUbvCgt9JeQj) (internal)
-  b. [How to search for an issues in Kibana](https://youtu.be/fKmwH0aNUQQ)
-  c. [How to investigate a Sentry 500 Error in Kibana](https://youtu.be/o02t3V3vHMs)
+   1. [Visualization Tools Playlist](https://www.youtube.com/playlist?list=PL05JrBw4t0KrDIsPQ68htUUbvCgt9JeQj) (internal)
+   1. [How to search for an issues in Kibana](https://youtu.be/fKmwH0aNUQQ)
+   1. [How to investigate a Sentry 500 Error in Kibana](https://youtu.be/o02t3V3vHMs)
 
 ### Reading
 1. [ ] Understanding how to work with the CMOC: the support team has a [great write up](https://about.gitlab.com/handbook/support/workflows/cmoc_workflows.html) on the Communications Manager On-Call (CMOC) workflows.
-2. [ ] The [IM Onboarding handbook page](https://about.gitlab.com/handbook/engineering/infrastructure/incident-manager-onboarding/)
-3. [ ] [SRE Shadow blog post](https://about.gitlab.com/blog/2020/04/13/lm-sre-shadow/) so you have a feel of what working with the EOC is like. 
-4. [ ] Google has a few chapters on Incident response in their SRE books:
-  a. Good thoughts on the life of the engineers on call.
-   * [Being On call](https://sre.google/sre-book/being-on-call/)
-   * [Effective Troubleshooting](https://sre.google/sre-book/effective-troubleshooting/)
-  b. Dealing with the incident:
-   * [Emergency Response](https://sre.google/sre-book/emergency-response/)
-   * [Managing Incidents](https://sre.google/sre-book/managing-incidents/)
-   * [Workbook examples of incident response](https://sre.google/workbook/incident-response/)
-   * [Incident Review](https://sre.google/sre-book/postmortem-culture/) and [Learning from Failure](https://sre.google/workbook/postmortem-culture/)
-  c. [Being Oncall examples](https://sre.google/workbook/on-call/)
-4. [ ] The [Incident Manager Checklist](https://gitlab.com/gitlab-com/runbooks/-/blob/master/incidents/general_incidents.md#imoc-checklist) in our runbooks.
-5. If you have additional questions about the Incident Manager role, incident response or incident review, please join the #imoc_general Slack channel.
+1. [ ] The [IM Onboarding handbook page](https://about.gitlab.com/handbook/engineering/infrastructure/incident-manager-onboarding/)
+1. [ ] [SRE Shadow blog post](https://about.gitlab.com/blog/2020/04/13/lm-sre-shadow/) so you have a feel of what working with the EOC is like. 
+1. [ ] Google has a few chapters on Incident response in their SRE books:
+   1. Good thoughts on the life of the engineers on call.
+      - [Being On call](https://sre.google/sre-book/being-on-call/)
+      - [Effective Troubleshooting](https://sre.google/sre-book/effective-troubleshooting/)
+   1. Dealing with the incident:
+      - [Emergency Response](https://sre.google/sre-book/emergency-response/)
+      - [Managing Incidents](https://sre.google/sre-book/managing-incidents/)
+      - [Workbook examples of incident response](https://sre.google/workbook/incident-response/)
+      - [Incident Review](https://sre.google/sre-book/postmortem-culture/) and [Learning from Failure](https://sre.google/workbook/postmortem-culture/)
+   1. [Being Oncall examples](https://sre.google/workbook/on-call/)
+1. [ ] The [Incident Manager Checklist](https://gitlab.com/gitlab-com/runbooks/-/blob/master/incidents/general_incidents.md#imoc-checklist) in our runbooks.
+1. If you have additional questions about the Incident Manager role, incident response or incident review, please join the #imoc_general Slack channel.
 
 
 ## Getting going as an Incident Manager
