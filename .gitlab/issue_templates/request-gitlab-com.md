@@ -29,6 +29,5 @@ Please fill out as many detals as possible below.
 please do not edit the below
 -->
 
-/assign @awthomas
 /label ~"infrapm" ~"GitLab.com Feature Request"
 /confidential
