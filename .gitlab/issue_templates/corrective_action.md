@@ -11,11 +11,12 @@ Provide a brief assessment of the risk (chance and impact) of the problem that t
 <!--
 Note the originating incident(s) and link known related incidents/other issues.
 
+The relation will happen automatically if you are creating this issue from an incident, if this isn't done already please uncomment the following line:
+/relate gitlab-com/gl-infra/production#ISSUE_ID
 -->
 
 Originating issue(s): gitlab-com/gl-infra/production#ISSUE_ID
 
-/relate gitlab-com/gl-infra/production#ISSUE_ID
 
 ## Desired Outcome/Acceptance Criteria
 
@@ -42,4 +43,4 @@ Apply the appropriate services associated with this corrective action if applica
 * [ ] Assign a severity label (this is the highest sev of related incidents, defaults to 'severity::4')
 * [ ] Assign a priority (this will default to 'priority::4')
 
-/label ~"team::Reliability" ~"ca::triage" ~"severity::4" ~"priority::4" ~"corrective action"
+/label ~"team::Reliability" ~"ca::triage" ~"severity::4" ~"priority::4" ~"corrective action" ~"work::incident"

@@ -15,4 +15,4 @@ Originating issue(s): gitlab-com/gl-infra/production#ISSUE_ID
 
 /relate gitlab-com/gl-infra/production#ISSUE_ID
 
-/label ~"team::Reliability" ~"Reliability::P4" ~"work::general"
+/label ~"team::Reliability" ~"Reliability::P4" ~"work::incident"
