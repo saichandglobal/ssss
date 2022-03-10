@@ -11,7 +11,7 @@ Provide a brief assessment of the risk (chance and impact) of the problem that t
 <!--
 Note the originating incident(s) and link known related incidents/other issues.
 
-The relation will happen automatically if you are creating this issue from an incident, if this isn't done already please comment the following line:
+The relation will happen automatically if you are creating this issue from an incident, if this isn't done already please uncomment the following line:
 /relate gitlab-com/gl-infra/production#ISSUE_ID
 -->
 
