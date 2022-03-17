@@ -1,6 +1,5 @@
 
-
-  Background:
+ ##Background:
 
   The aim here is to showcase/walk-through tooling that SREs find useful in their day-to-day activities. This includes--but not limited to--new features being build, as well as third-party software, and scripts that may be useful for troubleshooting during an on-call incident, or during normal day-to-day workflows. 
 
