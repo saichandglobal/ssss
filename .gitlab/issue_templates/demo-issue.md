@@ -1,4 +1,4 @@
-<!--
+
 
   Background:
 
@@ -8,18 +8,18 @@
 
 ## Scenario
 
-<!--
+
   Provide a brief introduction to the tool, and describe a scenario or scenarios where this tooling is applicable. It might be helpful to discuss specific advantages this tooling offers over other tools other SREs may use. Some time discussing other alternatives should be welcomed, if time permits.
 
 
   When demonstrating the tool, bring up incidents or theoretical scenarios (and firedrills) where this tooling may actually be helpful. We can then run through a mock-scenario of troubleshooting with this tool. 
 
   Potentially indicate scenarios where this tool may NOT be applicable too. Depending on the power of the tool, make sure you discuss applicable safeguards when using the tool. 
--->
+
 
 ## Meeting Format
 
-<!--
+
  Before the presentation, presenter should post link tool being used (if applicable).
 
  Ultimately, the presentation is open-ended, but should include a summary of the problem the tool is aiming to solve, or discuss scenarios (see above) where the tool may be most applicable toward the end. Ideally, the first few minutes should be an overview of the tooling.
@@ -27,7 +27,6 @@
  Note: Please give a reasonable amount of credit/acknowledgement to the orgs/people who developed the tooling, whether internally within Gitlab, or externally. 
 
    
--->
 
 
 - [ ] Demo
