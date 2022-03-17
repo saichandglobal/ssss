@@ -12,7 +12,9 @@
 
   When demonstrating the tool, bring up incidents or theoretical scenarios (and firedrills) where this tooling may actually be helpful. We can then run through a mock-scenario of troubleshooting with this tool. 
 
-  Potentially indicate scenarios where this tool may NOT be applicable too. Depending on the power of the tool, make sure you discuss applicable safeguards when using the tool. 
+  Potentially indicate scenarios where this tool may NOT be applicable as well.
+  
+  Depending on the power of the tool, make sure you discuss applicable safeguards when using the tool. 
 
 
 ## Meeting Format
