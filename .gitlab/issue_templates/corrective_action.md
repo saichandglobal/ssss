@@ -43,4 +43,4 @@ Apply the appropriate services associated with this corrective action if applica
 * [ ] Assign a severity label (this is the highest sev of related incidents, defaults to 'severity::4')
 * [ ] Assign a priority (this will default to 'priority::4')
 
-/label ~"team::Reliability" ~"ca::triage" ~"severity::4" ~"priority::4" ~"corrective action" ~"work::incident"
+/label ~"team::Reliability" ~"workflow-infra::Triage" ~"severity::4" ~"priority::4" ~"corrective action" ~"work::incident"
