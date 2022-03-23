@@ -4,7 +4,7 @@ This template is for GitLab Team Members seeking support of SRE where there isn'
 Please fill out the details below.
 -->
 
-**Details** 
+**Details**
  - Point of contact for this request: [+ @user +]
  - If a call is needed, what is the proposed date and time of the call:  [+ Date and Time +]
  - Additional call details (format, type of call): [+ additional details +]
@@ -13,12 +13,9 @@ Please fill out the details below.
 [+ Support Request Details +]
 
 
-
-
-
 <!--
 please do not edit the below
 -->
 
 /assign @gitlab-com/gl-infra/managers
-/label ~"workflow-infra::Triage" ~"team::Reliability" 
+/label ~"workflow-infra::Triage" ~"team::Reliability" ~"unblocks others"
