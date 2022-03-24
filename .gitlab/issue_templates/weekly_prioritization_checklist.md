@@ -6,12 +6,11 @@ The following boards should be reviewed and adjusted based on [priority](https:/
 
 ### Check Priority
 
-- [ ] Review the [Issues by Priority board](https://gitlab.com/gitlab-com/gl-infra/reliability/-/boards/3993753).
+- [ ] Review the [Issues by Priority board](https://gitlab.com/gitlab-com/gl-infra/reliability/-/boards/3993753?not[label_name][]=work%3A%3Aproject).
   - [ ] Review the `reliability::P1` list for any assigned or unassigned issues and ensure they are being actively worked on **and** being handed off between regions.
   - [ ] Review the list of unassigned [`reliability::P2` issues](https://gitlab.com/gitlab-com/gl-infra/reliability/-/boards/3993753?assignee_id=None)
-      - [ ] Confirm that the order of issues is in line with current business and team priorities, adjust the order if needed.
+      - [ ] Confirm that the most important issue is at the top, adjust the order if needed.
       - [ ] For new issues labeled `work::general` review and assign to the current or incoming BEOC as needed.
-      - [ ] For new issues labeled `work::Project` review and contact the [squad lead](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/509) of the appropriate Project Squad to arrange for scheduling.
 
 ### Check Stage
        
