@@ -27,6 +27,8 @@ Please fill out as many details as possible below.
 
 *Share your assessment of how the customer's rate limits should be increased*
 
+Related [Rate Limiting runbook](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/rate-limiting/README.md)
+
 [+ Rate Limit Increase Recommendation +]
 
 <!--
