@@ -22,7 +22,6 @@ The new project will use https://gitlab.com/gitlab-com/gl-infra/templates/projec
 - Reference issue / epic for why this project needs to be created: {+ TODO +}
 
 ## Procedure
-- [ ] Get sign-off by a Manager in the Infrastructure department that this new project will be necessary at the project path path above.
 - [ ] In the https://gitlab.com/gitlab-com/gl-infra group [create a new project from a group template](https://gitlab.com/projects/new?namespace_id=1112072#create_from_template). Under the "group" tab, select the `project-with-ops-mirror` template.
 - [ ] Set the visibility level to "Public" and fill in a short description, select "Create Project" which will clone the project using the template.
 - [ ] Create a blank project (with no README) with visibility "internal" on ops.gitlab.net using the same project path as the project on GitLab.com. Ensure `MIRROR: true` is set as a CI variable.
@@ -30,3 +29,12 @@ The new project will use https://gitlab.com/gitlab-com/gl-infra/templates/projec
   - [ ] Under `Settings -> Repository -> Mirroring repositories` add a **Push** mirror using the project path of the project created on ops, using the `ops-gitlab-net` user. For example: `https://ops-gitlab-net@ops.gitlab.net/gitlab-com/gl-infra/some-project.git`. The token is in 1password under "ops-gitlab-net system account" `pat: ops.gitlab.net/for pushing repositories`. Ensure that "Mirror only protected branches" is **unchecked**.
   - [ ] Ensure that `OPS_API_TOKEN` is set and `CANONICAL=true`. The ops api token is in 1password under "ops-gitlab-net system account".
   - [ ] Under `Settings -> General > Merge request (MR) approvals` add an approval rule for the target branch of `main` for the `gitlab-com/gl-infra` group
+- [ ] Send out a general notification in `#infrastructure-lounge` that this new project is created
+
+```
+:mega: FYI A new project has been created with a push mirror to ops.gitlab.net, located at PROJECT_PATH and MIRROR_PATH.
+
+PROJECT_DESCRIPTION
+
+For more details see ISSUE_LINK, if you any questions please let me know!
+```
