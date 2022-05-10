@@ -8,7 +8,7 @@ The goal of this issue is to guide you on where to look for information and gath
 
 This is a living document. If you see opportunities for improvements or outdated links, please open an MR and suggest changes.
 
-As a handbook-first company, we rely on documentation for sharing knowledge. However, it's *a lot* of reading, and not everyone processes information best that way. Feel free to ask for pairing sessions on #infrastructure-lounge and from your onboarding buddy, take frequent breaks, and anything else you know works for you to pace yourself. 
+As a handbook-first company, we rely on documentation for sharing knowledge. However, it's *a lot* of reading, and not everyone processes information best that way. Feel free to ask for pairing sessions on #infrastructure-lounge and from your onboarding buddy, take frequent breaks, and anything else you know works for you to pace yourself.
 Also be sure to schedule some coffee chats with team mates to connect and get to know each other. As an async org, it's extra important that we make time for these social calls.
 
 1. [ ] **Infrastructure Overview**
@@ -25,7 +25,6 @@ Also be sure to schedule some coffee chats with team mates to connect and get to
         1. [ ] Read about our [logging infrastructure](https://gitlab.com/gitlab-com/runbooks/-/tree/master/docs/logging)
     1. [ ] Monitoring
         1. [ ] Get familiar with the dashboards in the [private monitoring infrastructure](https://dashboards.gitlab.net/)
-        1. [ ] Get familiar with the dashboards in the [public monitoring infrastructure](https://dashboards.gitlab.com/)
         1. [ ] Understand the dashboards we use to get a general sense of how things are running
         1. [ ] Get familiar with how we [create and modify](https://gitlab.com/gitlab-com/runbooks/blob/master/dashboards/README.md) dashboards
         1. [ ] Get familiar with [prometheus](https://thanos.gitlab.net/graph), investigate how to [query](https://prometheus.io/docs/querying/basics/) to get information out of it.
@@ -35,16 +34,17 @@ Also be sure to schedule some coffee chats with team mates to connect and get to
         1. [ ] Read the different sections in the [K8s Operations Howto](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/kube/k8s-operations.md) page.
         1. [ ] Review Our GKE / K8s setup - [K8s workloads](https://gitlab.com/gitlab-com/gl-infra/k8s-workloads/gitlab-com)
     1. [ ] Review Our Infrastructure as code - https://ops.gitlab.net/gitlab-com/gitlab-com-infrastructure
-    1. [ ] Review our Configuration management: 
+    1. [ ] Review our Configuration management:
         1. [ ] [cookbooks](https://gitlab.com/gitlab-cookbooks/gitlab-server)
         1. [ ] [chef repo](https://ops.gitlab.net/gitlab-cookbooks/chef-repo)
+    1. [ ] Watch a video that gives a high level overview of [how GitLab uses SLOs](https://www.youtube.com/watch?v=YXOm-8cpcyg)
 
 1. [ ] **Making Changes**
     1. [ ] Issues and Epics
         1. [ ] Review issues labeled as `outage` in the [infrastructure issue tracker](https://gitlab.com/groups/gitlab-com/gl-infra/-/issues?scope=all&utf8=%E2%9C%93&state=closed&label_name%5B%5D=outage).
         1. [ ] Ask your onboarding buddy to point you to the ongoing Epics that define the team strategy. [Example](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/509)
         1. [ ] Familiarize yourself with the [team board](https://gitlab.com/groups/gitlab-com/gl-infra/-/boards/1433541?label_name[]=team%3A%3AReliability)
-   
+
     1. [ ] Setup the [GitLab Development Kit (GDK)](https://gitlab.com/gitlab-org/gitlab-development-kit/) locally. Play with it. Break it. Destroy it.
     1. [ ] Get comfortable making Merge or Access Requests
         1. [ ] Make a merge request to add yourself to your team's page, example, [Reliability](https://about.gitlab.com/handbook/engineering/infrastructure/team/reliability/), [Delivery](https://about.gitlab.com/handbook/engineering/infrastructure/team/delivery/) or [Scalability](https://about.gitlab.com/handbook/engineering/infrastructure/team/scalability/).
@@ -54,10 +54,8 @@ Also be sure to schedule some coffee chats with team mates to connect and get to
         1. [ ] Contribute a merge request to each of the following repos: gitlab-ce, gitlab-ee, gitaly, workhorse, gitlab-runner (or take a look at the [engineering projects](https://about.gitlab.com/handbook/engineering/projects) for more inspiration). The idea here is to get comfortable with the application architecture and codebase.
         1. [ ] Make an improvement to any of the [onboarding issue templates](https://gitlab.com/gitlab-com/gl-infra/infrastructure/edit/master/.gitlab/issue_templates/) or the onboarding info in [the handbook](https://about.gitlab.com/handbook/engineering/infrastructure/sre-onboarding/).
         1. [ ] Make a cookbook change to https://gitlab.com/gitlab-cookbooks/gitlab-server
-            1. [ ] Roll the above change via https://ops.gitlab.net/gitlab-cookbooks/chef-repo 
+            1. [ ] Roll the above change via https://ops.gitlab.net/gitlab-cookbooks/chef-repo
         1. [ ] If pairing is a useful vehicle for learning for you, ask to schedule some pairing sessions with team mates to pair on issues they are working on.
         1. [ ] Look at the [Team Board's](https://gitlab.com/groups/gitlab-com/gl-infra/-/boards/1433541?label_name[]=team%3A%3AReliability) "Ready" column and choose an issue to start working on. Ask to pair if you like.
 1. [ ] **Next Onboarding Issue**
     1. [ ] Create a new issue and assign it to yourself, using the [Oncall Onboarding](https://gitlab.com/gitlab-com/gl-infra/infrastructure/edit/master/.gitlab/issue_templates/oncall_onboarding.md) issue template.
-    
-    
