@@ -17,5 +17,5 @@ Please fill out the details below.
 please do not edit the below
 -->
 
-/assign @gitlab-com/gl-infra/managers
+/assign @amoter @afappiano @dawsmith @kwanyangu
 /label ~"workflow-infra::Triage" ~"team::Reliability" ~"unblocks others"
