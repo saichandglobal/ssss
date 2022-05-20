@@ -18,3 +18,6 @@ The following boards should be reviewed and adjusted based on [priority](https:/
   - [ ] Review the `workflow-infra::Triage` list to make sure issues are not piling up waiting to be triaged.
   - [ ] Review the `workflow-infra::In Progress` list to get an overview of total Work in Progress across the team.  Only issues that are actively being worked on should have the `workflow-infra::In Progress` label applied.  If inactive work is found in this list adjust labels and send a note indicating why.
   - [ ] Review the `workflow-infra::Proposal` list to see if there are any new issues that require review.  If any are found assign to an appropriate reviewer.
+
+### Check non-Reliability Projects for new issues
+- [ ] [Production Changes](https://gitlab.com/gitlab-com/gl-infra/production/-/issues/?label_name%5B%5D=change%3A%3Aunscheduled)
