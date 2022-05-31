@@ -7,7 +7,7 @@ Title: Site Reliability Engineer Onboarding Issue 1 - Machine Setup
 We need to keep iterating on this checklist so please submit MR's for any improvements
 that you can think of. The file is located in an issue template in the '[issue template section](https://gitlab.com/gitlab-com/gl-infra/infrastructure/edit/master/.gitlab/issue_templates/onboarding_machine_setup.md)'.
 
-We have broken onboarding up into three separate issues: Machine Setup, Context Gathering, and Oncall Onboarding. They should be completed in that order, with the expectation that the oncall onboarding will take at least 3 months from your start date to complete. Take your time. 
+We have broken onboarding up into three separate issues: Machine Setup, Context Gathering, and Oncall Onboarding. They should be completed in that order, with the expectation that the oncall onboarding will take at least 3 months from your start date to complete. Take your time.
 
 The goal for this first onboarding issue is to handle all of the installations and accesses you will need to have your machine ready to do the things you need to be able to do. At any time, feel free to ask your onboarding buddy for help, or reach out in #infrastructure-lounge.
 
@@ -27,7 +27,7 @@ Manager = M
     1. [ ] N: (Optional) After finishing the 1st Yubikey setup, schedule a 2 hours meeting with your Onboarder to setup the 2nd Yubikey
 
 1. [ ] **Accounts:**
-    1. [ ] O: Check that by the start of Day 2 that an issue has been auto-created in the [Access Request Repo](https://gitlab.com/gitlab-com/team-member-epics/access-requests) by the employment bot.  This will create accounts for many of the services we use: AWS, Azure, dev, DO, GitLab.com admin, staging, GCP, Chef, Pager Duty
+    1. [ ] O: Check that by the start of Day 2 that an issue has been auto-created in the [Access Request Repo](https://gitlab.com/gitlab-com/team-member-epics/access-requests) by the employment bot.  This will create accounts for many of the services we use: AWS, dev, DO, GitLab.com admin, staging, GCP, Chef, Pager Duty
     1. [ ] N: comment in the access request issue with your desired Unix username and your SSH public key (if you have a 2nd Yubikey, publish both public SSH keys). Tip: use the same username you use on your laptop.
     1. [ ] N: You should receive a GitLab `admin` account via a 'plussed' email address (ex `yourGitLabHandle+admin@gitlab.com`). Set this account password and configure multi factor security on this account.
     1. [ ] N: Accept the invitation and configure [Pager Duty](https://gitlab.pagerduty.com/) timezone and phone number and other details
@@ -39,25 +39,16 @@ Manager = M
     1. [ ] O: add new production engineers as 'owner' in [gl-infra](https://gitlab.com/groups/gitlab-com/gl-infra/-/group_members).
     1. [ ] O: add new production engineer as 'owner' to the [cookbooks](https://gitlab.com/groups/gitlab-cookbooks/-/group_members) group
     1. [ ] O: add new production engineer as 'owner' to the [reliability](https://ops.gitlab.net/groups/gitlab-com/reliability/-/group_members) group on the Ops instance.
-    1. [ ] O: invite the new production engineer to [Azure Active Directory](https://portal.azure.com/?reAuth=true#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
-        1. Azure AD -> Users and Groups -> All Users -> New Guest User -> Enter email and invite.
     1. [ ] N: create your account with the invitation.
-    1. [ ] M: add new production engineer to the [Azure](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade) subscription
-        1. Subscriptions -> `Microsoft Azure Sponsorship` -> Access control -> Add -> Add role assignment -> select a role and the user -> Save
-        1. Subscriptions -> `Pay-As-You-Go - Testing Sub` -> Access control -> Add -> Add role assignment -> select a role and the user -> Save
-    1. [ ] M: make new production engineer 'co-admin'
-        1. Subscriptions -> `Microsoft Azure Sponsorship` -> Access control -> Add -> Add co-administrator -> select the user -> Save
-        1. Subscriptions -> `Pay-As-You-Go - Testing Sub` -> Access control -> Add -> Add co-administrator -> select the user -> Save
     1. [ ] O: make new production engineer 'admin' on [Gitlab-com AWS](https://gitlab-com.signin.aws.amazon.com/console)
 1. [ ] **Tools:**
-    1. [ ] N: install the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
     1. [ ] N: install the [gcloud cli](https://cloud.google.com/sdk/)
 1. [ ] **Monitoring:**
     1. [ ] O: make new production engineer 'admin' on [private monitoring infrastructure](https://dashboards.gitlab.net/)
 
 1. [ ] **Runbooks and Alerts:**
     1. [ ] O: add new production engineer as 'maintainer' to [runbooks](https://gitlab.com/gitlab-com/runbooks/-/project_members).
-    
+
 1. [ ] **SSH:**
    1. [ ] N: [create an SSH user](https://gitlab.com/gitlab-com/gl-infra/chef-repo/blob/master/README.md#add-a-new-system-admin) and send an MR to [chef-repo](https://gitlab.com/gitlab-com/gl-infra/chef-repo) - ensure you are providing the ssh key from the yubikey setup
     1. [ ] O: Merge the MR, and then run `knife data bag from file users <username>.json`
@@ -69,7 +60,7 @@ Manager = M
     1. [ ] M: add the new production engineer as a 'developer' on [ops chef-repo](https://ops.gitlab.net/gitlab-com/gl-infra/chef-repo)
     1. [ ] O: add the new production engineer as a 'maintainer' on  [.com chef-repo](https://gitlab.com/gitlab-com/gl-infra/chef-repo)
     1. [ ] N: clone the [chef-repo](https://gitlab.com/gitlab-com/gl-infra/chef-repo) and run `bundle install` to install all the dependencies.
-        - Note: if you encounter the error `OpenSSL library could not be found.`      
+        - Note: if you encounter the error `OpenSSL library could not be found.`
         - run `gem install openssl -- --with-openssl-dir=<dir>` where dir is the path to openssl@1.1 directory since the default is openssl@3 and at the time of this edit ruby doesn't support openssl@3, after that run `bundle install`.
     1. [ ] N: chef-repo repository contains a lot of useful materials. You don't need to read all of them, just look at a few examples and be aware that they are here:
         1. [ ] chef server installation [docs](https://ops.gitlab.net/gitlab-com/gl-infra/chef-repo/-/blob/master/doc/set-up-chef-server.md)
@@ -116,5 +107,3 @@ Manager = M
          - You can use any of the setup methods
 1. [ ] **Next Onboarding Issue**
     1. [ ] N: Create a new issue and assign it to yourself, using the [Gather Context](https://gitlab.com/gitlab-com/gl-infra/infrastructure/edit/master/.gitlab/issue_templates/onboarding_gather_context.md) issue template.
-    
-
