@@ -39,6 +39,7 @@ Manager = M
     1. [ ] O: add new production engineers as 'owner' in [gl-infra](https://gitlab.com/groups/gitlab-com/gl-infra/-/group_members).
     1. [ ] O: add new production engineer as 'owner' to the [cookbooks](https://gitlab.com/groups/gitlab-cookbooks/-/group_members) group
     1. [ ] O: add new production engineer as 'owner' to the [reliability](https://ops.gitlab.net/groups/gitlab-com/reliability/-/group_members) group on the Ops instance.
+    1. [ ] O: add new production engineer as 'maintainer' to [gitlab-org/reliability](https://gitlab.com/groups/gitlab-org/reliability/-/group_members).
     1. [ ] N: create your account with the invitation.
     1. [ ] O: make new production engineer 'admin' on [Gitlab-com AWS](https://gitlab-com.signin.aws.amazon.com/console)
 1. [ ] **Tools:**
