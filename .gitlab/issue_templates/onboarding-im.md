@@ -6,7 +6,7 @@ The "Incident Manager" role has previously been referred to as "IMOC" (Incident 
 
 ## IM Onboarder Details
 - Onboarder - {+ GitLab username +}
-- Ideal 4 hour shift (in UTC, example "04:00 - 8:00 UTC") - {+ 4 hour shift +} (see handbook for [details](https://about.gitlab.com/handbook/engineering/infrastructure/incident-manager-onboarding/index.html#what-are-the-expected-commitments-and-how-do-i-balance-my-normal-job-responsibilities))
+- Ideal shift (in UTC, example "04:00 - 8:00 UTC") - {+ shift +} (see handbook for [details](https://about.gitlab.com/handbook/engineering/infrastructure/incident-manager-onboarding/index.html#what-are-the-expected-commitments-and-how-do-i-balance-my-normal-job-responsibilities))
 
 ### The goal of incident response:
 
