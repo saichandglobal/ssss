@@ -143,7 +143,7 @@ and has been very helpful for new people getting used to things.
 
 ##### IM Shadow Setup Checklist
 - [ ] Onboarder is setup in Pagerduty
-- [ ] Onboarder has joined #imoc-general
+- [ ] Onboarder has joined #imoc_general
 - [ ] A current IM is assigned as their onboarding team member and made a DRI of this issue with the Onboarder. Ideally this should be an Infrastructure Engineering Manager.
 - [ ] Onboarder is briefed via a sync meeting about their first shadow rotation
 - [ ] Onboarder watches the `#incident-management` channel looking for messages from the Woodhouse app announcing "paging IMOC" to selectively join and learn from observing an active incident.
