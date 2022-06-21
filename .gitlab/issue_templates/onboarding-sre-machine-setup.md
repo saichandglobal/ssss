@@ -55,7 +55,7 @@ Manager = M
     1. [ ] O: Merge the MR, and then run `knife data bag from file users <username>.json`
     1. [ ] N: wait for chef to propagate your public key to the bastion servers and all the rest of the infrastructure nodes
 1. [ ] **Bastion setup for SSH:**
-    1. [ ] N: obtain a base known-good SSH config for GitLab infrastructure: `curl https://gitlab.com/gitlab-com/gl-infra/infrastructure/raw/master/onboarding/ssh-config >> $HOME/.ssh/config`
+    1. [ ] N: obtain a base known-good SSH config for GitLab infrastructure: `curl https://gitlab.com/gitlab-com/gl-infra/reliability/-/raw/master/onboarding/ssh-config >> $HOME/.ssh/config`
 1. [ ] **Chef:**
     1. :warning: These steps assume the previous SSH section was completed
     1. [ ] M: add the new SRE as a 'developer' on [ops chef-repo](https://ops.gitlab.net/gitlab-com/gl-infra/chef-repo)
