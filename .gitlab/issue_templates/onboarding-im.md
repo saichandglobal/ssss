@@ -115,11 +115,12 @@ Some methods that can be employed to accomplish this:
 
 
 ## Getting going as an Incident Manager
-After the reading and video above, you should start shadowing existing Incident Managers.  
+After the reading and watching the videos above, you should start shadowing existing Incident Managers.  
 
 Things you will need: (note, you can do the Access Request and start shadowing / joining channels while you wait on the Access Request)
 1. [ ] An account on GitLab's PagerDuty account (via Access Request)
 1. [ ] The PagerDuty App on your phone
+1. [ ] Update your [GitLab.com account profile](https://gitlab.com/-/profile) so that your email address is set under the "Public email" option. This is required so that you can be properly tagged on incidents. 
 1. [ ] Join the following channels on Slack: #incident-management, #production, #feed_alerts-general, #abuse, #dev-escalation
 1. [ ] If you're starting as an IM Shadow, also joining the #imoc_general channel on Slack.
 1. [ ] Make sure you can login to the [dashboards site](https://dashboards.gitlab.net/d/RZmbBr7mk/gitlab-triage)
