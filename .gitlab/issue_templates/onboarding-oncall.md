@@ -74,7 +74,10 @@ Make sure you know how to:
 ### Observability
 
 - [ ] Locate the General SLA dashboard and find the panel for `Sidekiq Queue Lengths per Queue`
-- [ ] Read the SLI apdex troubleshooting tutorial: https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/monitoring/apdex-alerts-guide.md
+- [ ] Read these documents about notifications and troubleshooting:
+  - [ ] Alert Tuning: https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/monitoring/alert_tuning.md
+  - [ ] The SLI apdex troubleshooting tutorial: https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/monitoring/apdex-alerts-guide.md
+  - [ ] An impatient SRE's guide to deleting alerts: https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/monitoring/deleting-alerts.md
 - [ ] Ensure you know how to Silence an alert. [view documentation](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/monitoring/alerts_manual.md)
 - [ ] Ensure you can run `make generate` in [runbooks](https://gitlab.com/gitlab-com/runbooks).
 - [ ] Create a visualization in Kibana for all errors grouped by status code.  [view documentation](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/elastic/kibana.md)
