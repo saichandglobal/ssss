@@ -39,10 +39,10 @@ The rest of this issue gives some practical steps/exercises for things you shoul
 ### Asking for help
 
 Make sure you know how to:
-- [ ] Page IMOC by typing `/pd trigger` in slack, then choosing `GitLab Production - IMOC` under `Impacted Service`.
-- [ ] Page CMOC by typing `/pd trigger` in slack, then choosing `GitLab Production - CMOC` under `Impacted Service`.
-- [ ] Page Security by typing `/security Please joing us for incident#123` in slack. [Handbook](https://about.gitlab.com/handbook/engineering/security/#engaging-the-security-on-call).
-- [ ] Page Dev by typing `/devoncall incident-issue-url into #dev-escalation`. [Handbook](https://about.gitlab.com/handbook/engineering/development/processes/Infra-Dev-Escalation/process.html#weekdays).
+- [ ] Page IMOC by typing `/pd trigger` in slack, then choosing `GitLab Production - Incident Manager` under `Impacted Service`.
+- [ ] Page CMOC by typing `/pd trigger` in slack, then choosing `Incident Management - CMOC` under `Impacted Service`.
+- [ ] Page Security - for medium/high severity incidents, refer to [how to engage the SEOC](https://about.gitlab.com/handbook/engineering/security/security-operations/sirt/engaging-security-on-call.html#engage-the-security-engineer-on-call). For lower severity incidents, refer to the [incident severity table](https://about.gitlab.com/handbook/engineering/security/security-operations/sirt/engaging-security-on-call.html#incident-severity) to determine the right course of action.
+- [ ] Page Dev by typing `/devoncall incident-issue-url` into `#dev-escalation`. [Handbook](https://about.gitlab.com/handbook/engineering/development/processes/Infra-Dev-Escalation/process.html#weekdays).
 
 ### Tools
 
@@ -53,7 +53,7 @@ Make sure you know how to:
 
 - [ ] To declare an incident via Slack: `/incident declare`.
 - [ ] When you're ready, add yourself to the [EOC Shadow PD Schedule](https://gitlab.pagerduty.com/schedules#PZEBYO0).
-- [ ] Checkout an example Alert in `#production`, Explore the `Runbook`, `Dashboard`, the discription and the related `Prometheus graph` by clicking `show more`. Note that any of these links could be outdated, so proceed your evaluation with caution.
+- [ ] Checkout an example Alert in `#production`, Explore the `Runbook`, `Dashboard`, the description and the related `Prometheus graph` by clicking `show more`. Note that any of these links could be outdated, so proceed your evaluation with caution.
 - [ ] Understand when an Incident Review is required by viewing [The Incident Review Handbook](https://about.gitlab.com/handbook/engineering/infrastructure/incident-review/#incident-review).
 - [ ] Checkout Scenario 3 Youtube recording in [this Firedrill doc](https://docs.google.com/document/d/1uZHz1w3NC6yhSPpuWiUftoz2pIaMtnXhKGvn4O3Fe1U/edit#heading=h.o4psext022tb) to give you an idea of the k8s-related issues you might encounter in gitlab.com.
 
@@ -87,4 +87,4 @@ Make sure you know how to:
 - [ ] Familiarize yourself with how to create incidents from Slack.
 - [ ] Get the current HAProxy state of all nodes using the command line. [view documentation](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/frontend/haproxy.md)
 - [ ] First drain and then ready connections from one of the zonal clusters in staging. [view documentation](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/frontend/haproxy.md#set-server-state)
-- [ ] Join the following slack channels: `#incident-management`, `#production`, `#releases`, `#f_upcoming_release`, `#alerts_general`, `#alerts`, `#dev-escalation`
+- [ ] Join the following slack channels: `#incident-management`, `#production`, `#releases`, `#f_upcoming_release`, `#feed_alerts-general`, `#alerts`, `#dev-escalation`
