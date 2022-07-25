@@ -58,4 +58,4 @@ Also be sure to schedule some coffee chats with team mates to connect and get to
         1. [ ] If pairing is a useful vehicle for learning for you, ask to schedule some pairing sessions with team mates to pair on issues they are working on.
         1. [ ] Look at the [Team Board's](https://gitlab.com/groups/gitlab-com/gl-infra/-/boards/1433541?label_name[]=team%3A%3AReliability) "Ready" column and choose an issue to start working on. Ask to pair if you like.
 1. [ ] **Next Onboarding Issue**
-    1. [ ] Create a new issue and assign it to yourself, using the [Oncall Onboarding](https://gitlab.com/gitlab-com/gl-infra/infrastructure/edit/master/.gitlab/issue_templates/oncall_onboarding.md) issue template.
+    1. [ ] Create a new issue and assign it to yourself, using the [Oncall Onboarding](https://gitlab.com/gitlab-com/gl-infra/infrastructure/edit/master/.gitlab/issue_templates/onboarding-oncall.md) issue template.
