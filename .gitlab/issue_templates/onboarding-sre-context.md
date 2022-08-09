@@ -41,7 +41,7 @@ Also be sure to schedule some coffee chats with team mates to connect and get to
 
 1. [ ] **Making Changes**
     1. [ ] Issues and Epics
-        1. [ ] Review issues labeled as `outage` in the [infrastructure issue tracker](https://gitlab.com/groups/gitlab-com/gl-infra/-/issues?scope=all&utf8=%E2%9C%93&state=closed&label_name%5B%5D=outage).
+        1. [ ] Review issues labeled as ~severity::1 incidents in the [production tracker](https://gitlab.com/gitlab-com/gl-infra/production/-/issues/?sort=updated_desc&state=all&label_name%5B%5D=severity%3A%3A1&first_page_size=20).
         1. [ ] Ask your onboarding buddy to point you to the ongoing Epics that define the team strategy. [Example](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/509)
         1. [ ] Familiarize yourself with the [team board](https://gitlab.com/groups/gitlab-com/gl-infra/-/boards/1433541?label_name[]=team%3A%3AReliability)
 
