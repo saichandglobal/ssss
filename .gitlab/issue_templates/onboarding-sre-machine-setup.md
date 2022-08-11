@@ -45,7 +45,7 @@ Manager = M
 1. [ ] **Tools:**
     1. [ ] N: install the [gcloud cli](https://cloud.google.com/sdk/)
 1. [ ] **Monitoring:**
-    1. [ ] O: make new SRE 'admin' on [private monitoring infrastructure](https://dashboards.gitlab.net/)
+    1. [ ] O: make new SRE 'admin' on [private monitoring infrastructure](https://dashboards.gitlab.net/) (Note: Ask new team member to log in first, so account is created before you can make them admin)
 
 1. [ ] **Runbooks and Alerts:**
     1. [ ] O: add new SRE as 'maintainer' to [runbooks](https://gitlab.com/gitlab-com/runbooks/-/project_members).
