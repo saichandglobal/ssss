@@ -79,6 +79,7 @@ Manager = M
        [runbook](https://gitlab.com/gitlab-com/runbooks/blob/master/docs/uncategorized/staging-environment.md#run-a-rails-console-in-staging-environment).
 1. [ ] **Terraform:**
     1. [ ] N: clone the [terraform repo](https://ops.gitlab.net/gitlab-com/gitlab-com-infrastructure)
+    Note: Ensure that you have been added to gcp-ops-sg@gitlab.com group in Gcloud.
     1. [ ] N: Complete the [_Getting Started_](https://ops.gitlab.net/gitlab-com/gitlab-com-infrastructure#getting-started) guide
 1. [ ] **Communications:**
     1. [ ] O: Invite the new SRE to specialized Slack channels:
@@ -106,5 +107,7 @@ Manager = M
 1. [ ] **Kubernetes**
     1. [ ] N: Complete your [Kubernetes Access Setup](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/kube/k8s-oncall-setup.md).
          - You can use any of the setup methods
+1. [ ] **Cloudflare**
+    1. [ ] N: Ensure you have been given Cloudflare access and can log in.
 1. [ ] **Next Onboarding Issue**
     1. [ ] N: Create a new issue and assign it to yourself, using the [Gather Context](https://gitlab.com/gitlab-com/gl-infra/infrastructure/edit/master/.gitlab/issue_templates/onboarding_gather_context.md) issue template.
