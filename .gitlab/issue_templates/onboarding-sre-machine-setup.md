@@ -24,14 +24,13 @@ Manager = M
     1. [ ] N: Read through the onboarding info in [the handbook](https://about.gitlab.com/handbook/engineering/infrastructure/team/reliability/sre-onboarding/).
     1. [ ] N: [Read Geekbot's FAQ](https://geekbot.com/faq/) and configure your settings
     1. [ ] N: Complete the setup of your [Yubikey](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/uncategorized/yubikey.md) Note: this setup can take at least a day to complete, and we encourage you to get help if things are unclear or you run into an issue.
-    1. [ ] N: (Optional) After finishing the 1st Yubikey setup, schedule a 2 hours meeting with your Onboarder to setup the 2nd Yubikey
+    1. [ ] N: (Optional) After finishing the 1st Yubikey setup, set up your secondary key in the same way but skip creating another master key, adding a second set of subkeys instead.
 
 1. [ ] **Accounts:**
     1. [ ] O: Check that by the start of Day 2 that an issue has been auto-created in the [Access Request Repo](https://gitlab.com/gitlab-com/team-member-epics/access-requests) by the employment bot.  This will create accounts for many of the services we use: AWS, dev, DO, GitLab.com admin, staging, GCP, Chef, Pager Duty
     1. [ ] N: comment in the access request issue with your desired Unix username and your SSH public key (if you have a 2nd Yubikey, publish both public SSH keys). Tip: use the same username you use on your laptop.
     1. [ ] N: You should receive a GitLab `admin` account via a 'plussed' email address (ex `yourGitLabHandle+admin@gitlab.com`). Set this account password and configure multi factor security on this account.
     1. [ ] N: Accept the invitation and configure [Pager Duty](https://gitlab.pagerduty.com/) timezone and phone number and other details
-    1. [ ] N: Verify your access to Rackspace - this is where you can make tickets for issues with GCP
 1. [ ] **Permissions:**
     1. [ ] O: Check the new SRE has been added to the following groups/with permissions by the Employment Bot:
          1. [ ] 'developer' in [gitlab-com](https://gitlab.com/groups/gitlab-com/-/group_members).
@@ -42,10 +41,13 @@ Manager = M
     1. [ ] O: add new SRE as 'maintainer' to [gitlab-org/reliability](https://gitlab.com/groups/gitlab-org/reliability/-/group_members).
     1. [ ] N: create your account with the invitation.
     1. [ ] O: make new SRE 'admin' on [Gitlab-com AWS](https://gitlab-com.signin.aws.amazon.com/console)
+    1. [ ] O: make new SRE 'admin' on [Staging AWS](https://784552884212.signin.aws.amazon.com/console)
+
 1. [ ] **Tools:**
     1. [ ] N: install the [gcloud cli](https://cloud.google.com/sdk/)
 1. [ ] **Monitoring:**
-    1. [ ] O: make new SRE 'admin' on [private monitoring infrastructure](https://dashboards.gitlab.net/) (Note: Ask new team member to log in first, so account is created before you can make them admin)
+    1. [ ] N: Log in to the Grafana [private monitoring infrastructure](https://dashboards.gitlab.net/) to create an account
+    1. [ ] O: make new SRE 'admin' on [private monitoring infrastructure](https://dashboards.gitlab.net/) once they've created this account
 
 1. [ ] **Runbooks and Alerts:**
     1. [ ] O: add new SRE as 'maintainer' to [runbooks](https://gitlab.com/gitlab-com/runbooks/-/project_members).
@@ -63,6 +65,7 @@ Manager = M
     1. [ ] N: clone the [chef-repo](https://gitlab.com/gitlab-com/gl-infra/chef-repo) and run `bundle install` to install all the dependencies.
         - Note: if you encounter the error `OpenSSL library could not be found.`
         - run `gem install openssl -- --with-openssl-dir=<dir>` where dir is the path to openssl@1.1 directory since the default is openssl@3 and at the time of this edit ruby doesn't support openssl@3, after that run `bundle install`.
+        - You may find it eaiser to use `rbenv` to [manage versions instead](https://gitlab.com/gitlab-com/gl-infra/chef-repo/-/tree/master#troubleshooting).
     1. [ ] N: chef-repo repository contains a lot of useful materials. You don't need to read all of them, just look at a few examples and be aware that they are here:
         1. [ ] chef server installation [docs](https://ops.gitlab.net/gitlab-com/gl-infra/chef-repo/-/blob/master/doc/set-up-chef-server.md)
     1. [ ] O: run `sudo chef-client` on `chef-01-inf-ops.c.gitlab-ops.internal` to ensure the new SRE has SSH access there
@@ -73,7 +76,7 @@ Manager = M
     1. [ ] N: create chef-repo/.chef/knife.rb from [knife.rb.example](https://gitlab.com/gitlab-com/gl-infra/chef-repo/blob/master/knife.rb.example)
     1. [ ] N: test your chef setup with `knife status`
     1. [ ] O: in the chef-repo, add the new Chef user to config/vault_admins.yml, then run `rake update_vault_admins`.  This will run for a while (hours, not minutes) and then create an MR you can have approved and merged.  It will output "WARNING: Vault admin must be an array" a lot; this is not a problem
-    1. [ ] N: try to ssh into a host and make sure it works. Example: `knife status | grep dashboard`, get one of the hosts' name and ssh into it
+    1. [ ] N: try to ssh into a host and make sure it works. Example: `knife status | grep prometheus`, get one of the hosts' name and ssh into it
 1. [ ] **Console access:**
     1. [ ] N: Ensure that you can run a rails console as described in the
        [runbook](https://gitlab.com/gitlab-com/runbooks/blob/master/docs/uncategorized/staging-environment.md#run-a-rails-console-in-staging-environment).
