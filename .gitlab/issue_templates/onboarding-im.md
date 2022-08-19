@@ -126,7 +126,7 @@ Things you will need: (note, you can do the Access Request and start shadowing /
 1. [ ] Make sure you can login to the [dashboards site](https://dashboards.gitlab.net/d/RZmbBr7mk/gitlab-triage)
 1. [ ] Make sure you can login to [kibana](https://log.gprd.gitlab.net/) 
 1. [ ] Familiarize yourself with the [dev escalation process](https://about.gitlab.com/handbook/engineering/development/processes/Infra-Dev-Escalation/process.html)
-1. [ ] Make sure you can login to https://ops.gitlab.net/
+1. [ ] Make sure you can login to https://ops.gitlab.net/ (Sign in with Google)
 1. [ ] Join the [IMOC Google group](https://groups.google.com/a/gitlab.com/g/imoc).
 1. [ ] Subscribe to the [IMOC shared calendar](https://calendar.google.com/calendar/u/0?cid=Y19xdjMwbThwNGZ2bW03OHMyMG4zbXJ2ajlyb0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t)
 
