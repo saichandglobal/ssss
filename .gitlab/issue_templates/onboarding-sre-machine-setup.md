@@ -113,4 +113,4 @@ Manager = M
 1. [ ] **Cloudflare**
     1. [ ] N: Ensure you have been given Cloudflare access and can log in.
 1. [ ] **Next Onboarding Issue**
-    1. [ ] N: Create a new issue and assign it to yourself, using the [Gather Context](https://gitlab.com/gitlab-com/gl-infra/infrastructure/edit/master/.gitlab/issue_templates/onboarding_gather_context.md) issue template.
+    1. [ ] N: Create a new issue and assign it to yourself, using the [Gather Context](https://gitlab.com/gitlab-com/gl-infra/infrastructure/edit/master/.gitlab/issue_templates/onboarding-sre-context.md) issue template.
