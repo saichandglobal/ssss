@@ -107,4 +107,4 @@ Manager = M
     1. [ ] N: Complete your [Kubernetes Access Setup](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/kube/k8s-oncall-setup.md).
          - You can use any of the setup methods
 1. [ ] **Next Onboarding Issue**
-    1. [ ] N: Create a new issue and assign it to yourself, using the [Gather Context](https://gitlab.com/gitlab-com/gl-infra/infrastructure/edit/master/.gitlab/issue_templates/onboarding_gather_context.md) issue template.
+    1. [ ] N: Create a new issue and assign it to yourself, using the [Gather Context](https://gitlab.com/gitlab-com/gl-infra/infrastructure/edit/master/.gitlab/issue_templates/onboarding-sre-context.md) issue template.
