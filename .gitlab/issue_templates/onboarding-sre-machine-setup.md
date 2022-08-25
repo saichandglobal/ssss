@@ -60,8 +60,6 @@ Manager = M
     1. [ ] N: obtain a base known-good SSH config for GitLab infrastructure: `curl https://gitlab.com/gitlab-com/gl-infra/reliability/-/raw/master/onboarding/ssh-config >> $HOME/.ssh/config`
 1. [ ] **Chef:**
     1. :warning: These steps assume the previous SSH section was completed
-    1. [ ] M: add the new SRE as a 'developer' on [ops chef-repo](https://ops.gitlab.net/gitlab-com/gl-infra/chef-repo)
-    1. [ ] O: add the new SRE as a 'maintainer' on  [.com chef-repo](https://gitlab.com/gitlab-com/gl-infra/chef-repo)
     1. [ ] N: clone the [chef-repo](https://gitlab.com/gitlab-com/gl-infra/chef-repo) and run `bundle install` to install all the dependencies.
         - Note: if you encounter the error `OpenSSL library could not be found.`
         - run `gem install openssl -- --with-openssl-dir=<dir>` where dir is the path to openssl@1.1 directory since the default is openssl@3 and at the time of this edit ruby doesn't support openssl@3, after that run `bundle install`.
